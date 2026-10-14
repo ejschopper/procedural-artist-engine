@@ -31,3 +31,13 @@ direction). Labelled "estimated" in metadata.
 ## Data targets
 
 Per technique: 3–5 paintings, 20–40 crops each; 4-light sets for at least 3–5 areas per painting.
+
+## Principles (agreed 14 Oct 2026)
+
+- **Capture-driven:** photorealism comes from the artist's measured captures (4 lights, height, normals,
+  gloss, metalness). Hand-written procedural surfaces are a fallback only.
+- **No AI in the engine:** composition, mark placement, layering, synthesis, reconstruction and lighting use
+  classical maths and image processing. No neural networks, no external services; deterministic per seed.
+- **Originality:** outputs are new compositions built from the artist's recorded gestures; no region of an
+  existing painting is reproduced.
+- **Acceptance:** blind A/B test at 100% (real crops vs engine crops), judged by the artist.
