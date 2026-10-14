@@ -1,0 +1,30 @@
+# One notes.txt per captured area. Anything you don't know: leave blank or write "?".
+
+painting:          Structures 8
+artist:
+year:
+size_cm:           88 x 88
+medium:            oil
+additives:         none                 # e.g. paste medium, sand, wax, varnish (gloss/matte/satin)
+substrate:         cotton duck          # linen, cotton duck, jute, panel, paper...
+ground:            acrylic gesso, 2 coats
+
+area:              area01
+area_location:     upper left, ~15 cm from top, ~20 cm from left edge
+area_size_mm:      127 x 127
+ppi:               300
+technique_here:    knife-dragged bands, thick lips    # what the marks in this area are
+
+capture_device:    e.g. camera + lens, or scanner model
+height_units:      e.g. 0-65535 = 0.0-3.0 mm   (or "value = microns", or "float, mm")
+height_zero:       e.g. primed canvas surface
+normal_convention: OpenGL (+Y up)  or  DirectX (+Y down)
+same_pixel_grid:   yes                  # do all maps line up pixel for pixel?
+color_space:       sRGB / Adobe RGB / linear
+
+lights:            top, bottom, left, right
+light_elevation_deg: 35                 # angle above the canvas surface
+light_type:        e.g. LED panel, flash, raking strip
+scale_reference:   e.g. US penny (1.52 mm) in light-top shot, lower right
+
+notes:             anything unusual (varnish glare, retouched area, damage, a mark you want called out)
