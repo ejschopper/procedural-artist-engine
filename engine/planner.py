@@ -23,13 +23,13 @@ import cv2
 import numpy as np
 
 TECHNIQUES = {
-    "knife_bands": dict(kinds=("lip", "drag"), layout="rows", angle_jitter=1.5, scale=(0.95, 1.05), step=(0.7, 0.95),
+    "knife_bands": dict(kinds=("lip", "drag"), max_len_mm=None, layout="rows", angle_jitter=1.5, scale=(0.95, 1.05), step=(0.7, 0.95),
                         row_jitter_mm=0.8, flip180=0.3, relief=(0.85, 1.15), bright=0.03, own_colour=0.25, layer=1),
-    "scumble": dict(kinds=("drag", "daub"), layout="scatter", coverage=0.9, angle_jitter=12, scale=(0.85, 1.1),
+    "scumble": dict(kinds=("drag", "daub"), max_len_mm=30, layout="scatter", coverage=0.9, angle_jitter=12, scale=(0.85, 1.1),
                     flip180=0.5, relief=(0.5, 0.9), bright=0.05, own_colour=0.2, layer=1),
-    "daubs": dict(kinds=("daub", "drag", "fleck"), layout="scatter", coverage=1.1, angle_jitter=180, scale=(0.8, 1.15),
+    "daubs": dict(kinds=("daub", "drag", "fleck"), max_len_mm=12, layout="scatter", coverage=1.1, angle_jitter=180, scale=(0.8, 1.15),
                   flip180=0.5, relief=(0.8, 1.2), bright=0.05, own_colour=0.35, layer=1),
-    "flecks": dict(kinds=("fleck",), layout="scatter", coverage=0.04, angle_jitter=180, scale=(0.8, 1.2),
+    "flecks": dict(kinds=("fleck",), max_len_mm=5, layout="scatter", coverage=0.04, angle_jitter=180, scale=(0.8, 1.2),
                    flip180=0.5, relief=(0.8, 1.2), bright=0.08, own_colour=0.6, layer=2),
 }
 
@@ -117,7 +117,7 @@ def plan_fields(H, W, px_mm, rng, palette, n=5, techniques=("scumble", "daubs", 
         tech = techniques[i % len(techniques)]
         rgb = np.array(palette[int(rng.integers(len(palette)))], np.float32)
         ang = float(rng.choice([0, 0, 90, rng.uniform(-30, 30)]))
-        r = Region(mask=mask, technique=tech, colour=tuple(rgb), angle_deg=ang, order=i)
+        r = Region(mask=mask, technique=tech, colour=tuple(rgb), angle_deg=0.0 if tech == "knife_bands" else ang, order=i)
         if tech == "knife_bands":
             ys, = np.nonzero(mask.any(1))
             y0, y1 = ys.min(), ys.max()
@@ -149,7 +149,7 @@ def make_ground(plan, rng, fill=None):
         tile = lambda a: np.tile(a, reps + ((1,) if a.ndim == 3 else ()))[:H, :W]
         fa_hp = fa - cv2.GaussianBlur(fa, (0, 0), 2 * mm)
         fh_hp = fh - cv2.GaussianBlur(fh, (0, 0), 2 * mm)
-        alb += 0.8 * tile(fa_hp); height += tile(fh_hp)
+        alb += 0.8 * tile(fa_hp); height = np.clip(height + tile(fh_hp), 0, None)
     gloss = np.full((H, W), 0.35, np.float32)
     return {"albedo": np.clip(alb, 0, 255), "height": height.astype(np.float32), "gloss": gloss}
 
@@ -181,11 +181,15 @@ def place(plan, marks, rng, fill=None, reuse_mm=40.0):
     by_kind = {}
     for i, m in enumerate(marks):
         by_kind.setdefault(m.kind, []).append(i)
-    out = []
+    out, missing = [], []
     for r in sorted(plan.regions, key=lambda r: (TECHNIQUES[r.technique]["layer"], r.order)):
         t = {**TECHNIQUES[r.technique], **r.params}
-        pool = [i for k in t["kinds"] for i in by_kind.get(k, [])]
-        if not pool:
+        pool = [i for k in t["kinds"] for i in by_kind.get(k, [])
+                if t["max_len_mm"] is None or max(marks[i].size_mm) <= t["max_len_mm"]]
+        if len(pool) < t.get("min_marks", 3):
+            # never fake a technique with unsuitable marks: leave the ground showing and say what is missing
+            missing.append(f"{r.technique}: {len(pool)} suitable marks (need 3+ of {'/'.join(t['kinds'])}"
+                           + (f" <= {t['max_len_mm']} mm" if t['max_len_mm'] else "") + ")")
             continue
         common = lambda: dict(scale=float(rng.uniform(*t["scale"])), brightness=float(rng.normal(0, t["bright"])),
                               relief_gain=float(rng.uniform(*t["relief"])), own_colour=t["own_colour"])
@@ -223,5 +227,6 @@ def place(plan, marks, rng, fill=None, reuse_mm=40.0):
     used = pick.uses[pick.uses > 0]
     report = {"placements": len(out), "distinct_marks": int(len(used)), "library": len(marks),
               "max_share": float(used.max() / max(1, used.sum())) if len(used) else 0.0,
-              "regions": {k: sum(1 for r in plan.regions if r.technique == k) for k in TECHNIQUES}}
+              "regions": {k: sum(1 for r in plan.regions if r.technique == k) for k in TECHNIQUES},
+              "missing": missing}
     return out, ground, report

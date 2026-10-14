@@ -110,31 +110,41 @@ def compose(H, W, px_mm, placements, marks, ground=None):
         albedo = ground["albedo"].astype(np.float32).copy(); height = ground["height"].astype(np.float32).copy()
         gloss = ground["gloss"].astype(np.float32).copy()
     owner = np.full((H, W), -1, np.int32)
+    s_ = max(6.0, 2.0 / px_mm)                        # colour harmonisation scale (px)
+    pad = int(3 * s_) + 2                             # context around a mark for its low-frequency colour
     for k, p in enumerate(placements):
         mk = marks[p["mark"]]
         mh, mw = mk.alpha.shape
         c = (mw / 2, mh / 2)
         M = cv2.getRotationMatrix2D(c, p.get("angle_deg", 0.0), p.get("scale", 1.0))
         M[0, 2] += p["x"] - c[0]; M[1, 2] += p["y"] - c[1]
-        a = _place(mk.alpha, M, (W, H))
+        # bounding box of the placed mark on the canvas, plus context
+        corners = np.array([[0, 0, 1], [mw, 0, 1], [0, mh, 1], [mw, mh, 1]], np.float32) @ M.T
+        bx0 = max(0, int(np.floor(corners[:, 0].min())) - pad); bx1 = min(W, int(np.ceil(corners[:, 0].max())) + pad)
+        by0 = max(0, int(np.floor(corners[:, 1].min())) - pad); by1 = min(H, int(np.ceil(corners[:, 1].max())) + pad)
+        if bx1 <= bx0 or by1 <= by0:
+            continue
+        Ml = M.copy(); Ml[0, 2] -= bx0; Ml[1, 2] -= by0
+        size = (bx1 - bx0, by1 - by0)
+        a = _place(mk.alpha, Ml, size)
         if a.max() < 1e-3:
             continue
-        r = np.clip(_place_sharp(mk.relief, M, (W, H)), 0, None) * p.get("relief_gain", 1.0)
-        col = _place_sharp(mk.albedo.astype(np.float32), M, (W, H))
+        r = np.clip(_place_sharp(mk.relief, Ml, size), 0, None) * p.get("relief_gain", 1.0)
+        col = _place_sharp(mk.albedo.astype(np.float32), Ml, size)
+        A = albedo[by0:by1, bx0:bx1]
         # keep the mark's own detail, take its broad colour from the surface it lands on (paint picks up
         # and carries the local colour), so marks never read as pasted-in tiles
-        s_ = max(6.0, 2.0 / px_mm)
         aw = cv2.GaussianBlur(a, (0, 0), s_) + 1e-4
         mark_low = cv2.GaussianBlur(col * a[..., None], (0, 0), s_) / aw[..., None]
-        ground_low = cv2.GaussianBlur(albedo, (0, 0), s_)
+        ground_low = cv2.GaussianBlur(A, (0, 0), s_)
         k_ = p.get("own_colour", 0.25)              # 0 = fully local colour, 1 = mark keeps its own
         col = col - mark_low + (ground_low * (1 - k_) + mark_low * k_)
         col = np.clip(col * (1 + p.get("brightness", 0.0)), 0, 255)
-        g = _place(mk.gloss, M, (W, H))
-        albedo = albedo * (1 - a[..., None]) + col * a[..., None]
-        height = height + a * r                     # new paint sits on what is below
-        gloss = gloss * (1 - a) + g * a
-        owner[a > 0.5] = k
+        g = _place(mk.gloss, Ml, size)
+        albedo[by0:by1, bx0:bx1] = A * (1 - a[..., None]) + col * a[..., None]
+        height[by0:by1, bx0:bx1] += a * r           # new paint sits on what is below
+        G = gloss[by0:by1, bx0:bx1]; gloss[by0:by1, bx0:bx1] = G * (1 - a) + g * a
+        owner[by0:by1, bx0:bx1][a > 0.5] = k
     return {"albedo": np.uint8(np.clip(albedo, 0, 255)), "height_mm": height, "gloss": gloss, "owner": owner}
 
 
