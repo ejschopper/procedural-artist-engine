@@ -1,0 +1,117 @@
+{
+ "structures8_crop01.png": {
+  "ppi": 300,
+  "source": "Structures 8",
+  "lighting": "from bottom",
+  "scale_check": "weave period 9.6 px",
+  "medium": "oil",
+  "substrate": "cotton duck",
+  "painting_size_cm": [
+   88,
+   88
+  ]
+ },
+ "structures8_crop02.png": {
+  "ppi": 300,
+  "source": "Structures 8",
+  "lighting": "from bottom",
+  "scale_check": "weave period 9.6 px",
+  "medium": "oil",
+  "substrate": "cotton duck",
+  "painting_size_cm": [
+   88,
+   88
+  ]
+ },
+ "structures8_crop03.png": {
+  "ppi": 300,
+  "source": "Structures 8",
+  "lighting": "from bottom",
+  "scale_check": "weave period 9.6 px",
+  "medium": "oil",
+  "substrate": "cotton duck",
+  "painting_size_cm": [
+   88,
+   88
+  ]
+ },
+ "structures8_crop04.png": {
+  "ppi": 300,
+  "source": "Structures 8",
+  "lighting": "from bottom",
+  "scale_check": "weave period 9.6 px",
+  "medium": "oil",
+  "substrate": "cotton duck",
+  "painting_size_cm": [
+   88,
+   88
+  ]
+ },
+ "structures8_crop05.png": {
+  "ppi": 300,
+  "source": "Structures 8",
+  "lighting": "from bottom",
+  "scale_check": "weave period 9.6 px",
+  "medium": "oil",
+  "substrate": "cotton duck",
+  "painting_size_cm": [
+   88,
+   88
+  ]
+ },
+ "commodore64_crop01.png": {
+  "ppi": 150,
+  "source": "Commodore64",
+  "scale_check": "weave ~5.9 px",
+  "painting_size_in": [
+   30,
+   40
+  ],
+  "medium": "acrylic + paste medium",
+  "substrate": "canvas"
+ },
+ "commodore64_crop02.png": {
+  "ppi": 150,
+  "source": "Commodore64",
+  "scale_check": "weave ~5.9 px",
+  "painting_size_in": [
+   30,
+   40
+  ],
+  "medium": "acrylic + paste medium",
+  "substrate": "canvas"
+ },
+ "commodore64_crop03.png": {
+  "ppi": 150,
+  "source": "Commodore64",
+  "scale_check": "weave ~5.9 px",
+  "painting_size_in": [
+   30,
+   40
+  ],
+  "medium": "acrylic + paste medium",
+  "substrate": "canvas"
+ },
+ "commodore64_crop04.png": {
+  "ppi": 150,
+  "source": "Commodore64",
+  "scale_check": "weave ~5.9 px",
+  "painting_size_in": [
+   30,
+   40
+  ],
+  "medium": "acrylic + paste medium",
+  "substrate": "canvas"
+ },
+ "commodore64_crop05.png": {
+  "ppi": 150,
+  "source": "Commodore64",
+  "scale_check": "weave ~5.9 px",
+  "painting_size_in": [
+   30,
+   40
+  ],
+  "medium": "acrylic + paste medium",
+  "substrate": "canvas"
+ }
+}

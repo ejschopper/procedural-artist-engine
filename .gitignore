@@ -1,0 +1,15 @@
+# Artwork and renders stay out of git (large, and rights belong to the artist)
+library/images/
+library/crops/
+library/closeups/
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.webp
+out*/
+stage1/
+wtest/
+__pycache__/
+*.bak*

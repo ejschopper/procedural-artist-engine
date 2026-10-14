@@ -1,0 +1,520 @@
+{
+ "ref_012": {
+  "family": "weathered_field"
+ },
+ "ref_018": {
+  "family": "weathered_field"
+ },
+ "ref_022": {
+  "family": "weathered_field"
+ },
+ "ref_027": {
+  "family": "weathered_field",
+  "note": "key weathered field: scored horizon, scratches, rust bleed"
+ },
+ "ref_028": {
+  "family": "weathered_field",
+  "crop_frac": [
+   0.11,
+   0.21,
+   0.69,
+   0.82
+  ]
+ },
+ "ref_029": {
+  "family": "weathered_field",
+  "crop_frac": [
+   0.19,
+   0.14,
+   0.82,
+   0.56
+  ]
+ },
+ "ref_031": {
+  "family": "weathered_field",
+  "crop_frac": [
+   0.18,
+   0.18,
+   0.84,
+   0.82
+  ]
+ },
+ "ref_033": {
+  "family": "weathered_field",
+  "note": "same family as archive IMG_0443 (orange field on cream)"
+ },
+ "ref_034": {
+  "family": "weathered_field"
+ },
+ "ref_039": {
+  "family": "weathered_field",
+  "crop_frac": [
+   0.06,
+   0.12,
+   0.94,
+   0.88
+  ]
+ },
+ "ref_043": {
+  "family": "weathered_field",
+  "crop_frac": [
+   0.22,
+   0.22,
+   0.76,
+   0.7
+  ]
+ },
+ "ref_044": {
+  "family": "weathered_field",
+  "note": "duplicate of 029",
+  "exclude_from_stats": true,
+  "crop_frac": [
+   0.19,
+   0.14,
+   0.82,
+   0.56
+  ]
+ },
+ "ref_047": {
+  "family": "weathered_field"
+ },
+ "ref_050": {
+  "family": "weathered_field"
+ },
+ "ref_052": {
+  "family": "weathered_field"
+ },
+ "ref_053": {
+  "family": "weathered_field"
+ },
+ "ref_055": {
+  "family": "weathered_field",
+  "crop_frac": [
+   0.16,
+   0.11,
+   0.84,
+   0.79
+  ]
+ },
+ "ref_056": {
+  "family": "weathered_field"
+ },
+ "ref_057": {
+  "family": "weathered_field"
+ },
+ "ref_058": {
+  "family": "weathered_field",
+  "crop_frac": [
+   0.21,
+   0.09,
+   0.78,
+   0.92
+  ]
+ },
+ "ref_084": {
+  "family": "weathered_field",
+  "note": "physical nails (render as image only)"
+ },
+ "ref_085": {
+  "family": "weathered_field"
+ },
+ "ref_036": {
+  "family": "atmospheric_field"
+ },
+ "ref_042": {
+  "family": "atmospheric_field",
+  "note": "duplicate of 036",
+  "exclude_from_stats": true
+ },
+ "ref_054": {
+  "family": "atmospheric_field"
+ },
+ "ref_016": {
+  "family": "field_accent"
+ },
+ "ref_063": {
+  "family": "field_accent"
+ },
+ "ref_071": {
+  "family": "field_accent"
+ },
+ "ref_074": {
+  "family": "field_accent"
+ },
+ "ref_079": {
+  "family": "field_accent"
+ },
+ "ref_017": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_048": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_061": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_083": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_087": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_088": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_091": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_093": {
+  "family": "shapes_over_worn_ground",
+  "note": "100% close-up of 088: primary visual check for scraped-back layers"
+ },
+ "ref_041": {
+  "family": "inscribed_geometric"
+ },
+ "ref_046": {
+  "family": "inscribed_geometric"
+ },
+ "ref_070": {
+  "family": "inscribed_geometric"
+ },
+ "ref_089": {
+  "family": "inscribed_geometric",
+  "note": "peeling over ruled grid"
+ },
+ "ref_001": {
+  "family": "symbolic_concentric"
+ },
+ "ref_003": {
+  "family": "symbolic_concentric"
+ },
+ "ref_062": {
+  "family": "symbolic_concentric",
+  "note": "crackle, torn canvas"
+ },
+ "ref_073": {
+  "family": "symbolic_concentric"
+ },
+ "ref_002": {
+  "family": "layered_geometric"
+ },
+ "ref_005": {
+  "family": "layered_geometric"
+ },
+ "ref_007": {
+  "family": "layered_geometric"
+ },
+ "ref_009": {
+  "family": "layered_geometric"
+ },
+ "ref_013": {
+  "family": "layered_geometric"
+ },
+ "ref_015": {
+  "family": "layered_geometric"
+ },
+ "ref_026": {
+  "family": "layered_geometric"
+ },
+ "ref_094": {
+  "family": "layered_geometric"
+ },
+ "ref_004": {
+  "family": "hardedge_flat",
+  "note": "phone screenshot"
+ },
+ "ref_006": {
+  "family": "hardedge_flat"
+ },
+ "ref_011": {
+  "family": "hardedge_flat"
+ },
+ "ref_014": {
+  "family": "hardedge_flat"
+ },
+ "ref_065": {
+  "family": "hardedge_flat"
+ },
+ "ref_066": {
+  "family": "hardedge_flat"
+ },
+ "ref_096": {
+  "family": "hardedge_flat"
+ },
+ "ref_099": {
+  "family": "hardedge_flat"
+ },
+ "ref_069": {
+  "family": "hardedge_space"
+ },
+ "ref_075": {
+  "family": "hardedge_space"
+ },
+ "ref_077": {
+  "family": "hardedge_space"
+ },
+ "ref_095": {
+  "family": "hardedge_space"
+ },
+ "ref_030": {
+  "family": "roller_pattern"
+ },
+ "ref_032": {
+  "family": "roller_pattern"
+ },
+ "ref_072": {
+  "family": "roller_pattern"
+ },
+ "ref_025": {
+  "family": "stain_wash"
+ },
+ "ref_038": {
+  "family": "stain_wash"
+ },
+ "ref_049": {
+  "family": "stain_wash"
+ },
+ "ref_010": {
+  "family": "pattern_mosaic"
+ },
+ "ref_023": {
+  "family": "pattern_mosaic"
+ },
+ "ref_024": {
+  "family": "pattern_mosaic"
+ },
+ "ref_090": {
+  "family": "pattern_mosaic"
+ },
+ "ref_035": {
+  "family": "surface_closeup"
+ },
+ "ref_037": {
+  "family": "surface_closeup"
+ },
+ "ref_040": {
+  "family": "surface_closeup"
+ },
+ "ref_008": {
+  "family": "mixed_media_collage"
+ },
+ "ref_064": {
+  "family": "mixed_media_collage"
+ },
+ "ref_076": {
+  "family": "mixed_media_collage"
+ },
+ "ref_080": {
+  "family": "mixed_media_collage"
+ },
+ "ref_082": {
+  "family": "mixed_media_collage"
+ },
+ "ref_021": {
+  "family": "outlier"
+ },
+ "ref_078": {
+  "family": "outlier"
+ },
+ "ref_081": {
+  "family": "outlier"
+ },
+ "ref_100": {
+  "family": "outlier"
+ },
+ "ref_019": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_020": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_045": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_051": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_059": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_060": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_067": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_068": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_086": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_092": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_097": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_098": {
+  "family": "digital_or_ai_mood_only"
+ },
+ "ref_101": {
+  "family": "outlier"
+ },
+ "ref_102": {
+  "family": "hardedge_flat"
+ },
+ "ref_103": {
+  "family": "hardedge_flat"
+ },
+ "ref_104": {
+  "family": "weathered_field"
+ },
+ "ref_105": {
+  "family": "atmospheric_orb"
+ },
+ "ref_106": {
+  "family": "atmospheric_orb"
+ },
+ "ref_107": {
+  "family": "atmospheric_field"
+ },
+ "ref_108": {
+  "family": "field_accent",
+  "exclude_from_stats": true,
+  "note": "duplicate of ref_079"
+ },
+ "ref_109": {
+  "family": "weathered_field"
+ },
+ "ref_110": {
+  "family": "hardedge_flat",
+  "exclude_from_stats": true,
+  "note": "duplicate of ref_066"
+ },
+ "ref_111": {
+  "family": "weathered_field",
+  "exclude_from_stats": true,
+  "note": "grid of 9 small weathered fields (contact sheet)"
+ },
+ "ref_112": {
+  "family": "weathered_field"
+ },
+ "ref_113": {
+  "family": "weathered_field"
+ },
+ "ref_114": {
+  "family": "pattern_mosaic"
+ },
+ "ref_115": {
+  "family": "hardedge_flat",
+  "exclude_from_stats": true,
+  "note": "duplicate of ref_099"
+ },
+ "ref_116": {
+  "family": "inscribed_geometric",
+  "exclude_from_stats": true,
+  "note": "duplicate of ref_089"
+ },
+ "ref_117": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_118": {
+  "family": "inscribed_geometric"
+ },
+ "ref_119": {
+  "family": "hardedge_flat"
+ },
+ "ref_120": {
+  "family": "layered_geometric"
+ },
+ "ref_121": {
+  "family": "hardedge_flat",
+  "exclude_from_stats": true,
+  "note": "duplicate of ref_119"
+ },
+ "ref_122": {
+  "family": "hardedge_flat"
+ },
+ "ref_123": {
+  "family": "layered_geometric",
+  "exclude_from_stats": true,
+  "note": "duplicate of ref_120"
+ },
+ "ref_124": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_125": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_126": {
+  "family": "shapes_over_worn_ground"
+ },
+ "ref_127": {
+  "family": "split_organic"
+ },
+ "ref_128": {
+  "family": "split_organic"
+ },
+ "ref_129": {
+  "family": "split_organic"
+ },
+ "ref_130": {
+  "family": "stain_wash"
+ },
+ "ref_131": {
+  "family": "weathered_field"
+ },
+ "ref_132": {
+  "family": "weathered_field"
+ },
+ "ref_133": {
+  "family": "weathered_field"
+ },
+ "ref_134": {
+  "family": "weathered_field",
+  "exclude_from_stats": true,
+  "note": "duplicate of ref_055"
+ },
+ "ref_135": {
+  "family": "weathered_field"
+ },
+ "ref_136": {
+  "family": "gestural_field"
+ },
+ "ref_137": {
+  "family": "atmospheric_field"
+ },
+ "ref_138": {
+  "family": "atmospheric_field"
+ },
+ "ref_139": {
+  "family": "atmospheric_field"
+ },
+ "ref_140": {
+  "family": "atmospheric_field"
+ },
+ "ref_141": {
+  "family": "knife_drag_bands",
+  "note": "Structures 8 (artist sample): knife-dragged horizontal bands, light from below; 100% crops in closeups/ at ~300 ppi (weave period 9.6 px = ~0.8 mm)",
+  "title": "Structures 8",
+  "medium": "oil",
+  "substrate": "cotton duck",
+  "size_cm": [
+   88,
+   88
+  ],
+  "lighting": "from bottom"
+ },
+ "ref_142": {
+  "family": "gestural_shapes_on_ground",
+  "title": "Commodore64",
+  "note": "gestural navy and ochre stepped shapes on scumbled cream ground; raw canvas exposed; crops in closeups/ at ~150 ppi (weave ~5.9 px = ~1 mm)",
+  "size_in": [
+   30,
+   40
+  ],
+  "substrate": "canvas (cotton duck, ~1 mm weave)",
+  "medium": "acrylic with paste medium in thicker areas"
+ }
+}

@@ -1,0 +1,10133 @@
+{
+ "description": "Reference library: user-supplied images, for statistics and visual comparison only.",
+ "stat_long_side_px": 600,
+ "count": 142,
+ "images": [
+  {
+   "id": "ref_001",
+   "family": "symbolic_concentric",
+   "crop_xyxy": [
+    190,
+    59,
+    580,
+    450
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 57.91,
+    "lightness_std": 24.03,
+    "chroma_mean": 22.49,
+    "texture_fine": 1.861,
+    "texture_mid": 5.357,
+    "band_horizontal": 0.02,
+    "band_vertical": 0.23,
+    "edge_darkening": -10.71,
+    "palette": [
+     {
+      "rgb": [
+       221,
+       217,
+       208
+      ],
+      "weight": 0.228
+     },
+     {
+      "rgb": [
+       104,
+       136,
+       183
+      ],
+      "weight": 0.227
+     },
+     {
+      "rgb": [
+       45,
+       45,
+       45
+      ],
+      "weight": 0.192
+     },
+     {
+      "rgb": [
+       167,
+       78,
+       60
+      ],
+      "weight": 0.154
+     },
+     {
+      "rgb": [
+       216,
+       189,
+       106
+      ],
+      "weight": 0.141
+     },
+     {
+      "rgb": [
+       206,
+       155,
+       135
+      ],
+      "weight": 0.058
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_002",
+   "family": "layered_geometric",
+   "crop_xyxy": [
+    0,
+    0,
+    1283,
+    1601
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 61.06,
+    "lightness_std": 18.12,
+    "chroma_mean": 30.8,
+    "texture_fine": 3.194,
+    "texture_mid": 4.427,
+    "band_horizontal": 0.231,
+    "band_vertical": 0.117,
+    "edge_darkening": 11.73,
+    "palette": [
+     {
+      "rgb": [
+       211,
+       205,
+       186
+      ],
+      "weight": 0.23
+     },
+     {
+      "rgb": [
+       171,
+       155,
+       130
+      ],
+      "weight": 0.217
+     },
+     {
+      "rgb": [
+       125,
+       100,
+       64
+      ],
+      "weight": 0.17
+     },
+     {
+      "rgb": [
+       178,
+       130,
+       54
+      ],
+      "weight": 0.15
+     },
+     {
+      "rgb": [
+       105,
+       50,
+       55
+      ],
+      "weight": 0.117
+     },
+     {
+      "rgb": [
+       227,
+       170,
+       72
+      ],
+      "weight": 0.115
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_003",
+   "family": "symbolic_concentric",
+   "crop_xyxy": [
+    218,
+    225,
+    677,
+    683
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 56.38,
+    "lightness_std": 19.75,
+    "chroma_mean": 11.76,
+    "texture_fine": 1.604,
+    "texture_mid": 3.966,
+    "band_horizontal": 0.186,
+    "band_vertical": 0.224,
+    "edge_darkening": 22.37,
+    "palette": [
+     {
+      "rgb": [
+       171,
+       154,
+       139
+      ],
+      "weight": 0.24
+     },
+     {
+      "rgb": [
+       174,
+       170,
+       155
+      ],
+      "weight": 0.214
+     },
+     {
+      "rgb": [
+       166,
+       157,
+       118
+      ],
+      "weight": 0.205
+     },
+     {
+      "rgb": [
+       30,
+       29,
+       28
+      ],
+      "weight": 0.146
+     },
+     {
+      "rgb": [
+       145,
+       149,
+       152
+      ],
+      "weight": 0.142
+     },
+     {
+      "rgb": [
+       140,
+       80,
+       60
+      ],
+      "weight": 0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_004",
+   "family": "hardedge_flat",
+   "note": "phone screenshot",
+   "crop_xyxy": [
+    0,
+    0,
+    1284,
+    2778
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 40.59,
+    "lightness_std": 36.16,
+    "chroma_mean": 17.49,
+    "texture_fine": 9.002,
+    "texture_mid": 11.455,
+    "band_horizontal": 0.712,
+    "band_vertical": 0.039,
+    "edge_darkening": 13.87,
+    "palette": [
+     {
+      "rgb": [
+       3,
+       3,
+       3
+      ],
+      "weight": 0.335
+     },
+     {
+      "rgb": [
+       233,
+       230,
+       212
+      ],
+      "weight": 0.238
+     },
+     {
+      "rgb": [
+       57,
+       65,
+       73
+      ],
+      "weight": 0.213
+     },
+     {
+      "rgb": [
+       234,
+       59,
+       67
+      ],
+      "weight": 0.097
+     },
+     {
+      "rgb": [
+       116,
+       143,
+       181
+      ],
+      "weight": 0.082
+     },
+     {
+      "rgb": [
+       249,
+       187,
+       16
+      ],
+      "weight": 0.033
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_005",
+   "family": "layered_geometric",
+   "crop_xyxy": [
+    89,
+    103,
+    1098,
+    916
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 59.62,
+    "lightness_std": 18.3,
+    "chroma_mean": 7.91,
+    "texture_fine": 3.644,
+    "texture_mid": 4.157,
+    "band_horizontal": 0.693,
+    "band_vertical": 0.204,
+    "edge_darkening": 22.89,
+    "palette": [
+     {
+      "rgb": [
+       175,
+       172,
+       153
+      ],
+      "weight": 0.35
+     },
+     {
+      "rgb": [
+       135,
+       135,
+       126
+      ],
+      "weight": 0.186
+     },
+     {
+      "rgb": [
+       193,
+       202,
+       196
+      ],
+      "weight": 0.186
+     },
+     {
+      "rgb": [
+       77,
+       72,
+       61
+      ],
+      "weight": 0.161
+     },
+     {
+      "rgb": [
+       105,
+       105,
+       100
+      ],
+      "weight": 0.104
+     },
+     {
+      "rgb": [
+       31,
+       16,
+       13
+      ],
+      "weight": 0.013
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_006",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    47,
+    84,
+    773,
+    940
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 44.33,
+    "lightness_std": 29.05,
+    "chroma_mean": 9.5,
+    "texture_fine": 2.918,
+    "texture_mid": 7.777,
+    "band_horizontal": 0.064,
+    "band_vertical": 0.313,
+    "edge_darkening": 9.46,
+    "palette": [
+     {
+      "rgb": [
+       136,
+       124,
+       88
+      ],
+      "weight": 0.282
+     },
+     {
+      "rgb": [
+       16,
+       19,
+       18
+      ],
+      "weight": 0.238
+     },
+     {
+      "rgb": [
+       229,
+       229,
+       229
+      ],
+      "weight": 0.157
+     },
+     {
+      "rgb": [
+       59,
+       63,
+       70
+      ],
+      "weight": 0.15
+     },
+     {
+      "rgb": [
+       53,
+       113,
+       116
+      ],
+      "weight": 0.111
+     },
+     {
+      "rgb": [
+       195,
+       197,
+       194
+      ],
+      "weight": 0.063
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_007",
+   "family": "layered_geometric",
+   "crop_xyxy": [
+    0,
+    0,
+    1179,
+    1209
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 56.2,
+    "lightness_std": 30.07,
+    "chroma_mean": 10.71,
+    "texture_fine": 4.103,
+    "texture_mid": 8.825,
+    "band_horizontal": 0.304,
+    "band_vertical": 0.238,
+    "edge_darkening": -15.95,
+    "palette": [
+     {
+      "rgb": [
+       214,
+       215,
+       213
+      ],
+      "weight": 0.425
+     },
+     {
+      "rgb": [
+       68,
+       105,
+       104
+      ],
+      "weight": 0.184
+     },
+     {
+      "rgb": [
+       19,
+       19,
+       23
+      ],
+      "weight": 0.129
+     },
+     {
+      "rgb": [
+       157,
+       107,
+       18
+      ],
+      "weight": 0.11
+     },
+     {
+      "rgb": [
+       44,
+       45,
+       49
+      ],
+      "weight": 0.091
+     },
+     {
+      "rgb": [
+       160,
+       161,
+       156
+      ],
+      "weight": 0.06
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_008",
+   "family": "mixed_media_collage",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1346
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 68.41,
+    "lightness_std": 19.02,
+    "chroma_mean": 9.82,
+    "texture_fine": 11.008,
+    "texture_mid": 6.002,
+    "band_horizontal": 0.125,
+    "band_vertical": 0.261,
+    "edge_darkening": -24.27,
+    "palette": [
+     {
+      "rgb": [
+       208,
+       217,
+       216
+      ],
+      "weight": 0.297
+     },
+     {
+      "rgb": [
+       173,
+       160,
+       144
+      ],
+      "weight": 0.244
+     },
+     {
+      "rgb": [
+       187,
+       190,
+       183
+      ],
+      "weight": 0.205
+     },
+     {
+      "rgb": [
+       131,
+       130,
+       132
+      ],
+      "weight": 0.14
+     },
+     {
+      "rgb": [
+       86,
+       88,
+       97
+      ],
+      "weight": 0.075
+     },
+     {
+      "rgb": [
+       23,
+       21,
+       28
+      ],
+      "weight": 0.039
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_009",
+   "family": "layered_geometric",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 49.98,
+    "lightness_std": 9.88,
+    "chroma_mean": 13.82,
+    "texture_fine": 1.782,
+    "texture_mid": 2.196,
+    "band_horizontal": 0.156,
+    "band_vertical": 0.465,
+    "edge_darkening": -5.33,
+    "palette": [
+     {
+      "rgb": [
+       130,
+       94,
+       90
+      ],
+      "weight": 0.308
+     },
+     {
+      "rgb": [
+       164,
+       154,
+       111
+      ],
+      "weight": 0.203
+     },
+     {
+      "rgb": [
+       113,
+       123,
+       117
+      ],
+      "weight": 0.181
+     },
+     {
+      "rgb": [
+       132,
+       142,
+       131
+      ],
+      "weight": 0.133
+     },
+     {
+      "rgb": [
+       102,
+       98,
+       90
+      ],
+      "weight": 0.12
+     },
+     {
+      "rgb": [
+       77,
+       70,
+       65
+      ],
+      "weight": 0.055
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_010",
+   "family": "pattern_mosaic",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 71.45,
+    "lightness_std": 19.77,
+    "chroma_mean": 36.02,
+    "texture_fine": 4.572,
+    "texture_mid": 6.808,
+    "band_horizontal": 0.354,
+    "band_vertical": 0.153,
+    "edge_darkening": -14.45,
+    "palette": [
+     {
+      "rgb": [
+       230,
+       187,
+       147
+      ],
+      "weight": 0.315
+     },
+     {
+      "rgb": [
+       233,
+       217,
+       195
+      ],
+      "weight": 0.269
+     },
+     {
+      "rgb": [
+       144,
+       10,
+       18
+      ],
+      "weight": 0.155
+     },
+     {
+      "rgb": [
+       223,
+       187,
+       15
+      ],
+      "weight": 0.146
+     },
+     {
+      "rgb": [
+       186,
+       163,
+       132
+      ],
+      "weight": 0.071
+     },
+     {
+      "rgb": [
+       139,
+       116,
+       87
+      ],
+      "weight": 0.044
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_011",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    323,
+    152,
+    960,
+    1096
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 79.81,
+    "lightness_std": 6.99,
+    "chroma_mean": 65.04,
+    "texture_fine": 0.995,
+    "texture_mid": 1.775,
+    "band_horizontal": 0.258,
+    "band_vertical": 0.334,
+    "edge_darkening": 9.76,
+    "palette": [
+     {
+      "rgb": [
+       236,
+       207,
+       6
+      ],
+      "weight": 0.387
+     },
+     {
+      "rgb": [
+       223,
+       190,
+       11
+      ],
+      "weight": 0.269
+     },
+     {
+      "rgb": [
+       172,
+       208,
+       251
+      ],
+      "weight": 0.242
+     },
+     {
+      "rgb": [
+       60,
+       194,
+       207
+      ],
+      "weight": 0.069
+     },
+     {
+      "rgb": [
+       206,
+       54,
+       6
+      ],
+      "weight": 0.028
+     },
+     {
+      "rgb": [
+       10,
+       180,
+       26
+      ],
+      "weight": 0.005
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_012",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    176,
+    154,
+    764,
+    878
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 79.14,
+    "lightness_std": 9.53,
+    "chroma_mean": 11.24,
+    "texture_fine": 2.776,
+    "texture_mid": 4.111,
+    "band_horizontal": 0.369,
+    "band_vertical": 0.411,
+    "edge_darkening": 8.08,
+    "palette": [
+     {
+      "rgb": [
+       222,
+       215,
+       201
+      ],
+      "weight": 0.471
+     },
+     {
+      "rgb": [
+       184,
+       196,
+       198
+      ],
+      "weight": 0.25
+     },
+     {
+      "rgb": [
+       147,
+       180,
+       218
+      ],
+      "weight": 0.164
+     },
+     {
+      "rgb": [
+       164,
+       163,
+       161
+      ],
+      "weight": 0.054
+     },
+     {
+      "rgb": [
+       120,
+       153,
+       198
+      ],
+      "weight": 0.037
+     },
+     {
+      "rgb": [
+       110,
+       98,
+       92
+      ],
+      "weight": 0.024
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_013",
+   "family": "layered_geometric",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 68.08,
+    "lightness_std": 14.87,
+    "chroma_mean": 20.75,
+    "texture_fine": 3.333,
+    "texture_mid": 4.937,
+    "band_horizontal": 0.2,
+    "band_vertical": 0.183,
+    "edge_darkening": -13.77,
+    "palette": [
+     {
+      "rgb": [
+       203,
+       200,
+       195
+      ],
+      "weight": 0.332
+     },
+     {
+      "rgb": [
+       169,
+       178,
+       174
+      ],
+      "weight": 0.285
+     },
+     {
+      "rgb": [
+       183,
+       127,
+       62
+      ],
+      "weight": 0.146
+     },
+     {
+      "rgb": [
+       137,
+       136,
+       112
+      ],
+      "weight": 0.085
+     },
+     {
+      "rgb": [
+       123,
+       40,
+       15
+      ],
+      "weight": 0.076
+     },
+     {
+      "rgb": [
+       196,
+       171,
+       91
+      ],
+      "weight": 0.075
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_014",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    224,
+    219,
+    1246,
+    1265
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 58.03,
+    "lightness_std": 24.74,
+    "chroma_mean": 25.34,
+    "texture_fine": 2.492,
+    "texture_mid": 6.255,
+    "band_horizontal": 0.207,
+    "band_vertical": 0.386,
+    "edge_darkening": 10.29,
+    "palette": [
+     {
+      "rgb": [
+       140,
+       198,
+       186
+      ],
+      "weight": 0.398
+     },
+     {
+      "rgb": [
+       158,
+       63,
+       51
+      ],
+      "weight": 0.173
+     },
+     {
+      "rgb": [
+       66,
+       34,
+       36
+      ],
+      "weight": 0.17
+     },
+     {
+      "rgb": [
+       128,
+       175,
+       163
+      ],
+      "weight": 0.13
+     },
+     {
+      "rgb": [
+       251,
+       231,
+       185
+      ],
+      "weight": 0.083
+     },
+     {
+      "rgb": [
+       96,
+       66,
+       70
+      ],
+      "weight": 0.045
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_015",
+   "family": "layered_geometric",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 47.0,
+    "lightness_std": 20.88,
+    "chroma_mean": 23.99,
+    "texture_fine": 2.228,
+    "texture_mid": 3.046,
+    "band_horizontal": 0.22,
+    "band_vertical": 0.255,
+    "edge_darkening": 1.66,
+    "palette": [
+     {
+      "rgb": [
+       157,
+       193,
+       207
+      ],
+      "weight": 0.262
+     },
+     {
+      "rgb": [
+       101,
+       71,
+       78
+      ],
+      "weight": 0.239
+     },
+     {
+      "rgb": [
+       118,
+       56,
+       31
+      ],
+      "weight": 0.179
+     },
+     {
+      "rgb": [
+       153,
+       64,
+       32
+      ],
+      "weight": 0.138
+     },
+     {
+      "rgb": [
+       126,
+       160,
+       176
+      ],
+      "weight": 0.106
+     },
+     {
+      "rgb": [
+       58,
+       31,
+       34
+      ],
+      "weight": 0.077
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_016",
+   "family": "field_accent",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1457
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 83.95,
+    "lightness_std": 17.47,
+    "chroma_mean": 10.24,
+    "texture_fine": 1.383,
+    "texture_mid": 3.055,
+    "band_horizontal": 0.345,
+    "band_vertical": 0.164,
+    "edge_darkening": -23.16,
+    "palette": [
+     {
+      "rgb": [
+       243,
+       241,
+       231
+      ],
+      "weight": 0.446
+     },
+     {
+      "rgb": [
+       224,
+       216,
+       200
+      ],
+      "weight": 0.349
+     },
+     {
+      "rgb": [
+       180,
+       173,
+       142
+      ],
+      "weight": 0.101
+     },
+     {
+      "rgb": [
+       35,
+       81,
+       100
+      ],
+      "weight": 0.062
+     },
+     {
+      "rgb": [
+       114,
+       94,
+       73
+      ],
+      "weight": 0.028
+     },
+     {
+      "rgb": [
+       252,
+       111,
+       87
+      ],
+      "weight": 0.015
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_017",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1347
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 47.94,
+    "lightness_std": 23.33,
+    "chroma_mean": 22.83,
+    "texture_fine": 5.166,
+    "texture_mid": 7.987,
+    "band_horizontal": 0.152,
+    "band_vertical": 0.083,
+    "edge_darkening": 2.17,
+    "palette": [
+     {
+      "rgb": [
+       139,
+       101,
+       67
+      ],
+      "weight": 0.213
+     },
+     {
+      "rgb": [
+       203,
+       181,
+       150
+      ],
+      "weight": 0.19
+     },
+     {
+      "rgb": [
+       178,
+       150,
+       120
+      ],
+      "weight": 0.182
+     },
+     {
+      "rgb": [
+       19,
+       18,
+       15
+      ],
+      "weight": 0.171
+     },
+     {
+      "rgb": [
+       196,
+       112,
+       91
+      ],
+      "weight": 0.133
+     },
+     {
+      "rgb": [
+       94,
+       73,
+       45
+      ],
+      "weight": 0.111
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_018",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    221,
+    131,
+    826,
+    957
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 67.77,
+    "lightness_std": 6.81,
+    "chroma_mean": 18.57,
+    "texture_fine": 2.255,
+    "texture_mid": 2.756,
+    "band_horizontal": 0.384,
+    "band_vertical": 0.163,
+    "edge_darkening": 2.3,
+    "palette": [
+     {
+      "rgb": [
+       144,
+       173,
+       176
+      ],
+      "weight": 0.253
+     },
+     {
+      "rgb": [
+       190,
+       172,
+       128
+      ],
+      "weight": 0.225
+     },
+     {
+      "rgb": [
+       172,
+       153,
+       107
+      ],
+      "weight": 0.204
+     },
+     {
+      "rgb": [
+       131,
+       159,
+       162
+      ],
+      "weight": 0.152
+     },
+     {
+      "rgb": [
+       208,
+       206,
+       184
+      ],
+      "weight": 0.09
+     },
+     {
+      "rgb": [
+       150,
+       130,
+       87
+      ],
+      "weight": 0.075
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_019",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 55.44,
+    "lightness_std": 15.19,
+    "chroma_mean": 15.26,
+    "texture_fine": 1.603,
+    "texture_mid": 3.127,
+    "band_horizontal": 0.294,
+    "band_vertical": 0.461,
+    "edge_darkening": 20.09,
+    "palette": [
+     {
+      "rgb": [
+       103,
+       124,
+       130
+      ],
+      "weight": 0.277
+     },
+     {
+      "rgb": [
+       197,
+       188,
+       154
+      ],
+      "weight": 0.213
+     },
+     {
+      "rgb": [
+       153,
+       156,
+       146
+      ],
+      "weight": 0.147
+     },
+     {
+      "rgb": [
+       55,
+       72,
+       89
+      ],
+      "weight": 0.128
+     },
+     {
+      "rgb": [
+       82,
+       99,
+       117
+      ],
+      "weight": 0.123
+     },
+     {
+      "rgb": [
+       195,
+       126,
+       110
+      ],
+      "weight": 0.111
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_020",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 63.81,
+    "lightness_std": 14.5,
+    "chroma_mean": 25.31,
+    "texture_fine": 2.236,
+    "texture_mid": 5.696,
+    "band_horizontal": 0.394,
+    "band_vertical": 0.175,
+    "edge_darkening": -11.48,
+    "palette": [
+     {
+      "rgb": [
+       133,
+       153,
+       97
+      ],
+      "weight": 0.239
+     },
+     {
+      "rgb": [
+       168,
+       216,
+       200
+      ],
+      "weight": 0.21
+     },
+     {
+      "rgb": [
+       108,
+       123,
+       96
+      ],
+      "weight": 0.182
+     },
+     {
+      "rgb": [
+       157,
+       183,
+       116
+      ],
+      "weight": 0.169
+     },
+     {
+      "rgb": [
+       115,
+       176,
+       162
+      ],
+      "weight": 0.121
+     },
+     {
+      "rgb": [
+       74,
+       81,
+       70
+      ],
+      "weight": 0.078
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_021",
+   "family": "outlier",
+   "crop_xyxy": [
+    0,
+    0,
+    343,
+    461
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 35.18,
+    "lightness_std": 12.19,
+    "chroma_mean": 12.6,
+    "texture_fine": 5.448,
+    "texture_mid": 7.404,
+    "band_horizontal": 0.051,
+    "band_vertical": 0.094,
+    "edge_darkening": -0.38,
+    "palette": [
+     {
+      "rgb": [
+       86,
+       108,
+       96
+      ],
+      "weight": 0.298
+     },
+     {
+      "rgb": [
+       84,
+       94,
+       74
+      ],
+      "weight": 0.237
+     },
+     {
+      "rgb": [
+       66,
+       78,
+       60
+      ],
+      "weight": 0.222
+     },
+     {
+      "rgb": [
+       10,
+       19,
+       9
+      ],
+      "weight": 0.086
+     },
+     {
+      "rgb": [
+       40,
+       51,
+       38
+      ],
+      "weight": 0.08
+     },
+     {
+      "rgb": [
+       110,
+       128,
+       111
+      ],
+      "weight": 0.076
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_022",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    240,
+    96,
+    773,
+    988
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 60.33,
+    "lightness_std": 13.3,
+    "chroma_mean": 15.65,
+    "texture_fine": 3.054,
+    "texture_mid": 4.47,
+    "band_horizontal": 0.42,
+    "band_vertical": 0.342,
+    "edge_darkening": -14.54,
+    "palette": [
+     {
+      "rgb": [
+       149,
+       161,
+       162
+      ],
+      "weight": 0.479
+     },
+     {
+      "rgb": [
+       129,
+       136,
+       134
+      ],
+      "weight": 0.137
+     },
+     {
+      "rgb": [
+       126,
+       120,
+       18
+      ],
+      "weight": 0.122
+     },
+     {
+      "rgb": [
+       201,
+       203,
+       203
+      ],
+      "weight": 0.12
+     },
+     {
+      "rgb": [
+       109,
+       95,
+       16
+      ],
+      "weight": 0.082
+     },
+     {
+      "rgb": [
+       112,
+       65,
+       39
+      ],
+      "weight": 0.06
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_023",
+   "family": "pattern_mosaic",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1702
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 55.12,
+    "lightness_std": 17.13,
+    "chroma_mean": 9.51,
+    "texture_fine": 4.993,
+    "texture_mid": 5.954,
+    "band_horizontal": 0.431,
+    "band_vertical": 0.286,
+    "edge_darkening": -19.92,
+    "palette": [
+     {
+      "rgb": [
+       190,
+       191,
+       193
+      ],
+      "weight": 0.241
+     },
+     {
+      "rgb": [
+       119,
+       103,
+       88
+      ],
+      "weight": 0.234
+     },
+     {
+      "rgb": [
+       145,
+       129,
+       109
+      ],
+      "weight": 0.227
+     },
+     {
+      "rgb": [
+       97,
+       75,
+       61
+      ],
+      "weight": 0.134
+     },
+     {
+      "rgb": [
+       162,
+       159,
+       152
+      ],
+      "weight": 0.127
+     },
+     {
+      "rgb": [
+       48,
+       31,
+       24
+      ],
+      "weight": 0.035
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_024",
+   "family": "pattern_mosaic",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1349
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 37.06,
+    "lightness_std": 16.4,
+    "chroma_mean": 21.51,
+    "texture_fine": 10.293,
+    "texture_mid": 5.443,
+    "band_horizontal": 0.107,
+    "band_vertical": 0.216,
+    "edge_darkening": 23.35,
+    "palette": [
+     {
+      "rgb": [
+       70,
+       63,
+       66
+      ],
+      "weight": 0.248
+     },
+     {
+      "rgb": [
+       89,
+       96,
+       100
+      ],
+      "weight": 0.22
+     },
+     {
+      "rgb": [
+       30,
+       31,
+       36
+      ],
+      "weight": 0.154
+     },
+     {
+      "rgb": [
+       154,
+       66,
+       56
+      ],
+      "weight": 0.15
+     },
+     {
+      "rgb": [
+       140,
+       129,
+       110
+      ],
+      "weight": 0.138
+     },
+     {
+      "rgb": [
+       200,
+       156,
+       95
+      ],
+      "weight": 0.09
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_025",
+   "family": "stain_wash",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1334
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 76.33,
+    "lightness_std": 11.48,
+    "chroma_mean": 9.22,
+    "texture_fine": 1.99,
+    "texture_mid": 3.622,
+    "band_horizontal": 0.255,
+    "band_vertical": 0.496,
+    "edge_darkening": -3.83,
+    "palette": [
+     {
+      "rgb": [
+       198,
+       194,
+       181
+      ],
+      "weight": 0.277
+     },
+     {
+      "rgb": [
+       182,
+       176,
+       158
+      ],
+      "weight": 0.259
+     },
+     {
+      "rgb": [
+       215,
+       215,
+       215
+      ],
+      "weight": 0.196
+     },
+     {
+      "rgb": [
+       159,
+       153,
+       128
+      ],
+      "weight": 0.119
+     },
+     {
+      "rgb": [
+       240,
+       243,
+       248
+      ],
+      "weight": 0.09
+     },
+     {
+      "rgb": [
+       132,
+       115,
+       87
+      ],
+      "weight": 0.059
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_026",
+   "family": "layered_geometric",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1146
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 59.39,
+    "lightness_std": 27.58,
+    "chroma_mean": 9.91,
+    "texture_fine": 3.916,
+    "texture_mid": 8.873,
+    "band_horizontal": 0.297,
+    "band_vertical": 0.366,
+    "edge_darkening": -46.79,
+    "palette": [
+     {
+      "rgb": [
+       224,
+       221,
+       216
+      ],
+      "weight": 0.274
+     },
+     {
+      "rgb": [
+       194,
+       187,
+       177
+      ],
+      "weight": 0.217
+     },
+     {
+      "rgb": [
+       34,
+       37,
+       46
+      ],
+      "weight": 0.205
+     },
+     {
+      "rgb": [
+       172,
+       141,
+       115
+      ],
+      "weight": 0.129
+     },
+     {
+      "rgb": [
+       150,
+       110,
+       85
+      ],
+      "weight": 0.099
+     },
+     {
+      "rgb": [
+       91,
+       80,
+       76
+      ],
+      "weight": 0.076
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_027",
+   "family": "weathered_field",
+   "note": "key weathered field: scored horizon, scratches, rust bleed",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1147
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 57.17,
+    "lightness_std": 21.27,
+    "chroma_mean": 12.75,
+    "texture_fine": 5.477,
+    "texture_mid": 3.545,
+    "band_horizontal": 0.759,
+    "band_vertical": 0.096,
+    "edge_darkening": 23.57,
+    "palette": [
+     {
+      "rgb": [
+       154,
+       174,
+       167
+      ],
+      "weight": 0.239
+     },
+     {
+      "rgb": [
+       117,
+       144,
+       142
+      ],
+      "weight": 0.216
+     },
+     {
+      "rgb": [
+       207,
+       207,
+       195
+      ],
+      "weight": 0.206
+     },
+     {
+      "rgb": [
+       18,
+       72,
+       89
+      ],
+      "weight": 0.144
+     },
+     {
+      "rgb": [
+       68,
+       111,
+       117
+      ],
+      "weight": 0.141
+     },
+     {
+      "rgb": [
+       6,
+       27,
+       48
+      ],
+      "weight": 0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_028",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    158,
+    378,
+    993,
+    1476
+   ],
+   "crop_method": "manual",
+   "stats": {
+    "lightness_mean": 34.12,
+    "lightness_std": 7.99,
+    "chroma_mean": 16.27,
+    "texture_fine": 1.72,
+    "texture_mid": 2.027,
+    "band_horizontal": 0.422,
+    "band_vertical": 0.225,
+    "edge_darkening": 6.66,
+    "palette": [
+     {
+      "rgb": [
+       93,
+       73,
+       56
+      ],
+      "weight": 0.257
+     },
+     {
+      "rgb": [
+       106,
+       85,
+       66
+      ],
+      "weight": 0.232
+     },
+     {
+      "rgb": [
+       83,
+       60,
+       44
+      ],
+      "weight": 0.178
+     },
+     {
+      "rgb": [
+       73,
+       48,
+       34
+      ],
+      "weight": 0.141
+     },
+     {
+      "rgb": [
+       122,
+       99,
+       77
+      ],
+      "weight": 0.14
+     },
+     {
+      "rgb": [
+       144,
+       119,
+       95
+      ],
+      "weight": 0.052
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_029",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    171,
+    140,
+    739,
+    560
+   ],
+   "crop_method": "manual",
+   "stats": {
+    "lightness_mean": 70.7,
+    "lightness_std": 8.95,
+    "chroma_mean": 58.72,
+    "texture_fine": 0.81,
+    "texture_mid": 2.737,
+    "band_horizontal": 0.369,
+    "band_vertical": 0.234,
+    "edge_darkening": 9.19,
+    "palette": [
+     {
+      "rgb": [
+       213,
+       168,
+       66
+      ],
+      "weight": 0.263
+     },
+     {
+      "rgb": [
+       237,
+       191,
+       92
+      ],
+      "weight": 0.253
+     },
+     {
+      "rgb": [
+       230,
+       179,
+       50
+      ],
+      "weight": 0.152
+     },
+     {
+      "rgb": [
+       187,
+       142,
+       51
+      ],
+      "weight": 0.148
+     },
+     {
+      "rgb": [
+       237,
+       128,
+       61
+      ],
+      "weight": 0.112
+     },
+     {
+      "rgb": [
+       172,
+       101,
+       46
+      ],
+      "weight": 0.071
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_030",
+   "family": "roller_pattern",
+   "crop_xyxy": [
+    56,
+    45,
+    1024,
+    1293
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 55.3,
+    "lightness_std": 21.2,
+    "chroma_mean": 28.94,
+    "texture_fine": 4.156,
+    "texture_mid": 7.627,
+    "band_horizontal": 0.143,
+    "band_vertical": 0.198,
+    "edge_darkening": -0.77,
+    "palette": [
+     {
+      "rgb": [
+       205,
+       202,
+       189
+      ],
+      "weight": 0.24
+     },
+     {
+      "rgb": [
+       90,
+       142,
+       135
+      ],
+      "weight": 0.193
+     },
+     {
+      "rgb": [
+       63,
+       40,
+       40
+      ],
+      "weight": 0.168
+     },
+     {
+      "rgb": [
+       233,
+       95,
+       67
+      ],
+      "weight": 0.152
+     },
+     {
+      "rgb": [
+       204,
+       149,
+       58
+      ],
+      "weight": 0.128
+     },
+     {
+      "rgb": [
+       122,
+       78,
+       102
+      ],
+      "weight": 0.118
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_031",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    259,
+    324,
+    1209,
+    1476
+   ],
+   "crop_method": "manual",
+   "stats": {
+    "lightness_mean": 25.23,
+    "lightness_std": 12.15,
+    "chroma_mean": 9.09,
+    "texture_fine": 3.661,
+    "texture_mid": 2.703,
+    "band_horizontal": 0.491,
+    "band_vertical": 0.169,
+    "edge_darkening": 7.89,
+    "palette": [
+     {
+      "rgb": [
+       79,
+       64,
+       53
+      ],
+      "weight": 0.235
+     },
+     {
+      "rgb": [
+       57,
+       50,
+       43
+      ],
+      "weight": 0.224
+     },
+     {
+      "rgb": [
+       101,
+       81,
+       68
+      ],
+      "weight": 0.194
+     },
+     {
+      "rgb": [
+       38,
+       32,
+       28
+      ],
+      "weight": 0.154
+     },
+     {
+      "rgb": [
+       19,
+       15,
+       14
+      ],
+      "weight": 0.105
+     },
+     {
+      "rgb": [
+       133,
+       109,
+       92
+      ],
+      "weight": 0.088
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_032",
+   "family": "roller_pattern",
+   "crop_xyxy": [
+    68,
+    223,
+    1365,
+    1514
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 57.39,
+    "lightness_std": 19.52,
+    "chroma_mean": 20.56,
+    "texture_fine": 2.187,
+    "texture_mid": 4.357,
+    "band_horizontal": 0.09,
+    "band_vertical": 0.423,
+    "edge_darkening": -21.02,
+    "palette": [
+     {
+      "rgb": [
+       108,
+       101,
+       79
+      ],
+      "weight": 0.238
+     },
+     {
+      "rgb": [
+       153,
+       211,
+       184
+      ],
+      "weight": 0.207
+     },
+     {
+      "rgb": [
+       54,
+       69,
+       43
+      ],
+      "weight": 0.179
+     },
+     {
+      "rgb": [
+       179,
+       182,
+       165
+      ],
+      "weight": 0.174
+     },
+     {
+      "rgb": [
+       199,
+       140,
+       165
+      ],
+      "weight": 0.165
+     },
+     {
+      "rgb": [
+       165,
+       126,
+       64
+      ],
+      "weight": 0.036
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_033",
+   "family": "weathered_field",
+   "note": "same family as archive IMG_0443 (orange field on cream)",
+   "crop_xyxy": [
+    156,
+    39,
+    1401,
+    1589
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 63.8,
+    "lightness_std": 14.26,
+    "chroma_mean": 22.68,
+    "texture_fine": 2.799,
+    "texture_mid": 4.673,
+    "band_horizontal": 0.412,
+    "band_vertical": 0.313,
+    "edge_darkening": -5.45,
+    "palette": [
+     {
+      "rgb": [
+       189,
+       176,
+       142
+      ],
+      "weight": 0.427
+     },
+     {
+      "rgb": [
+       165,
+       147,
+       110
+      ],
+      "weight": 0.189
+     },
+     {
+      "rgb": [
+       117,
+       98,
+       68
+      ],
+      "weight": 0.142
+     },
+     {
+      "rgb": [
+       200,
+       203,
+       204
+      ],
+      "weight": 0.121
+     },
+     {
+      "rgb": [
+       158,
+       90,
+       6
+      ],
+      "weight": 0.114
+     },
+     {
+      "rgb": [
+       34,
+       29,
+       25
+      ],
+      "weight": 0.006
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_034",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    249,
+    322,
+    1303,
+    1503
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 39.23,
+    "lightness_std": 27.91,
+    "chroma_mean": 5.91,
+    "texture_fine": 3.175,
+    "texture_mid": 5.887,
+    "band_horizontal": 0.002,
+    "band_vertical": 0.973,
+    "edge_darkening": 11.63,
+    "palette": [
+     {
+      "rgb": [
+       31,
+       30,
+       29
+      ],
+      "weight": 0.251
+     },
+     {
+      "rgb": [
+       185,
+       178,
+       158
+      ],
+      "weight": 0.224
+     },
+     {
+      "rgb": [
+       45,
+       42,
+       40
+      ],
+      "weight": 0.222
+     },
+     {
+      "rgb": [
+       69,
+       64,
+       62
+      ],
+      "weight": 0.136
+     },
+     {
+      "rgb": [
+       200,
+       193,
+       173
+      ],
+      "weight": 0.117
+     },
+     {
+      "rgb": [
+       156,
+       156,
+       151
+      ],
+      "weight": 0.049
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_035",
+   "family": "surface_closeup",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 46.54,
+    "lightness_std": 19.61,
+    "chroma_mean": 33.77,
+    "texture_fine": 7.137,
+    "texture_mid": 5.969,
+    "band_horizontal": 0.196,
+    "band_vertical": 0.328,
+    "edge_darkening": 3.86,
+    "palette": [
+     {
+      "rgb": [
+       115,
+       58,
+       39
+      ],
+      "weight": 0.29
+     },
+     {
+      "rgb": [
+       170,
+       94,
+       72
+      ],
+      "weight": 0.273
+     },
+     {
+      "rgb": [
+       141,
+       77,
+       56
+      ],
+      "weight": 0.188
+     },
+     {
+      "rgb": [
+       240,
+       220,
+       174
+      ],
+      "weight": 0.138
+     },
+     {
+      "rgb": [
+       86,
+       42,
+       25
+      ],
+      "weight": 0.071
+     },
+     {
+      "rgb": [
+       188,
+       166,
+       123
+      ],
+      "weight": 0.041
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_036",
+   "family": "atmospheric_field",
+   "crop_xyxy": [
+    79,
+    119,
+    706,
+    1420
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 64.42,
+    "lightness_std": 21.09,
+    "chroma_mean": 20.68,
+    "texture_fine": 2.73,
+    "texture_mid": 5.993,
+    "band_horizontal": 0.638,
+    "band_vertical": 0.071,
+    "edge_darkening": -8.52,
+    "palette": [
+     {
+      "rgb": [
+       234,
+       231,
+       226
+      ],
+      "weight": 0.25
+     },
+     {
+      "rgb": [
+       213,
+       178,
+       128
+      ],
+      "weight": 0.196
+     },
+     {
+      "rgb": [
+       177,
+       151,
+       118
+      ],
+      "weight": 0.177
+     },
+     {
+      "rgb": [
+       146,
+       101,
+       62
+      ],
+      "weight": 0.17
+     },
+     {
+      "rgb": [
+       117,
+       89,
+       62
+      ],
+      "weight": 0.124
+     },
+     {
+      "rgb": [
+       79,
+       67,
+       57
+      ],
+      "weight": 0.083
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_037",
+   "family": "surface_closeup",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 51.56,
+    "lightness_std": 20.75,
+    "chroma_mean": 25.38,
+    "texture_fine": 13.468,
+    "texture_mid": 9.782,
+    "band_horizontal": 0.038,
+    "band_vertical": 0.025,
+    "edge_darkening": 6.58,
+    "palette": [
+     {
+      "rgb": [
+       96,
+       108,
+       131
+      ],
+      "weight": 0.214
+     },
+     {
+      "rgb": [
+       59,
+       50,
+       56
+      ],
+      "weight": 0.213
+     },
+     {
+      "rgb": [
+       185,
+       147,
+       75
+      ],
+      "weight": 0.178
+     },
+     {
+      "rgb": [
+       149,
+       168,
+       189
+      ],
+      "weight": 0.152
+     },
+     {
+      "rgb": [
+       221,
+       197,
+       125
+      ],
+      "weight": 0.137
+     },
+     {
+      "rgb": [
+       130,
+       91,
+       44
+      ],
+      "weight": 0.106
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_038",
+   "family": "stain_wash",
+   "crop_xyxy": [
+    231,
+    118,
+    1161,
+    1304
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 44.27,
+    "lightness_std": 20.38,
+    "chroma_mean": 8.67,
+    "texture_fine": 2.615,
+    "texture_mid": 5.643,
+    "band_horizontal": 0.667,
+    "band_vertical": 0.16,
+    "edge_darkening": -9.22,
+    "palette": [
+     {
+      "rgb": [
+       55,
+       77,
+       73
+      ],
+      "weight": 0.395
+     },
+     {
+      "rgb": [
+       45,
+       63,
+       62
+      ],
+      "weight": 0.153
+     },
+     {
+      "rgb": [
+       201,
+       200,
+       192
+      ],
+      "weight": 0.147
+     },
+     {
+      "rgb": [
+       69,
+       94,
+       87
+      ],
+      "weight": 0.13
+     },
+     {
+      "rgb": [
+       160,
+       175,
+       166
+      ],
+      "weight": 0.112
+     },
+     {
+      "rgb": [
+       110,
+       134,
+       123
+      ],
+      "weight": 0.062
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_039",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    154,
+    309,
+    2421,
+    2266
+   ],
+   "crop_method": "manual",
+   "stats": {
+    "lightness_mean": 48.03,
+    "lightness_std": 19.57,
+    "chroma_mean": 33.69,
+    "texture_fine": 2.948,
+    "texture_mid": 4.138,
+    "band_horizontal": 0.561,
+    "band_vertical": 0.155,
+    "edge_darkening": 22.15,
+    "palette": [
+     {
+      "rgb": [
+       102,
+       66,
+       24
+      ],
+      "weight": 0.204
+     },
+     {
+      "rgb": [
+       142,
+       85,
+       23
+      ],
+      "weight": 0.181
+     },
+     {
+      "rgb": [
+       136,
+       111,
+       67
+      ],
+      "weight": 0.17
+     },
+     {
+      "rgb": [
+       213,
+       193,
+       136
+      ],
+      "weight": 0.167
+     },
+     {
+      "rgb": [
+       178,
+       150,
+       95
+      ],
+      "weight": 0.162
+     },
+     {
+      "rgb": [
+       61,
+       38,
+       11
+      ],
+      "weight": 0.116
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_040",
+   "family": "surface_closeup",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 58.27,
+    "lightness_std": 20.28,
+    "chroma_mean": 28.61,
+    "texture_fine": 10.591,
+    "texture_mid": 8.968,
+    "band_horizontal": 0.124,
+    "band_vertical": 0.095,
+    "edge_darkening": -3.58,
+    "palette": [
+     {
+      "rgb": [
+       212,
+       102,
+       67
+      ],
+      "weight": 0.213
+     },
+     {
+      "rgb": [
+       138,
+       81,
+       52
+      ],
+      "weight": 0.211
+     },
+     {
+      "rgb": [
+       186,
+       180,
+       162
+      ],
+      "weight": 0.175
+     },
+     {
+      "rgb": [
+       222,
+       227,
+       213
+      ],
+      "weight": 0.16
+     },
+     {
+      "rgb": [
+       156,
+       133,
+       107
+      ],
+      "weight": 0.159
+     },
+     {
+      "rgb": [
+       72,
+       41,
+       25
+      ],
+      "weight": 0.082
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_041",
+   "family": "inscribed_geometric",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1800
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 55.69,
+    "lightness_std": 31.02,
+    "chroma_mean": 11.67,
+    "texture_fine": 3.933,
+    "texture_mid": 7.297,
+    "band_horizontal": 0.343,
+    "band_vertical": 0.264,
+    "edge_darkening": -55.59,
+    "palette": [
+     {
+      "rgb": [
+       226,
+       225,
+       223
+      ],
+      "weight": 0.278
+     },
+     {
+      "rgb": [
+       26,
+       27,
+       38
+      ],
+      "weight": 0.242
+     },
+     {
+      "rgb": [
+       184,
+       181,
+       176
+      ],
+      "weight": 0.206
+     },
+     {
+      "rgb": [
+       108,
+       131,
+       124
+      ],
+      "weight": 0.151
+     },
+     {
+      "rgb": [
+       128,
+       51,
+       49
+      ],
+      "weight": 0.087
+     },
+     {
+      "rgb": [
+       192,
+       139,
+       31
+      ],
+      "weight": 0.036
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_042",
+   "family": "atmospheric_field",
+   "note": "duplicate of 036",
+   "exclude_from_stats": true,
+   "crop_xyxy": [
+    79,
+    119,
+    706,
+    1420
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 64.42,
+    "lightness_std": 21.09,
+    "chroma_mean": 20.68,
+    "texture_fine": 2.73,
+    "texture_mid": 5.993,
+    "band_horizontal": 0.638,
+    "band_vertical": 0.071,
+    "edge_darkening": -8.52,
+    "palette": [
+     {
+      "rgb": [
+       234,
+       231,
+       226
+      ],
+      "weight": 0.25
+     },
+     {
+      "rgb": [
+       213,
+       178,
+       128
+      ],
+      "weight": 0.196
+     },
+     {
+      "rgb": [
+       177,
+       151,
+       118
+      ],
+      "weight": 0.177
+     },
+     {
+      "rgb": [
+       146,
+       101,
+       62
+      ],
+      "weight": 0.17
+     },
+     {
+      "rgb": [
+       117,
+       89,
+       62
+      ],
+      "weight": 0.124
+     },
+     {
+      "rgb": [
+       79,
+       67,
+       57
+      ],
+      "weight": 0.083
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_043",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    197,
+    211,
+    680,
+    672
+   ],
+   "crop_method": "manual",
+   "stats": {
+    "lightness_mean": 71.05,
+    "lightness_std": 7.71,
+    "chroma_mean": 22.47,
+    "texture_fine": 1.828,
+    "texture_mid": 3.209,
+    "band_horizontal": 0.821,
+    "band_vertical": 0.026,
+    "edge_darkening": -1.11,
+    "palette": [
+     {
+      "rgb": [
+       217,
+       147,
+       116
+      ],
+      "weight": 0.264
+     },
+     {
+      "rgb": [
+       155,
+       172,
+       185
+      ],
+      "weight": 0.225
+     },
+     {
+      "rgb": [
+       207,
+       136,
+       106
+      ],
+      "weight": 0.202
+     },
+     {
+      "rgb": [
+       197,
+       182,
+       162
+      ],
+      "weight": 0.132
+     },
+     {
+      "rgb": [
+       211,
+       196,
+       176
+      ],
+      "weight": 0.119
+     },
+     {
+      "rgb": [
+       234,
+       235,
+       231
+      ],
+      "weight": 0.059
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_044",
+   "family": "weathered_field",
+   "note": "duplicate of 029",
+   "exclude_from_stats": true,
+   "crop_xyxy": [
+    171,
+    140,
+    739,
+    560
+   ],
+   "crop_method": "manual",
+   "stats": {
+    "lightness_mean": 70.7,
+    "lightness_std": 8.95,
+    "chroma_mean": 58.72,
+    "texture_fine": 0.81,
+    "texture_mid": 2.737,
+    "band_horizontal": 0.369,
+    "band_vertical": 0.234,
+    "edge_darkening": 9.19,
+    "palette": [
+     {
+      "rgb": [
+       213,
+       168,
+       66
+      ],
+      "weight": 0.263
+     },
+     {
+      "rgb": [
+       237,
+       191,
+       92
+      ],
+      "weight": 0.253
+     },
+     {
+      "rgb": [
+       230,
+       179,
+       50
+      ],
+      "weight": 0.152
+     },
+     {
+      "rgb": [
+       187,
+       142,
+       51
+      ],
+      "weight": 0.148
+     },
+     {
+      "rgb": [
+       237,
+       128,
+       61
+      ],
+      "weight": 0.112
+     },
+     {
+      "rgb": [
+       172,
+       101,
+       46
+      ],
+      "weight": 0.071
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_045",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    10,
+    83,
+    370,
+    412
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 71.14,
+    "lightness_std": 12.73,
+    "chroma_mean": 23.55,
+    "texture_fine": 1.956,
+    "texture_mid": 3.934,
+    "band_horizontal": 0.071,
+    "band_vertical": 0.174,
+    "edge_darkening": -0.77,
+    "palette": [
+     {
+      "rgb": [
+       194,
+       181,
+       171
+      ],
+      "weight": 0.489
+     },
+     {
+      "rgb": [
+       220,
+       209,
+       197
+      ],
+      "weight": 0.206
+     },
+     {
+      "rgb": [
+       206,
+       38,
+       63
+      ],
+      "weight": 0.113
+     },
+     {
+      "rgb": [
+       209,
+       115,
+       42
+      ],
+      "weight": 0.086
+     },
+     {
+      "rgb": [
+       205,
+       177,
+       118
+      ],
+      "weight": 0.063
+     },
+     {
+      "rgb": [
+       62,
+       143,
+       161
+      ],
+      "weight": 0.043
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_046",
+   "family": "inscribed_geometric",
+   "crop_xyxy": [
+    54,
+    46,
+    1026,
+    1315
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 72.21,
+    "lightness_std": 17.24,
+    "chroma_mean": 15.54,
+    "texture_fine": 4.296,
+    "texture_mid": 7.808,
+    "band_horizontal": 0.047,
+    "band_vertical": 0.464,
+    "edge_darkening": 23.47,
+    "palette": [
+     {
+      "rgb": [
+       211,
+       204,
+       178
+      ],
+      "weight": 0.426
+     },
+     {
+      "rgb": [
+       199,
+       189,
+       162
+      ],
+      "weight": 0.354
+     },
+     {
+      "rgb": [
+       63,
+       123,
+       125
+      ],
+      "weight": 0.127
+     },
+     {
+      "rgb": [
+       161,
+       163,
+       140
+      ],
+      "weight": 0.045
+     },
+     {
+      "rgb": [
+       13,
+       20,
+       23
+      ],
+      "weight": 0.029
+     },
+     {
+      "rgb": [
+       48,
+       76,
+       77
+      ],
+      "weight": 0.019
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_047",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    67,
+    166,
+    1011,
+    1006
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 64.23,
+    "lightness_std": 18.19,
+    "chroma_mean": 7.75,
+    "texture_fine": 1.518,
+    "texture_mid": 3.251,
+    "band_horizontal": 0.087,
+    "band_vertical": 0.745,
+    "edge_darkening": 12.27,
+    "palette": [
+     {
+      "rgb": [
+       206,
+       194,
+       183
+      ],
+      "weight": 0.363
+     },
+     {
+      "rgb": [
+       195,
+       183,
+       168
+      ],
+      "weight": 0.258
+     },
+     {
+      "rgb": [
+       92,
+       93,
+       86
+      ],
+      "weight": 0.19
+     },
+     {
+      "rgb": [
+       75,
+       76,
+       69
+      ],
+      "weight": 0.09
+     },
+     {
+      "rgb": [
+       116,
+       114,
+       103
+      ],
+      "weight": 0.061
+     },
+     {
+      "rgb": [
+       157,
+       149,
+       137
+      ],
+      "weight": 0.038
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_048",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    297,
+    136,
+    1143,
+    1304
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 69.11,
+    "lightness_std": 22.65,
+    "chroma_mean": 7.09,
+    "texture_fine": 5.287,
+    "texture_mid": 6.333,
+    "band_horizontal": 0.501,
+    "band_vertical": 0.069,
+    "edge_darkening": -14.62,
+    "palette": [
+     {
+      "rgb": [
+       198,
+       194,
+       181
+      ],
+      "weight": 0.33
+     },
+     {
+      "rgb": [
+       214,
+       212,
+       200
+      ],
+      "weight": 0.315
+     },
+     {
+      "rgb": [
+       176,
+       172,
+       157
+      ],
+      "weight": 0.147
+     },
+     {
+      "rgb": [
+       33,
+       38,
+       43
+      ],
+      "weight": 0.123
+     },
+     {
+      "rgb": [
+       145,
+       136,
+       124
+      ],
+      "weight": 0.052
+     },
+     {
+      "rgb": [
+       93,
+       90,
+       84
+      ],
+      "weight": 0.033
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_049",
+   "family": "stain_wash",
+   "crop_xyxy": [
+    118,
+    158,
+    1338,
+    1701
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 68.16,
+    "lightness_std": 11.82,
+    "chroma_mean": 50.23,
+    "texture_fine": 1.512,
+    "texture_mid": 3.42,
+    "band_horizontal": 0.159,
+    "band_vertical": 0.445,
+    "edge_darkening": -12.52,
+    "palette": [
+     {
+      "rgb": [
+       189,
+       130,
+       9
+      ],
+      "weight": 0.273
+     },
+     {
+      "rgb": [
+       219,
+       213,
+       206
+      ],
+      "weight": 0.26
+     },
+     {
+      "rgb": [
+       223,
+       146,
+       12
+      ],
+      "weight": 0.248
+     },
+     {
+      "rgb": [
+       228,
+       110,
+       35
+      ],
+      "weight": 0.132
+     },
+     {
+      "rgb": [
+       216,
+       151,
+       131
+      ],
+      "weight": 0.052
+     },
+     {
+      "rgb": [
+       60,
+       121,
+       164
+      ],
+      "weight": 0.035
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_050",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    285,
+    228,
+    1175,
+    1220
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 62.82,
+    "lightness_std": 6.41,
+    "chroma_mean": 55.38,
+    "texture_fine": 2.549,
+    "texture_mid": 2.711,
+    "band_horizontal": 0.319,
+    "band_vertical": 0.275,
+    "edge_darkening": -3.59,
+    "palette": [
+     {
+      "rgb": [
+       187,
+       152,
+       59
+      ],
+      "weight": 0.412
+     },
+     {
+      "rgb": [
+       179,
+       134,
+       29
+      ],
+      "weight": 0.311
+     },
+     {
+      "rgb": [
+       223,
+       130,
+       9
+      ],
+      "weight": 0.177
+     },
+     {
+      "rgb": [
+       199,
+       196,
+       191
+      ],
+      "weight": 0.051
+     },
+     {
+      "rgb": [
+       143,
+       95,
+       32
+      ],
+      "weight": 0.03
+     },
+     {
+      "rgb": [
+       141,
+       150,
+       146
+      ],
+      "weight": 0.018
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_051",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    318,
+    187,
+    1375,
+    1321
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 43.81,
+    "lightness_std": 19.59,
+    "chroma_mean": 6.63,
+    "texture_fine": 3.766,
+    "texture_mid": 4.85,
+    "band_horizontal": 0.328,
+    "band_vertical": 0.076,
+    "edge_darkening": -0.9,
+    "palette": [
+     {
+      "rgb": [
+       115,
+       114,
+       113
+      ],
+      "weight": 0.303
+     },
+     {
+      "rgb": [
+       142,
+       137,
+       131
+      ],
+      "weight": 0.172
+     },
+     {
+      "rgb": [
+       183,
+       175,
+       163
+      ],
+      "weight": 0.146
+     },
+     {
+      "rgb": [
+       94,
+       87,
+       77
+      ],
+      "weight": 0.137
+     },
+     {
+      "rgb": [
+       25,
+       24,
+       21
+      ],
+      "weight": 0.13
+     },
+     {
+      "rgb": [
+       56,
+       53,
+       48
+      ],
+      "weight": 0.112
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_052",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    185,
+    20,
+    815,
+    980
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 40.69,
+    "lightness_std": 29.48,
+    "chroma_mean": 38.68,
+    "texture_fine": 2.651,
+    "texture_mid": 5.302,
+    "band_horizontal": 0.929,
+    "band_vertical": 0.028,
+    "edge_darkening": 3.31,
+    "palette": [
+     {
+      "rgb": [
+       220,
+       158,
+       27
+      ],
+      "weight": 0.361
+     },
+     {
+      "rgb": [
+       19,
+       20,
+       13
+      ],
+      "weight": 0.261
+     },
+     {
+      "rgb": [
+       36,
+       30,
+       20
+      ],
+      "weight": 0.184
+     },
+     {
+      "rgb": [
+       200,
+       139,
+       28
+      ],
+      "weight": 0.156
+     },
+     {
+      "rgb": [
+       181,
+       175,
+       165
+      ],
+      "weight": 0.02
+     },
+     {
+      "rgb": [
+       84,
+       61,
+       44
+      ],
+      "weight": 0.018
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_053",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    643,
+    132,
+    1088,
+    1090
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 73.85,
+    "lightness_std": 13.77,
+    "chroma_mean": 11.63,
+    "texture_fine": 2.363,
+    "texture_mid": 3.043,
+    "band_horizontal": 0.376,
+    "band_vertical": 0.371,
+    "edge_darkening": -11.98,
+    "palette": [
+     {
+      "rgb": [
+       237,
+       217,
+       212
+      ],
+      "weight": 0.26
+     },
+     {
+      "rgb": [
+       218,
+       198,
+       191
+      ],
+      "weight": 0.241
+     },
+     {
+      "rgb": [
+       195,
+       174,
+       164
+      ],
+      "weight": 0.183
+     },
+     {
+      "rgb": [
+       175,
+       151,
+       140
+      ],
+      "weight": 0.142
+     },
+     {
+      "rgb": [
+       155,
+       126,
+       117
+      ],
+      "weight": 0.101
+     },
+     {
+      "rgb": [
+       127,
+       94,
+       89
+      ],
+      "weight": 0.073
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_054",
+   "family": "atmospheric_field",
+   "crop_xyxy": [
+    74,
+    336,
+    1286,
+    1467
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 39.69,
+    "lightness_std": 30.76,
+    "chroma_mean": 12.2,
+    "texture_fine": 3.45,
+    "texture_mid": 4.945,
+    "band_horizontal": 0.856,
+    "band_vertical": 0.093,
+    "edge_darkening": -21.88,
+    "palette": [
+     {
+      "rgb": [
+       40,
+       59,
+       80
+      ],
+      "weight": 0.231
+     },
+     {
+      "rgb": [
+       54,
+       76,
+       97
+      ],
+      "weight": 0.181
+     },
+     {
+      "rgb": [
+       232,
+       222,
+       200
+      ],
+      "weight": 0.163
+     },
+     {
+      "rgb": [
+       13,
+       17,
+       23
+      ],
+      "weight": 0.147
+     },
+     {
+      "rgb": [
+       24,
+       37,
+       48
+      ],
+      "weight": 0.139
+     },
+     {
+      "rgb": [
+       210,
+       196,
+       171
+      ],
+      "weight": 0.138
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_055",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    172,
+    118,
+    907,
+    853
+   ],
+   "crop_method": "manual",
+   "stats": {
+    "lightness_mean": 57.43,
+    "lightness_std": 12.03,
+    "chroma_mean": 11.27,
+    "texture_fine": 2.563,
+    "texture_mid": 3.93,
+    "band_horizontal": 0.096,
+    "band_vertical": 0.503,
+    "edge_darkening": 5.33,
+    "palette": [
+     {
+      "rgb": [
+       163,
+       157,
+       151
+      ],
+      "weight": 0.231
+     },
+     {
+      "rgb": [
+       144,
+       116,
+       95
+      ],
+      "weight": 0.201
+     },
+     {
+      "rgb": [
+       174,
+       175,
+       177
+      ],
+      "weight": 0.192
+     },
+     {
+      "rgb": [
+       156,
+       139,
+       122
+      ],
+      "weight": 0.192
+     },
+     {
+      "rgb": [
+       125,
+       92,
+       75
+      ],
+      "weight": 0.126
+     },
+     {
+      "rgb": [
+       92,
+       61,
+       50
+      ],
+      "weight": 0.058
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_056",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    123,
+    97,
+    1158,
+    1162
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 47.46,
+    "lightness_std": 16.02,
+    "chroma_mean": 13.23,
+    "texture_fine": 4.065,
+    "texture_mid": 4.424,
+    "band_horizontal": 0.762,
+    "band_vertical": 0.035,
+    "edge_darkening": -12.29,
+    "palette": [
+     {
+      "rgb": [
+       93,
+       103,
+       106
+      ],
+      "weight": 0.452
+     },
+     {
+      "rgb": [
+       197,
+       184,
+       162
+      ],
+      "weight": 0.167
+     },
+     {
+      "rgb": [
+       130,
+       96,
+       68
+      ],
+      "weight": 0.164
+     },
+     {
+      "rgb": [
+       158,
+       145,
+       122
+      ],
+      "weight": 0.084
+     },
+     {
+      "rgb": [
+       85,
+       70,
+       56
+      ],
+      "weight": 0.082
+     },
+     {
+      "rgb": [
+       36,
+       30,
+       25
+      ],
+      "weight": 0.051
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_057",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    156,
+    143,
+    1339,
+    1403
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 52.68,
+    "lightness_std": 25.91,
+    "chroma_mean": 14.4,
+    "texture_fine": 4.342,
+    "texture_mid": 6.728,
+    "band_horizontal": 0.686,
+    "band_vertical": 0.159,
+    "edge_darkening": -10.25,
+    "palette": [
+     {
+      "rgb": [
+       194,
+       177,
+       136
+      ],
+      "weight": 0.271
+     },
+     {
+      "rgb": [
+       171,
+       154,
+       122
+      ],
+      "weight": 0.241
+     },
+     {
+      "rgb": [
+       31,
+       29,
+       32
+      ],
+      "weight": 0.173
+     },
+     {
+      "rgb": [
+       64,
+       56,
+       58
+      ],
+      "weight": 0.146
+     },
+     {
+      "rgb": [
+       214,
+       212,
+       202
+      ],
+      "weight": 0.098
+     },
+     {
+      "rgb": [
+       133,
+       118,
+       100
+      ],
+      "weight": 0.072
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_058",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    302,
+    129,
+    1123,
+    1324
+   ],
+   "crop_method": "manual",
+   "stats": {
+    "lightness_mean": 51.17,
+    "lightness_std": 7.95,
+    "chroma_mean": 45.64,
+    "texture_fine": 1.877,
+    "texture_mid": 2.385,
+    "band_horizontal": 0.532,
+    "band_vertical": 0.157,
+    "edge_darkening": 1.34,
+    "palette": [
+     {
+      "rgb": [
+       176,
+       81,
+       72
+      ],
+      "weight": 0.359
+     },
+     {
+      "rgb": [
+       198,
+       89,
+       66
+      ],
+      "weight": 0.341
+     },
+     {
+      "rgb": [
+       37,
+       129,
+       122
+      ],
+      "weight": 0.108
+     },
+     {
+      "rgb": [
+       58,
+       166,
+       154
+      ],
+      "weight": 0.098
+     },
+     {
+      "rgb": [
+       226,
+       163,
+       76
+      ],
+      "weight": 0.06
+     },
+     {
+      "rgb": [
+       130,
+       68,
+       65
+      ],
+      "weight": 0.035
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_059",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    0,
+    0,
+    1850,
+    1850
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 51.52,
+    "lightness_std": 22.62,
+    "chroma_mean": 13.38,
+    "texture_fine": 3.71,
+    "texture_mid": 6.997,
+    "band_horizontal": 0.228,
+    "band_vertical": 0.393,
+    "edge_darkening": -21.99,
+    "palette": [
+     {
+      "rgb": [
+       189,
+       187,
+       184
+      ],
+      "weight": 0.269
+     },
+     {
+      "rgb": [
+       147,
+       147,
+       145
+      ],
+      "weight": 0.194
+     },
+     {
+      "rgb": [
+       31,
+       29,
+       27
+      ],
+      "weight": 0.147
+     },
+     {
+      "rgb": [
+       177,
+       136,
+       67
+      ],
+      "weight": 0.134
+     },
+     {
+      "rgb": [
+       126,
+       104,
+       74
+      ],
+      "weight": 0.129
+     },
+     {
+      "rgb": [
+       69,
+       68,
+       67
+      ],
+      "weight": 0.127
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_060",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    0,
+    0,
+    1850,
+    1850
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 52.28,
+    "lightness_std": 22.78,
+    "chroma_mean": 13.06,
+    "texture_fine": 2.549,
+    "texture_mid": 5.341,
+    "band_horizontal": 0.431,
+    "band_vertical": 0.284,
+    "edge_darkening": 0.62,
+    "palette": [
+     {
+      "rgb": [
+       204,
+       194,
+       179
+      ],
+      "weight": 0.234
+     },
+     {
+      "rgb": [
+       170,
+       162,
+       152
+      ],
+      "weight": 0.229
+     },
+     {
+      "rgb": [
+       41,
+       36,
+       36
+      ],
+      "weight": 0.157
+     },
+     {
+      "rgb": [
+       136,
+       127,
+       120
+      ],
+      "weight": 0.142
+     },
+     {
+      "rgb": [
+       80,
+       74,
+       68
+      ],
+      "weight": 0.136
+     },
+     {
+      "rgb": [
+       151,
+       77,
+       55
+      ],
+      "weight": 0.102
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_061",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    0,
+    0,
+    393,
+    491
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 77.14,
+    "lightness_std": 16.94,
+    "chroma_mean": 12.71,
+    "texture_fine": 5.585,
+    "texture_mid": 9.035,
+    "band_horizontal": 0.283,
+    "band_vertical": 0.205,
+    "edge_darkening": 4.01,
+    "palette": [
+     {
+      "rgb": [
+       216,
+       212,
+       193
+      ],
+      "weight": 0.51
+     },
+     {
+      "rgb": [
+       190,
+       180,
+       151
+      ],
+      "weight": 0.238
+     },
+     {
+      "rgb": [
+       138,
+       133,
+       118
+      ],
+      "weight": 0.104
+     },
+     {
+      "rgb": [
+       248,
+       249,
+       244
+      ],
+      "weight": 0.093
+     },
+     {
+      "rgb": [
+       51,
+       42,
+       30
+      ],
+      "weight": 0.038
+     },
+     {
+      "rgb": [
+       206,
+       60,
+       55
+      ],
+      "weight": 0.017
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_062",
+   "family": "symbolic_concentric",
+   "note": "crackle, torn canvas",
+   "crop_xyxy": [
+    85,
+    54,
+    994,
+    1321
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 45.27,
+    "lightness_std": 21.23,
+    "chroma_mean": 32.26,
+    "texture_fine": 5.443,
+    "texture_mid": 7.868,
+    "band_horizontal": 0.222,
+    "band_vertical": 0.139,
+    "edge_darkening": 8.06,
+    "palette": [
+     {
+      "rgb": [
+       59,
+       102,
+       43
+      ],
+      "weight": 0.365
+     },
+     {
+      "rgb": [
+       46,
+       85,
+       26
+      ],
+      "weight": 0.309
+     },
+     {
+      "rgb": [
+       231,
+       216,
+       181
+      ],
+      "weight": 0.145
+     },
+     {
+      "rgb": [
+       196,
+       180,
+       151
+      ],
+      "weight": 0.067
+     },
+     {
+      "rgb": [
+       133,
+       114,
+       77
+      ],
+      "weight": 0.06
+     },
+     {
+      "rgb": [
+       33,
+       29,
+       25
+      ],
+      "weight": 0.054
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_063",
+   "family": "field_accent",
+   "crop_xyxy": [
+    207,
+    87,
+    1185,
+    1341
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 50.74,
+    "lightness_std": 10.19,
+    "chroma_mean": 14.61,
+    "texture_fine": 1.815,
+    "texture_mid": 3.244,
+    "band_horizontal": 0.239,
+    "band_vertical": 0.707,
+    "edge_darkening": -10.32,
+    "palette": [
+     {
+      "rgb": [
+       100,
+       113,
+       99
+      ],
+      "weight": 0.391
+     },
+     {
+      "rgb": [
+       113,
+       125,
+       102
+      ],
+      "weight": 0.265
+     },
+     {
+      "rgb": [
+       91,
+       100,
+       93
+      ],
+      "weight": 0.165
+     },
+     {
+      "rgb": [
+       229,
+       89,
+       83
+      ],
+      "weight": 0.07
+     },
+     {
+      "rgb": [
+       184,
+       150,
+       125
+      ],
+      "weight": 0.057
+     },
+     {
+      "rgb": [
+       215,
+       215,
+       209
+      ],
+      "weight": 0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_064",
+   "family": "mixed_media_collage",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 67.95,
+    "lightness_std": 21.57,
+    "chroma_mean": 19.99,
+    "texture_fine": 7.027,
+    "texture_mid": 13.912,
+    "band_horizontal": 0.698,
+    "band_vertical": 0.052,
+    "edge_darkening": -15.21,
+    "palette": [
+     {
+      "rgb": [
+       201,
+       197,
+       184
+      ],
+      "weight": 0.31
+     },
+     {
+      "rgb": [
+       232,
+       232,
+       226
+      ],
+      "weight": 0.201
+     },
+     {
+      "rgb": [
+       176,
+       170,
+       158
+      ],
+      "weight": 0.191
+     },
+     {
+      "rgb": [
+       169,
+       9,
+       20
+      ],
+      "weight": 0.179
+     },
+     {
+      "rgb": [
+       134,
+       112,
+       96
+      ],
+      "weight": 0.083
+     },
+     {
+      "rgb": [
+       87,
+       49,
+       34
+      ],
+      "weight": 0.036
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_065",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    205,
+    111,
+    931,
+    1031
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 68.52,
+    "lightness_std": 28.38,
+    "chroma_mean": 33.35,
+    "texture_fine": 2.647,
+    "texture_mid": 6.244,
+    "band_horizontal": 0.092,
+    "band_vertical": 0.633,
+    "edge_darkening": -30.04,
+    "palette": [
+     {
+      "rgb": [
+       251,
+       239,
+       215
+      ],
+      "weight": 0.285
+     },
+     {
+      "rgb": [
+       248,
+       95,
+       64
+      ],
+      "weight": 0.203
+     },
+     {
+      "rgb": [
+       211,
+       179,
+       117
+      ],
+      "weight": 0.183
+     },
+     {
+      "rgb": [
+       57,
+       10,
+       64
+      ],
+      "weight": 0.169
+     },
+     {
+      "rgb": [
+       226,
+       225,
+       223
+      ],
+      "weight": 0.086
+     },
+     {
+      "rgb": [
+       192,
+       188,
+       185
+      ],
+      "weight": 0.074
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_066",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    15,
+    43,
+    180,
+    267
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 53.66,
+    "lightness_std": 21.09,
+    "chroma_mean": 33.23,
+    "texture_fine": 1.726,
+    "texture_mid": 4.86,
+    "band_horizontal": 0.181,
+    "band_vertical": 0.216,
+    "edge_darkening": 9.7,
+    "palette": [
+     {
+      "rgb": [
+       168,
+       63,
+       63
+      ],
+      "weight": 0.414
+     },
+     {
+      "rgb": [
+       215,
+       204,
+       195
+      ],
+      "weight": 0.224
+     },
+     {
+      "rgb": [
+       219,
+       149,
+       112
+      ],
+      "weight": 0.158
+     },
+     {
+      "rgb": [
+       154,
+       105,
+       61
+      ],
+      "weight": 0.086
+     },
+     {
+      "rgb": [
+       31,
+       28,
+       38
+      ],
+      "weight": 0.077
+     },
+     {
+      "rgb": [
+       104,
+       120,
+       131
+      ],
+      "weight": 0.043
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_067",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    10,
+    71,
+    383,
+    417
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 43.18,
+    "lightness_std": 16.18,
+    "chroma_mean": 30.62,
+    "texture_fine": 1.886,
+    "texture_mid": 5.722,
+    "band_horizontal": 0.17,
+    "band_vertical": 0.58,
+    "edge_darkening": -14.7,
+    "palette": [
+     {
+      "rgb": [
+       57,
+       105,
+       132
+      ],
+      "weight": 0.439
+     },
+     {
+      "rgb": [
+       185,
+       56,
+       40
+      ],
+      "weight": 0.212
+     },
+     {
+      "rgb": [
+       32,
+       54,
+       71
+      ],
+      "weight": 0.194
+     },
+     {
+      "rgb": [
+       226,
+       225,
+       223
+      ],
+      "weight": 0.054
+     },
+     {
+      "rgb": [
+       161,
+       150,
+       139
+      ],
+      "weight": 0.051
+     },
+     {
+      "rgb": [
+       210,
+       120,
+       34
+      ],
+      "weight": 0.05
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_068",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    0,
+    0,
+    800,
+    800
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 67.81,
+    "lightness_std": 14.93,
+    "chroma_mean": 27.57,
+    "texture_fine": 6.286,
+    "texture_mid": 8.203,
+    "band_horizontal": 0.329,
+    "band_vertical": 0.224,
+    "edge_darkening": 5.25,
+    "palette": [
+     {
+      "rgb": [
+       193,
+       183,
+       116
+      ],
+      "weight": 0.269
+     },
+     {
+      "rgb": [
+       144,
+       172,
+       154
+      ],
+      "weight": 0.221
+     },
+     {
+      "rgb": [
+       173,
+       147,
+       103
+      ],
+      "weight": 0.202
+     },
+     {
+      "rgb": [
+       219,
+       215,
+       156
+      ],
+      "weight": 0.172
+     },
+     {
+      "rgb": [
+       128,
+       110,
+       99
+      ],
+      "weight": 0.104
+     },
+     {
+      "rgb": [
+       15,
+       16,
+       14
+      ],
+      "weight": 0.032
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_069",
+   "family": "hardedge_space",
+   "crop_xyxy": [
+    189,
+    83,
+    875,
+    924
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 50.49,
+    "lightness_std": 17.11,
+    "chroma_mean": 41.09,
+    "texture_fine": 2.71,
+    "texture_mid": 4.322,
+    "band_horizontal": 0.415,
+    "band_vertical": 0.118,
+    "edge_darkening": 3.13,
+    "palette": [
+     {
+      "rgb": [
+       131,
+       107,
+       60
+      ],
+      "weight": 0.407
+     },
+     {
+      "rgb": [
+       101,
+       67,
+       37
+      ],
+      "weight": 0.185
+     },
+     {
+      "rgb": [
+       215,
+       108,
+       6
+      ],
+      "weight": 0.162
+     },
+     {
+      "rgb": [
+       225,
+       184,
+       54
+      ],
+      "weight": 0.157
+     },
+     {
+      "rgb": [
+       185,
+       171,
+       151
+      ],
+      "weight": 0.057
+     },
+     {
+      "rgb": [
+       0,
+       2,
+       4
+      ],
+      "weight": 0.031
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_070",
+   "family": "inscribed_geometric",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1350
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 59.11,
+    "lightness_std": 24.01,
+    "chroma_mean": 16.34,
+    "texture_fine": 5.549,
+    "texture_mid": 8.241,
+    "band_horizontal": 0.217,
+    "band_vertical": 0.319,
+    "edge_darkening": -24.6,
+    "palette": [
+     {
+      "rgb": [
+       182,
+       183,
+       175
+      ],
+      "weight": 0.282
+     },
+     {
+      "rgb": [
+       124,
+       133,
+       135
+      ],
+      "weight": 0.177
+     },
+     {
+      "rgb": [
+       216,
+       217,
+       215
+      ],
+      "weight": 0.172
+     },
+     {
+      "rgb": [
+       184,
+       138,
+       27
+      ],
+      "weight": 0.142
+     },
+     {
+      "rgb": [
+       20,
+       27,
+       37
+      ],
+      "weight": 0.114
+     },
+     {
+      "rgb": [
+       77,
+       77,
+       77
+      ],
+      "weight": 0.114
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_071",
+   "family": "field_accent",
+   "crop_xyxy": [
+    247,
+    177,
+    821,
+    918
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 69.15,
+    "lightness_std": 12.68,
+    "chroma_mean": 25.07,
+    "texture_fine": 5.731,
+    "texture_mid": 4.268,
+    "band_horizontal": 0.245,
+    "band_vertical": 0.414,
+    "edge_darkening": -14.8,
+    "palette": [
+     {
+      "rgb": [
+       203,
+       194,
+       180
+      ],
+      "weight": 0.303
+     },
+     {
+      "rgb": [
+       186,
+       173,
+       157
+      ],
+      "weight": 0.279
+     },
+     {
+      "rgb": [
+       249,
+       82,
+       49
+      ],
+      "weight": 0.203
+     },
+     {
+      "rgb": [
+       165,
+       151,
+       132
+      ],
+      "weight": 0.139
+     },
+     {
+      "rgb": [
+       234,
+       230,
+       223
+      ],
+      "weight": 0.038
+     },
+     {
+      "rgb": [
+       43,
+       62,
+       87
+      ],
+      "weight": 0.038
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_072",
+   "family": "roller_pattern",
+   "crop_xyxy": [
+    178,
+    34,
+    1264,
+    1406
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 50.02,
+    "lightness_std": 20.42,
+    "chroma_mean": 13.51,
+    "texture_fine": 2.7,
+    "texture_mid": 5.011,
+    "band_horizontal": 0.283,
+    "band_vertical": 0.611,
+    "edge_darkening": -42.67,
+    "palette": [
+     {
+      "rgb": [
+       67,
+       92,
+       78
+      ],
+      "weight": 0.279
+     },
+     {
+      "rgb": [
+       55,
+       77,
+       70
+      ],
+      "weight": 0.217
+     },
+     {
+      "rgb": [
+       204,
+       211,
+       220
+      ],
+      "weight": 0.215
+     },
+     {
+      "rgb": [
+       99,
+       107,
+       67
+      ],
+      "weight": 0.138
+     },
+     {
+      "rgb": [
+       128,
+       127,
+       81
+      ],
+      "weight": 0.087
+     },
+     {
+      "rgb": [
+       175,
+       164,
+       151
+      ],
+      "weight": 0.063
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_073",
+   "family": "symbolic_concentric",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1089
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 55.44,
+    "lightness_std": 21.51,
+    "chroma_mean": 39.44,
+    "texture_fine": 3.933,
+    "texture_mid": 6.486,
+    "band_horizontal": 0.094,
+    "band_vertical": 0.189,
+    "edge_darkening": -20.8,
+    "palette": [
+     {
+      "rgb": [
+       0,
+       202,
+       226
+      ],
+      "weight": 0.266
+     },
+     {
+      "rgb": [
+       167,
+       136,
+       102
+      ],
+      "weight": 0.209
+     },
+     {
+      "rgb": [
+       67,
+       61,
+       61
+      ],
+      "weight": 0.19
+     },
+     {
+      "rgb": [
+       243,
+       64,
+       15
+      ],
+      "weight": 0.146
+     },
+     {
+      "rgb": [
+       201,
+       186,
+       158
+      ],
+      "weight": 0.113
+     },
+     {
+      "rgb": [
+       24,
+       30,
+       106
+      ],
+      "weight": 0.077
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_074",
+   "family": "field_accent",
+   "crop_xyxy": [
+    236,
+    140,
+    1238,
+    1334
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 42.09,
+    "lightness_std": 14.23,
+    "chroma_mean": 41.97,
+    "texture_fine": 1.713,
+    "texture_mid": 3.179,
+    "band_horizontal": 0.691,
+    "band_vertical": 0.247,
+    "edge_darkening": -0.76,
+    "palette": [
+     {
+      "rgb": [
+       165,
+       71,
+       45
+      ],
+      "weight": 0.384
+     },
+     {
+      "rgb": [
+       178,
+       85,
+       60
+      ],
+      "weight": 0.371
+     },
+     {
+      "rgb": [
+       26,
+       32,
+       52
+      ],
+      "weight": 0.15
+     },
+     {
+      "rgb": [
+       187,
+       115,
+       65
+      ],
+      "weight": 0.041
+     },
+     {
+      "rgb": [
+       189,
+       190,
+       198
+      ],
+      "weight": 0.033
+     },
+     {
+      "rgb": [
+       148,
+       146,
+       152
+      ],
+      "weight": 0.022
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_075",
+   "family": "hardedge_space",
+   "crop_xyxy": [
+    102,
+    236,
+    1320,
+    1234
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 66.85,
+    "lightness_std": 21.77,
+    "chroma_mean": 36.92,
+    "texture_fine": 3.228,
+    "texture_mid": 6.656,
+    "band_horizontal": 0.243,
+    "band_vertical": 0.272,
+    "edge_darkening": 8.78,
+    "palette": [
+     {
+      "rgb": [
+       206,
+       221,
+       146
+      ],
+      "weight": 0.262
+     },
+     {
+      "rgb": [
+       156,
+       188,
+       120
+      ],
+      "weight": 0.253
+     },
+     {
+      "rgb": [
+       103,
+       143,
+       79
+      ],
+      "weight": 0.151
+     },
+     {
+      "rgb": [
+       201,
+       216,
+       190
+      ],
+      "weight": 0.137
+     },
+     {
+      "rgb": [
+       38,
+       95,
+       23
+      ],
+      "weight": 0.13
+     },
+     {
+      "rgb": [
+       6,
+       52,
+       10
+      ],
+      "weight": 0.067
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_076",
+   "family": "mixed_media_collage",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1350
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 69.22,
+    "lightness_std": 31.58,
+    "chroma_mean": 13.36,
+    "texture_fine": 6.106,
+    "texture_mid": 10.635,
+    "band_horizontal": 0.226,
+    "band_vertical": 0.098,
+    "edge_darkening": -30.78,
+    "palette": [
+     {
+      "rgb": [
+       221,
+       227,
+       224
+      ],
+      "weight": 0.474
+     },
+     {
+      "rgb": [
+       210,
+       210,
+       186
+      ],
+      "weight": 0.206
+     },
+     {
+      "rgb": [
+       17,
+       20,
+       28
+      ],
+      "weight": 0.175
+     },
+     {
+      "rgb": [
+       206,
+       168,
+       81
+      ],
+      "weight": 0.061
+     },
+     {
+      "rgb": [
+       118,
+       117,
+       87
+      ],
+      "weight": 0.049
+     },
+     {
+      "rgb": [
+       189,
+       50,
+       29
+      ],
+      "weight": 0.034
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_077",
+   "family": "hardedge_space",
+   "crop_xyxy": [
+    78,
+    90,
+    1001,
+    1006
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 51.38,
+    "lightness_std": 32.12,
+    "chroma_mean": 12.8,
+    "texture_fine": 11.466,
+    "texture_mid": 6.982,
+    "band_horizontal": 0.42,
+    "band_vertical": 0.172,
+    "edge_darkening": -19.71,
+    "palette": [
+     {
+      "rgb": [
+       224,
+       204,
+       179
+      ],
+      "weight": 0.469
+     },
+     {
+      "rgb": [
+       29,
+       28,
+       25
+      ],
+      "weight": 0.195
+     },
+     {
+      "rgb": [
+       67,
+       47,
+       32
+      ],
+      "weight": 0.166
+     },
+     {
+      "rgb": [
+       81,
+       62,
+       48
+      ],
+      "weight": 0.101
+     },
+     {
+      "rgb": [
+       172,
+       158,
+       146
+      ],
+      "weight": 0.035
+     },
+     {
+      "rgb": [
+       122,
+       108,
+       96
+      ],
+      "weight": 0.034
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_078",
+   "family": "outlier",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 63.91,
+    "lightness_std": 20.74,
+    "chroma_mean": 12.89,
+    "texture_fine": 3.614,
+    "texture_mid": 6.326,
+    "band_horizontal": 0.378,
+    "band_vertical": 0.21,
+    "edge_darkening": -7.73,
+    "palette": [
+     {
+      "rgb": [
+       208,
+       210,
+       204
+      ],
+      "weight": 0.319
+     },
+     {
+      "rgb": [
+       177,
+       175,
+       160
+      ],
+      "weight": 0.236
+     },
+     {
+      "rgb": [
+       141,
+       136,
+       126
+      ],
+      "weight": 0.166
+     },
+     {
+      "rgb": [
+       107,
+       85,
+       74
+      ],
+      "weight": 0.129
+     },
+     {
+      "rgb": [
+       57,
+       44,
+       46
+      ],
+      "weight": 0.088
+     },
+     {
+      "rgb": [
+       186,
+       157,
+       79
+      ],
+      "weight": 0.062
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_079",
+   "family": "field_accent",
+   "crop_xyxy": [
+    121,
+    65,
+    1292,
+    1205
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 71.87,
+    "lightness_std": 19.75,
+    "chroma_mean": 37.2,
+    "texture_fine": 4.788,
+    "texture_mid": 9.897,
+    "band_horizontal": 0.111,
+    "band_vertical": 0.835,
+    "edge_darkening": 12.56,
+    "palette": [
+     {
+      "rgb": [
+       205,
+       204,
+       158
+      ],
+      "weight": 0.402
+     },
+     {
+      "rgb": [
+       204,
+       126,
+       52
+      ],
+      "weight": 0.269
+     },
+     {
+      "rgb": [
+       222,
+       173,
+       59
+      ],
+      "weight": 0.183
+     },
+     {
+      "rgb": [
+       254,
+       254,
+       254
+      ],
+      "weight": 0.09
+     },
+     {
+      "rgb": [
+       10,
+       6,
+       7
+      ],
+      "weight": 0.04
+     },
+     {
+      "rgb": [
+       72,
+       67,
+       55
+      ],
+      "weight": 0.017
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_080",
+   "family": "mixed_media_collage",
+   "crop_xyxy": [
+    77,
+    96,
+    1108,
+    1136
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 73.22,
+    "lightness_std": 16.59,
+    "chroma_mean": 5.52,
+    "texture_fine": 7.764,
+    "texture_mid": 9.278,
+    "band_horizontal": 0.158,
+    "band_vertical": 0.17,
+    "edge_darkening": 3.39,
+    "palette": [
+     {
+      "rgb": [
+       219,
+       217,
+       213
+      ],
+      "weight": 0.383
+     },
+     {
+      "rgb": [
+       195,
+       191,
+       188
+      ],
+      "weight": 0.266
+     },
+     {
+      "rgb": [
+       166,
+       160,
+       159
+      ],
+      "weight": 0.17
+     },
+     {
+      "rgb": [
+       134,
+       127,
+       128
+      ],
+      "weight": 0.095
+     },
+     {
+      "rgb": [
+       96,
+       88,
+       94
+      ],
+      "weight": 0.056
+     },
+     {
+      "rgb": [
+       54,
+       44,
+       58
+      ],
+      "weight": 0.03
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_081",
+   "family": "outlier",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1350
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 67.29,
+    "lightness_std": 19.12,
+    "chroma_mean": 30.52,
+    "texture_fine": 8.719,
+    "texture_mid": 8.174,
+    "band_horizontal": 0.116,
+    "band_vertical": 0.157,
+    "edge_darkening": -6.54,
+    "palette": [
+     {
+      "rgb": [
+       226,
+       207,
+       172
+      ],
+      "weight": 0.439
+     },
+     {
+      "rgb": [
+       87,
+       147,
+       174
+      ],
+      "weight": 0.201
+     },
+     {
+      "rgb": [
+       209,
+       127,
+       113
+      ],
+      "weight": 0.125
+     },
+     {
+      "rgb": [
+       91,
+       185,
+       184
+      ],
+      "weight": 0.091
+     },
+     {
+      "rgb": [
+       31,
+       61,
+       136
+      ],
+      "weight": 0.077
+     },
+     {
+      "rgb": [
+       153,
+       39,
+       22
+      ],
+      "weight": 0.067
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_082",
+   "family": "mixed_media_collage",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1086
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 64.7,
+    "lightness_std": 23.51,
+    "chroma_mean": 14.81,
+    "texture_fine": 6.531,
+    "texture_mid": 7.799,
+    "band_horizontal": 0.099,
+    "band_vertical": 0.147,
+    "edge_darkening": -7.17,
+    "palette": [
+     {
+      "rgb": [
+       214,
+       212,
+       196
+      ],
+      "weight": 0.348
+     },
+     {
+      "rgb": [
+       186,
+       184,
+       169
+      ],
+      "weight": 0.218
+     },
+     {
+      "rgb": [
+       117,
+       134,
+       127
+      ],
+      "weight": 0.125
+     },
+     {
+      "rgb": [
+       173,
+       156,
+       87
+      ],
+      "weight": 0.117
+     },
+     {
+      "rgb": [
+       34,
+       34,
+       40
+      ],
+      "weight": 0.106
+     },
+     {
+      "rgb": [
+       74,
+       85,
+       89
+      ],
+      "weight": 0.086
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_083",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    286,
+    131,
+    1153,
+    1309
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 52.22,
+    "lightness_std": 31.3,
+    "chroma_mean": 18.21,
+    "texture_fine": 4.577,
+    "texture_mid": 4.738,
+    "band_horizontal": 0.626,
+    "band_vertical": 0.09,
+    "edge_darkening": 1.85,
+    "palette": [
+     {
+      "rgb": [
+       219,
+       218,
+       210
+      ],
+      "weight": 0.377
+     },
+     {
+      "rgb": [
+       15,
+       24,
+       35
+      ],
+      "weight": 0.184
+     },
+     {
+      "rgb": [
+       123,
+       70,
+       43
+      ],
+      "weight": 0.133
+     },
+     {
+      "rgb": [
+       172,
+       102,
+       53
+      ],
+      "weight": 0.124
+     },
+     {
+      "rgb": [
+       83,
+       44,
+       31
+      ],
+      "weight": 0.12
+     },
+     {
+      "rgb": [
+       184,
+       155,
+       130
+      ],
+      "weight": 0.063
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_084",
+   "family": "weathered_field",
+   "note": "physical nails (render as image only)",
+   "crop_xyxy": [
+    171,
+    161,
+    1269,
+    1279
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 61.39,
+    "lightness_std": 25.98,
+    "chroma_mean": 11.54,
+    "texture_fine": 7.409,
+    "texture_mid": 10.013,
+    "band_horizontal": 0.569,
+    "band_vertical": 0.197,
+    "edge_darkening": 19.5,
+    "palette": [
+     {
+      "rgb": [
+       231,
+       224,
+       211
+      ],
+      "weight": 0.253
+     },
+     {
+      "rgb": [
+       162,
+       146,
+       121
+      ],
+      "weight": 0.224
+     },
+     {
+      "rgb": [
+       193,
+       179,
+       153
+      ],
+      "weight": 0.223
+     },
+     {
+      "rgb": [
+       122,
+       109,
+       89
+      ],
+      "weight": 0.122
+     },
+     {
+      "rgb": [
+       77,
+       64,
+       54
+      ],
+      "weight": 0.091
+     },
+     {
+      "rgb": [
+       10,
+       10,
+       10
+      ],
+      "weight": 0.087
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_085",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    148,
+    16,
+    650,
+    784
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 37.65,
+    "lightness_std": 18.89,
+    "chroma_mean": 15.7,
+    "texture_fine": 2.033,
+    "texture_mid": 3.143,
+    "band_horizontal": 0.832,
+    "band_vertical": 0.067,
+    "edge_darkening": -9.46,
+    "palette": [
+     {
+      "rgb": [
+       32,
+       83,
+       88
+      ],
+      "weight": 0.241
+     },
+     {
+      "rgb": [
+       50,
+       111,
+       113
+      ],
+      "weight": 0.222
+     },
+     {
+      "rgb": [
+       14,
+       58,
+       67
+      ],
+      "weight": 0.214
+     },
+     {
+      "rgb": [
+       177,
+       182,
+       165
+      ],
+      "weight": 0.119
+     },
+     {
+      "rgb": [
+       9,
+       34,
+       48
+      ],
+      "weight": 0.116
+     },
+     {
+      "rgb": [
+       132,
+       152,
+       144
+      ],
+      "weight": 0.087
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_086",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    0,
+    0,
+    800,
+    800
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 56.97,
+    "lightness_std": 13.0,
+    "chroma_mean": 21.29,
+    "texture_fine": 5.894,
+    "texture_mid": 7.314,
+    "band_horizontal": 0.228,
+    "band_vertical": 0.249,
+    "edge_darkening": 4.32,
+    "palette": [
+     {
+      "rgb": [
+       92,
+       141,
+       135
+      ],
+      "weight": 0.281
+     },
+     {
+      "rgb": [
+       121,
+       171,
+       155
+      ],
+      "weight": 0.259
+     },
+     {
+      "rgb": [
+       151,
+       144,
+       95
+      ],
+      "weight": 0.192
+     },
+     {
+      "rgb": [
+       90,
+       106,
+       106
+      ],
+      "weight": 0.188
+     },
+     {
+      "rgb": [
+       205,
+       204,
+       166
+      ],
+      "weight": 0.048
+     },
+     {
+      "rgb": [
+       17,
+       19,
+       16
+      ],
+      "weight": 0.033
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_087",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    78,
+    205,
+    869,
+    1173
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 53.99,
+    "lightness_std": 22.54,
+    "chroma_mean": 18.57,
+    "texture_fine": 4.521,
+    "texture_mid": 8.241,
+    "band_horizontal": 0.133,
+    "band_vertical": 0.203,
+    "edge_darkening": -15.6,
+    "palette": [
+     {
+      "rgb": [
+       182,
+       161,
+       138
+      ],
+      "weight": 0.251
+     },
+     {
+      "rgb": [
+       198,
+       189,
+       171
+      ],
+      "weight": 0.23
+     },
+     {
+      "rgb": [
+       176,
+       120,
+       96
+      ],
+      "weight": 0.18
+     },
+     {
+      "rgb": [
+       133,
+       96,
+       66
+      ],
+      "weight": 0.153
+     },
+     {
+      "rgb": [
+       16,
+       16,
+       12
+      ],
+      "weight": 0.117
+     },
+     {
+      "rgb": [
+       87,
+       70,
+       45
+      ],
+      "weight": 0.07
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_088",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    28,
+    128,
+    915,
+    1212
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 54.13,
+    "lightness_std": 18.88,
+    "chroma_mean": 14.55,
+    "texture_fine": 4.103,
+    "texture_mid": 7.277,
+    "band_horizontal": 0.151,
+    "band_vertical": 0.204,
+    "edge_darkening": -21.35,
+    "palette": [
+     {
+      "rgb": [
+       182,
+       173,
+       159
+      ],
+      "weight": 0.299
+     },
+     {
+      "rgb": [
+       173,
+       148,
+       132
+      ],
+      "weight": 0.267
+     },
+     {
+      "rgb": [
+       140,
+       122,
+       105
+      ],
+      "weight": 0.155
+     },
+     {
+      "rgb": [
+       117,
+       94,
+       70
+      ],
+      "weight": 0.12
+     },
+     {
+      "rgb": [
+       87,
+       49,
+       37
+      ],
+      "weight": 0.081
+     },
+     {
+      "rgb": [
+       35,
+       25,
+       20
+      ],
+      "weight": 0.078
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_089",
+   "family": "inscribed_geometric",
+   "note": "peeling over ruled grid",
+   "crop_xyxy": [
+    250,
+    237,
+    824,
+    1078
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 66.94,
+    "lightness_std": 22.01,
+    "chroma_mean": 4.08,
+    "texture_fine": 4.605,
+    "texture_mid": 5.719,
+    "band_horizontal": 0.174,
+    "band_vertical": 0.034,
+    "edge_darkening": -18.72,
+    "palette": [
+     {
+      "rgb": [
+       214,
+       216,
+       216
+      ],
+      "weight": 0.386
+     },
+     {
+      "rgb": [
+       182,
+       187,
+       192
+      ],
+      "weight": 0.169
+     },
+     {
+      "rgb": [
+       120,
+       126,
+       135
+      ],
+      "weight": 0.151
+     },
+     {
+      "rgb": [
+       150,
+       157,
+       163
+      ],
+      "weight": 0.138
+     },
+     {
+      "rgb": [
+       63,
+       67,
+       71
+      ],
+      "weight": 0.089
+     },
+     {
+      "rgb": [
+       43,
+       47,
+       49
+      ],
+      "weight": 0.067
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_090",
+   "family": "pattern_mosaic",
+   "crop_xyxy": [
+    16,
+    137,
+    784,
+    662
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 78.35,
+    "lightness_std": 13.42,
+    "chroma_mean": 3.89,
+    "texture_fine": 5.104,
+    "texture_mid": 8.011,
+    "band_horizontal": 0.26,
+    "band_vertical": 0.144,
+    "edge_darkening": 7.21,
+    "palette": [
+     {
+      "rgb": [
+       205,
+       205,
+       199
+      ],
+      "weight": 0.358
+     },
+     {
+      "rgb": [
+       222,
+       222,
+       216
+      ],
+      "weight": 0.288
+     },
+     {
+      "rgb": [
+       184,
+       181,
+       176
+      ],
+      "weight": 0.218
+     },
+     {
+      "rgb": [
+       154,
+       155,
+       153
+      ],
+      "weight": 0.077
+     },
+     {
+      "rgb": [
+       96,
+       104,
+       109
+      ],
+      "weight": 0.038
+     },
+     {
+      "rgb": [
+       42,
+       50,
+       56
+      ],
+      "weight": 0.022
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_091",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1111
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 62.33,
+    "lightness_std": 21.68,
+    "chroma_mean": 24.5,
+    "texture_fine": 5.371,
+    "texture_mid": 9.017,
+    "band_horizontal": 0.214,
+    "band_vertical": 0.196,
+    "edge_darkening": -21.58,
+    "palette": [
+     {
+      "rgb": [
+       201,
+       178,
+       150
+      ],
+      "weight": 0.317
+     },
+     {
+      "rgb": [
+       218,
+       217,
+       209
+      ],
+      "weight": 0.18
+     },
+     {
+      "rgb": [
+       211,
+       146,
+       52
+      ],
+      "weight": 0.145
+     },
+     {
+      "rgb": [
+       133,
+       138,
+       111
+      ],
+      "weight": 0.132
+     },
+     {
+      "rgb": [
+       45,
+       47,
+       44
+      ],
+      "weight": 0.122
+     },
+     {
+      "rgb": [
+       101,
+       86,
+       74
+      ],
+      "weight": 0.105
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_092",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    218,
+    156,
+    867,
+    582
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 61.22,
+    "lightness_std": 23.62,
+    "chroma_mean": 17.38,
+    "texture_fine": 1.938,
+    "texture_mid": 5.897,
+    "band_horizontal": 0.161,
+    "band_vertical": 0.129,
+    "edge_darkening": -2.78,
+    "palette": [
+     {
+      "rgb": [
+       221,
+       213,
+       179
+      ],
+      "weight": 0.352
+     },
+     {
+      "rgb": [
+       174,
+       137,
+       96
+      ],
+      "weight": 0.182
+     },
+     {
+      "rgb": [
+       164,
+       173,
+       163
+      ],
+      "weight": 0.15
+     },
+     {
+      "rgb": [
+       106,
+       101,
+       95
+      ],
+      "weight": 0.122
+     },
+     {
+      "rgb": [
+       52,
+       69,
+       90
+      ],
+      "weight": 0.112
+     },
+     {
+      "rgb": [
+       38,
+       39,
+       41
+      ],
+      "weight": 0.082
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_093",
+   "family": "shapes_over_worn_ground",
+   "note": "100% close-up of 088: primary visual check for scraped-back layers",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1347
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 47.97,
+    "lightness_std": 23.13,
+    "chroma_mean": 19.58,
+    "texture_fine": 6.267,
+    "texture_mid": 7.319,
+    "band_horizontal": 0.23,
+    "band_vertical": 0.116,
+    "edge_darkening": -16.18,
+    "palette": [
+     {
+      "rgb": [
+       198,
+       171,
+       151
+      ],
+      "weight": 0.344
+     },
+     {
+      "rgb": [
+       147,
+       133,
+       107
+      ],
+      "weight": 0.207
+     },
+     {
+      "rgb": [
+       104,
+       94,
+       71
+      ],
+      "weight": 0.147
+     },
+     {
+      "rgb": [
+       32,
+       20,
+       13
+      ],
+      "weight": 0.121
+     },
+     {
+      "rgb": [
+       76,
+       42,
+       32
+      ],
+      "weight": 0.119
+     },
+     {
+      "rgb": [
+       135,
+       54,
+       18
+      ],
+      "weight": 0.062
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_094",
+   "family": "layered_geometric",
+   "crop_xyxy": [
+    39,
+    105,
+    1401,
+    1335
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 61.24,
+    "lightness_std": 16.5,
+    "chroma_mean": 19.05,
+    "texture_fine": 2.241,
+    "texture_mid": 4.056,
+    "band_horizontal": 0.357,
+    "band_vertical": 0.304,
+    "edge_darkening": -32.37,
+    "palette": [
+     {
+      "rgb": [
+       190,
+       176,
+       121
+      ],
+      "weight": 0.341
+     },
+     {
+      "rgb": [
+       125,
+       115,
+       105
+      ],
+      "weight": 0.156
+     },
+     {
+      "rgb": [
+       215,
+       214,
+       212
+      ],
+      "weight": 0.151
+     },
+     {
+      "rgb": [
+       109,
+       84,
+       60
+      ],
+      "weight": 0.127
+     },
+     {
+      "rgb": [
+       141,
+       137,
+       134
+      ],
+      "weight": 0.121
+     },
+     {
+      "rgb": [
+       148,
+       81,
+       62
+      ],
+      "weight": 0.105
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_095",
+   "family": "hardedge_space",
+   "crop_xyxy": [
+    136,
+    154,
+    975,
+    995
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 58.86,
+    "lightness_std": 16.14,
+    "chroma_mean": 43.11,
+    "texture_fine": 2.957,
+    "texture_mid": 5.346,
+    "band_horizontal": 0.056,
+    "band_vertical": 0.085,
+    "edge_darkening": -8.23,
+    "palette": [
+     {
+      "rgb": [
+       131,
+       170,
+       175
+      ],
+      "weight": 0.284
+     },
+     {
+      "rgb": [
+       45,
+       125,
+       139
+      ],
+      "weight": 0.198
+     },
+     {
+      "rgb": [
+       135,
+       51,
+       89
+      ],
+      "weight": 0.17
+     },
+     {
+      "rgb": [
+       250,
+       200,
+       19
+      ],
+      "weight": 0.161
+     },
+     {
+      "rgb": [
+       220,
+       88,
+       119
+      ],
+      "weight": 0.14
+     },
+     {
+      "rgb": [
+       250,
+       111,
+       14
+      ],
+      "weight": 0.047
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_096",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1350
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 62.05,
+    "lightness_std": 21.11,
+    "chroma_mean": 6.53,
+    "texture_fine": 4.705,
+    "texture_mid": 6.268,
+    "band_horizontal": 0.44,
+    "band_vertical": 0.209,
+    "edge_darkening": -28.11,
+    "palette": [
+     {
+      "rgb": [
+       148,
+       154,
+       154
+      ],
+      "weight": 0.228
+     },
+     {
+      "rgb": [
+       216,
+       219,
+       218
+      ],
+      "weight": 0.222
+     },
+     {
+      "rgb": [
+       175,
+       178,
+       171
+      ],
+      "weight": 0.217
+     },
+     {
+      "rgb": [
+       116,
+       121,
+       114
+      ],
+      "weight": 0.132
+     },
+     {
+      "rgb": [
+       86,
+       87,
+       59
+      ],
+      "weight": 0.129
+     },
+     {
+      "rgb": [
+       43,
+       33,
+       30
+      ],
+      "weight": 0.071
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_097",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    67,
+    167,
+    1011,
+    1108
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 50.3,
+    "lightness_std": 15.82,
+    "chroma_mean": 38.35,
+    "texture_fine": 2.851,
+    "texture_mid": 4.007,
+    "band_horizontal": 0.181,
+    "band_vertical": 0.128,
+    "edge_darkening": -11.48,
+    "palette": [
+     {
+      "rgb": [
+       154,
+       115,
+       23
+      ],
+      "weight": 0.249
+     },
+     {
+      "rgb": [
+       182,
+       148,
+       79
+      ],
+      "weight": 0.187
+     },
+     {
+      "rgb": [
+       197,
+       179,
+       136
+      ],
+      "weight": 0.159
+     },
+     {
+      "rgb": [
+       74,
+       66,
+       16
+      ],
+      "weight": 0.154
+     },
+     {
+      "rgb": [
+       119,
+       63,
+       8
+      ],
+      "weight": 0.153
+     },
+     {
+      "rgb": [
+       115,
+       113,
+       86
+      ],
+      "weight": 0.098
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_098",
+   "family": "digital_or_ai_mood_only",
+   "crop_xyxy": [
+    218,
+    156,
+    866,
+    582
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 52.8,
+    "lightness_std": 24.61,
+    "chroma_mean": 24.37,
+    "texture_fine": 2.118,
+    "texture_mid": 6.745,
+    "band_horizontal": 0.102,
+    "band_vertical": 0.169,
+    "edge_darkening": 0.9,
+    "palette": [
+     {
+      "rgb": [
+       200,
+       202,
+       189
+      ],
+      "weight": 0.215
+     },
+     {
+      "rgb": [
+       50,
+       36,
+       32
+      ],
+      "weight": 0.213
+     },
+     {
+      "rgb": [
+       191,
+       150,
+       63
+      ],
+      "weight": 0.191
+     },
+     {
+      "rgb": [
+       170,
+       164,
+       167
+      ],
+      "weight": 0.164
+     },
+     {
+      "rgb": [
+       114,
+       48,
+       47
+      ],
+      "weight": 0.124
+     },
+     {
+      "rgb": [
+       203,
+       95,
+       39
+      ],
+      "weight": 0.093
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_099",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 59.21,
+    "lightness_std": 25.06,
+    "chroma_mean": 6.66,
+    "texture_fine": 3.13,
+    "texture_mid": 6.837,
+    "band_horizontal": 0.191,
+    "band_vertical": 0.251,
+    "edge_darkening": -20.03,
+    "palette": [
+     {
+      "rgb": [
+       214,
+       215,
+       217
+      ],
+      "weight": 0.207
+     },
+     {
+      "rgb": [
+       169,
+       169,
+       163
+      ],
+      "weight": 0.203
+     },
+     {
+      "rgb": [
+       112,
+       133,
+       136
+      ],
+      "weight": 0.193
+     },
+     {
+      "rgb": [
+       196,
+       188,
+       172
+      ],
+      "weight": 0.165
+     },
+     {
+      "rgb": [
+       31,
+       34,
+       39
+      ],
+      "weight": 0.118
+     },
+     {
+      "rgb": [
+       51,
+       56,
+       68
+      ],
+      "weight": 0.116
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_100",
+   "family": "outlier",
+   "crop_xyxy": [
+    172,
+    34,
+    1269,
+    1406
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 43.06,
+    "lightness_std": 29.25,
+    "chroma_mean": 27.59,
+    "texture_fine": 7.758,
+    "texture_mid": 11.582,
+    "band_horizontal": 0.246,
+    "band_vertical": 0.243,
+    "edge_darkening": 49.74,
+    "palette": [
+     {
+      "rgb": [
+       37,
+       38,
+       41
+      ],
+      "weight": 0.494
+     },
+     {
+      "rgb": [
+       121,
+       204,
+       224
+      ],
+      "weight": 0.144
+     },
+     {
+      "rgb": [
+       138,
+       97,
+       147
+      ],
+      "weight": 0.096
+     },
+     {
+      "rgb": [
+       97,
+       203,
+       110
+      ],
+      "weight": 0.093
+     },
+     {
+      "rgb": [
+       241,
+       125,
+       152
+      ],
+      "weight": 0.088
+     },
+     {
+      "rgb": [
+       245,
+       193,
+       80
+      ],
+      "weight": 0.084
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_101",
+   "family": "outlier",
+   "crop_xyxy": [
+    132,
+    26,
+    964,
+    1393
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 75.87,
+    "lightness_std": 11.04,
+    "chroma_mean": 18.62,
+    "texture_fine": 6.82,
+    "texture_mid": 5.054,
+    "band_horizontal": 0.036,
+    "band_vertical": 0.137,
+    "edge_darkening": -6.04,
+    "palette": [
+     {
+      "rgb": [
+       229,
+       220,
+       194
+      ],
+      "weight": 0.265
+     },
+     {
+      "rgb": [
+       210,
+       201,
+       169
+      ],
+      "weight": 0.25
+     },
+     {
+      "rgb": [
+       192,
+       179,
+       149
+      ],
+      "weight": 0.223
+     },
+     {
+      "rgb": [
+       166,
+       157,
+       128
+      ],
+      "weight": 0.137
+     },
+     {
+      "rgb": [
+       144,
+       117,
+       94
+      ],
+      "weight": 0.065
+     },
+     {
+      "rgb": [
+       203,
+       127,
+       107
+      ],
+      "weight": 0.06
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_102",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    144,
+    103,
+    1176,
+    1127
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 43.02,
+    "lightness_std": 25.56,
+    "chroma_mean": 23.39,
+    "texture_fine": 1.99,
+    "texture_mid": 4.503,
+    "band_horizontal": 0.037,
+    "band_vertical": 0.542,
+    "edge_darkening": 10.68,
+    "palette": [
+     {
+      "rgb": [
+       8,
+       31,
+       70
+      ],
+      "weight": 0.241
+     },
+     {
+      "rgb": [
+       22,
+       56,
+       94
+      ],
+      "weight": 0.208
+     },
+     {
+      "rgb": [
+       187,
+       185,
+       182
+      ],
+      "weight": 0.197
+     },
+     {
+      "rgb": [
+       195,
+       171,
+       103
+      ],
+      "weight": 0.161
+     },
+     {
+      "rgb": [
+       84,
+       104,
+       68
+      ],
+      "weight": 0.154
+     },
+     {
+      "rgb": [
+       124,
+       151,
+       182
+      ],
+      "weight": 0.039
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_103",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    128,
+    194,
+    1101,
+    1193
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 55.29,
+    "lightness_std": 27.62,
+    "chroma_mean": 12.49,
+    "texture_fine": 3.042,
+    "texture_mid": 7.069,
+    "band_horizontal": 0.267,
+    "band_vertical": 0.305,
+    "edge_darkening": -26.38,
+    "palette": [
+     {
+      "rgb": [
+       99,
+       134,
+       140
+      ],
+      "weight": 0.288
+     },
+     {
+      "rgb": [
+       222,
+       214,
+       198
+      ],
+      "weight": 0.177
+     },
+     {
+      "rgb": [
+       211,
+       202,
+       182
+      ],
+      "weight": 0.173
+     },
+     {
+      "rgb": [
+       3,
+       9,
+       37
+      ],
+      "weight": 0.165
+     },
+     {
+      "rgb": [
+       73,
+       110,
+       117
+      ],
+      "weight": 0.125
+     },
+     {
+      "rgb": [
+       146,
+       149,
+       139
+      ],
+      "weight": 0.072
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_104",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    0,
+    0,
+    1827,
+    2272
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 78.81,
+    "lightness_std": 13.77,
+    "chroma_mean": 5.84,
+    "texture_fine": 5.482,
+    "texture_mid": 6.303,
+    "band_horizontal": 0.168,
+    "band_vertical": 0.069,
+    "edge_darkening": 7.82,
+    "palette": [
+     {
+      "rgb": [
+       215,
+       210,
+       201
+      ],
+      "weight": 0.311
+     },
+     {
+      "rgb": [
+       232,
+       228,
+       218
+      ],
+      "weight": 0.274
+     },
+     {
+      "rgb": [
+       194,
+       189,
+       180
+      ],
+      "weight": 0.201
+     },
+     {
+      "rgb": [
+       169,
+       161,
+       151
+      ],
+      "weight": 0.118
+     },
+     {
+      "rgb": [
+       138,
+       125,
+       116
+      ],
+      "weight": 0.057
+     },
+     {
+      "rgb": [
+       90,
+       77,
+       68
+      ],
+      "weight": 0.039
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_105",
+   "family": "atmospheric_orb",
+   "crop_xyxy": [
+    107,
+    107,
+    1361,
+    1366
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 29.88,
+    "lightness_std": 23.94,
+    "chroma_mean": 9.96,
+    "texture_fine": 1.202,
+    "texture_mid": 1.576,
+    "band_horizontal": 0.769,
+    "band_vertical": 0.119,
+    "edge_darkening": 9.8,
+    "palette": [
+     {
+      "rgb": [
+       23,
+       19,
+       22
+      ],
+      "weight": 0.335
+     },
+     {
+      "rgb": [
+       59,
+       35,
+       32
+      ],
+      "weight": 0.176
+     },
+     {
+      "rgb": [
+       90,
+       63,
+       53
+      ],
+      "weight": 0.14
+     },
+     {
+      "rgb": [
+       121,
+       97,
+       81
+      ],
+      "weight": 0.118
+     },
+     {
+      "rgb": [
+       154,
+       139,
+       122
+      ],
+      "weight": 0.115
+     },
+     {
+      "rgb": [
+       185,
+       184,
+       176
+      ],
+      "weight": 0.115
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_106",
+   "family": "atmospheric_orb",
+   "crop_xyxy": [
+    105,
+    103,
+    1356,
+    1357
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 82.07,
+    "lightness_std": 8.98,
+    "chroma_mean": 3.16,
+    "texture_fine": 1.422,
+    "texture_mid": 1.57,
+    "band_horizontal": 0.23,
+    "band_vertical": 0.336,
+    "edge_darkening": -4.51,
+    "palette": [
+     {
+      "rgb": [
+       211,
+       218,
+       221
+      ],
+      "weight": 0.305
+     },
+     {
+      "rgb": [
+       224,
+       230,
+       235
+      ],
+      "weight": 0.222
+     },
+     {
+      "rgb": [
+       196,
+       204,
+       208
+      ],
+      "weight": 0.177
+     },
+     {
+      "rgb": [
+       179,
+       186,
+       194
+      ],
+      "weight": 0.153
+     },
+     {
+      "rgb": [
+       159,
+       166,
+       174
+      ],
+      "weight": 0.099
+     },
+     {
+      "rgb": [
+       137,
+       138,
+       145
+      ],
+      "weight": 0.044
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_107",
+   "family": "atmospheric_field",
+   "crop_xyxy": [
+    111,
+    115,
+    1370,
+    1371
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 20.05,
+    "lightness_std": 23.9,
+    "chroma_mean": 12.48,
+    "texture_fine": 2.794,
+    "texture_mid": 4.682,
+    "band_horizontal": 0.873,
+    "band_vertical": 0.078,
+    "edge_darkening": -6.64,
+    "palette": [
+     {
+      "rgb": [
+       6,
+       2,
+       0
+      ],
+      "weight": 0.485
+     },
+     {
+      "rgb": [
+       77,
+       59,
+       32
+      ],
+      "weight": 0.131
+     },
+     {
+      "rgb": [
+       41,
+       30,
+       12
+      ],
+      "weight": 0.13
+     },
+     {
+      "rgb": [
+       164,
+       135,
+       91
+      ],
+      "weight": 0.111
+     },
+     {
+      "rgb": [
+       120,
+       97,
+       57
+      ],
+      "weight": 0.073
+     },
+     {
+      "rgb": [
+       192,
+       166,
+       126
+      ],
+      "weight": 0.071
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_108",
+   "family": "field_accent",
+   "exclude_from_stats": true,
+   "note": "duplicate of ref_079",
+   "crop_xyxy": [
+    121,
+    65,
+    1292,
+    1205
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 71.87,
+    "lightness_std": 19.75,
+    "chroma_mean": 37.2,
+    "texture_fine": 4.788,
+    "texture_mid": 9.897,
+    "band_horizontal": 0.111,
+    "band_vertical": 0.835,
+    "edge_darkening": 12.56,
+    "palette": [
+     {
+      "rgb": [
+       205,
+       204,
+       158
+      ],
+      "weight": 0.402
+     },
+     {
+      "rgb": [
+       204,
+       126,
+       52
+      ],
+      "weight": 0.269
+     },
+     {
+      "rgb": [
+       222,
+       173,
+       59
+      ],
+      "weight": 0.183
+     },
+     {
+      "rgb": [
+       254,
+       254,
+       254
+      ],
+      "weight": 0.09
+     },
+     {
+      "rgb": [
+       10,
+       6,
+       7
+      ],
+      "weight": 0.04
+     },
+     {
+      "rgb": [
+       72,
+       67,
+       55
+      ],
+      "weight": 0.017
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_109",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    81,
+    81,
+    1019,
+    1026
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 33.79,
+    "lightness_std": 11.53,
+    "chroma_mean": 14.22,
+    "texture_fine": 2.85,
+    "texture_mid": 2.782,
+    "band_horizontal": 0.529,
+    "band_vertical": 0.158,
+    "edge_darkening": 13.15,
+    "palette": [
+     {
+      "rgb": [
+       65,
+       55,
+       43
+      ],
+      "weight": 0.224
+     },
+     {
+      "rgb": [
+       75,
+       107,
+       97
+      ],
+      "weight": 0.203
+     },
+     {
+      "rgb": [
+       67,
+       82,
+       73
+      ],
+      "weight": 0.194
+     },
+     {
+      "rgb": [
+       75,
+       135,
+       129
+      ],
+      "weight": 0.135
+     },
+     {
+      "rgb": [
+       95,
+       71,
+       48
+      ],
+      "weight": 0.13
+     },
+     {
+      "rgb": [
+       45,
+       34,
+       28
+      ],
+      "weight": 0.114
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_110",
+   "family": "hardedge_flat",
+   "exclude_from_stats": true,
+   "note": "duplicate of ref_066",
+   "crop_xyxy": [
+    15,
+    43,
+    180,
+    267
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 53.66,
+    "lightness_std": 21.09,
+    "chroma_mean": 33.23,
+    "texture_fine": 1.726,
+    "texture_mid": 4.86,
+    "band_horizontal": 0.181,
+    "band_vertical": 0.216,
+    "edge_darkening": 9.7,
+    "palette": [
+     {
+      "rgb": [
+       168,
+       63,
+       63
+      ],
+      "weight": 0.414
+     },
+     {
+      "rgb": [
+       215,
+       204,
+       195
+      ],
+      "weight": 0.224
+     },
+     {
+      "rgb": [
+       219,
+       149,
+       112
+      ],
+      "weight": 0.158
+     },
+     {
+      "rgb": [
+       154,
+       105,
+       61
+      ],
+      "weight": 0.086
+     },
+     {
+      "rgb": [
+       31,
+       28,
+       38
+      ],
+      "weight": 0.077
+     },
+     {
+      "rgb": [
+       104,
+       120,
+       131
+      ],
+      "weight": 0.043
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_111",
+   "family": "weathered_field",
+   "exclude_from_stats": true,
+   "note": "grid of 9 small weathered fields (contact sheet)",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 67.49,
+    "lightness_std": 30.23,
+    "chroma_mean": 24.11,
+    "texture_fine": 5.546,
+    "texture_mid": 11.934,
+    "band_horizontal": 0.223,
+    "band_vertical": 0.502,
+    "edge_darkening": -11.23,
+    "palette": [
+     {
+      "rgb": [
+       253,
+       253,
+       253
+      ],
+      "weight": 0.392
+     },
+     {
+      "rgb": [
+       80,
+       32,
+       38
+      ],
+      "weight": 0.177
+     },
+     {
+      "rgb": [
+       189,
+       170,
+       177
+      ],
+      "weight": 0.122
+     },
+     {
+      "rgb": [
+       107,
+       114,
+       122
+      ],
+      "weight": 0.11
+     },
+     {
+      "rgb": [
+       207,
+       55,
+       62
+      ],
+      "weight": 0.106
+     },
+     {
+      "rgb": [
+       215,
+       141,
+       40
+      ],
+      "weight": 0.094
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_112",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    152,
+    31,
+    1138,
+    1271
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 57.01,
+    "lightness_std": 15.68,
+    "chroma_mean": 61.55,
+    "texture_fine": 8.173,
+    "texture_mid": 5.814,
+    "band_horizontal": 0.228,
+    "band_vertical": 0.095,
+    "edge_darkening": 6.71,
+    "palette": [
+     {
+      "rgb": [
+       214,
+       120,
+       30
+      ],
+      "weight": 0.319
+     },
+     {
+      "rgb": [
+       234,
+       143,
+       27
+      ],
+      "weight": 0.306
+     },
+     {
+      "rgb": [
+       179,
+       97,
+       43
+      ],
+      "weight": 0.133
+     },
+     {
+      "rgb": [
+       231,
+       170,
+       73
+      ],
+      "weight": 0.091
+     },
+     {
+      "rgb": [
+       125,
+       60,
+       31
+      ],
+      "weight": 0.081
+     },
+     {
+      "rgb": [
+       49,
+       36,
+       51
+      ],
+      "weight": 0.069
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_113",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    168,
+    43,
+    1106,
+    1247
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 67.04,
+    "lightness_std": 14.08,
+    "chroma_mean": 35.67,
+    "texture_fine": 5.286,
+    "texture_mid": 5.325,
+    "band_horizontal": 0.5,
+    "band_vertical": 0.034,
+    "edge_darkening": 12.19,
+    "palette": [
+     {
+      "rgb": [
+       242,
+       163,
+       202
+      ],
+      "weight": 0.287
+     },
+     {
+      "rgb": [
+       245,
+       120,
+       192
+      ],
+      "weight": 0.254
+     },
+     {
+      "rgb": [
+       124,
+       141,
+       147
+      ],
+      "weight": 0.158
+     },
+     {
+      "rgb": [
+       240,
+       221,
+       224
+      ],
+      "weight": 0.11
+     },
+     {
+      "rgb": [
+       119,
+       88,
+       95
+      ],
+      "weight": 0.109
+     },
+     {
+      "rgb": [
+       221,
+       99,
+       115
+      ],
+      "weight": 0.082
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_114",
+   "family": "pattern_mosaic",
+   "crop_xyxy": [
+    218,
+    31,
+    1221,
+    1409
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 62.54,
+    "lightness_std": 12.36,
+    "chroma_mean": 13.75,
+    "texture_fine": 2.407,
+    "texture_mid": 4.278,
+    "band_horizontal": 0.488,
+    "band_vertical": 0.072,
+    "edge_darkening": 9.78,
+    "palette": [
+     {
+      "rgb": [
+       175,
+       174,
+       163
+      ],
+      "weight": 0.218
+     },
+     {
+      "rgb": [
+       134,
+       158,
+       154
+      ],
+      "weight": 0.215
+     },
+     {
+      "rgb": [
+       117,
+       126,
+       118
+      ],
+      "weight": 0.169
+     },
+     {
+      "rgb": [
+       168,
+       135,
+       126
+      ],
+      "weight": 0.149
+     },
+     {
+      "rgb": [
+       201,
+       200,
+       186
+      ],
+      "weight": 0.147
+     },
+     {
+      "rgb": [
+       99,
+       90,
+       85
+      ],
+      "weight": 0.103
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_115",
+   "family": "hardedge_flat",
+   "exclude_from_stats": true,
+   "note": "duplicate of ref_099",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 59.21,
+    "lightness_std": 25.06,
+    "chroma_mean": 6.66,
+    "texture_fine": 3.13,
+    "texture_mid": 6.837,
+    "band_horizontal": 0.191,
+    "band_vertical": 0.251,
+    "edge_darkening": -20.03,
+    "palette": [
+     {
+      "rgb": [
+       214,
+       215,
+       217
+      ],
+      "weight": 0.207
+     },
+     {
+      "rgb": [
+       169,
+       169,
+       163
+      ],
+      "weight": 0.203
+     },
+     {
+      "rgb": [
+       112,
+       133,
+       136
+      ],
+      "weight": 0.193
+     },
+     {
+      "rgb": [
+       196,
+       188,
+       172
+      ],
+      "weight": 0.165
+     },
+     {
+      "rgb": [
+       31,
+       34,
+       39
+      ],
+      "weight": 0.118
+     },
+     {
+      "rgb": [
+       51,
+       56,
+       68
+      ],
+      "weight": 0.116
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_116",
+   "family": "inscribed_geometric",
+   "exclude_from_stats": true,
+   "note": "duplicate of ref_089",
+   "crop_xyxy": [
+    250,
+    237,
+    824,
+    1078
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 66.94,
+    "lightness_std": 22.01,
+    "chroma_mean": 4.08,
+    "texture_fine": 4.605,
+    "texture_mid": 5.719,
+    "band_horizontal": 0.174,
+    "band_vertical": 0.034,
+    "edge_darkening": -18.72,
+    "palette": [
+     {
+      "rgb": [
+       214,
+       216,
+       216
+      ],
+      "weight": 0.386
+     },
+     {
+      "rgb": [
+       182,
+       187,
+       192
+      ],
+      "weight": 0.169
+     },
+     {
+      "rgb": [
+       120,
+       126,
+       135
+      ],
+      "weight": 0.151
+     },
+     {
+      "rgb": [
+       150,
+       157,
+       163
+      ],
+      "weight": 0.138
+     },
+     {
+      "rgb": [
+       63,
+       67,
+       71
+      ],
+      "weight": 0.089
+     },
+     {
+      "rgb": [
+       43,
+       47,
+       49
+      ],
+      "weight": 0.067
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_117",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    24,
+    166,
+    804,
+    1011
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 71.18,
+    "lightness_std": 19.68,
+    "chroma_mean": 13.2,
+    "texture_fine": 3.449,
+    "texture_mid": 6.189,
+    "band_horizontal": 0.28,
+    "band_vertical": 0.269,
+    "edge_darkening": -19.2,
+    "palette": [
+     {
+      "rgb": [
+       229,
+       228,
+       222
+      ],
+      "weight": 0.295
+     },
+     {
+      "rgb": [
+       201,
+       193,
+       177
+      ],
+      "weight": 0.241
+     },
+     {
+      "rgb": [
+       193,
+       159,
+       128
+      ],
+      "weight": 0.208
+     },
+     {
+      "rgb": [
+       157,
+       127,
+       96
+      ],
+      "weight": 0.153
+     },
+     {
+      "rgb": [
+       97,
+       84,
+       64
+      ],
+      "weight": 0.065
+     },
+     {
+      "rgb": [
+       37,
+       28,
+       20
+      ],
+      "weight": 0.038
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_118",
+   "family": "inscribed_geometric",
+   "crop_xyxy": [
+    193,
+    33,
+    1247,
+    1407
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 62.71,
+    "lightness_std": 33.04,
+    "chroma_mean": 11.94,
+    "texture_fine": 8.154,
+    "texture_mid": 12.557,
+    "band_horizontal": 0.102,
+    "band_vertical": 0.059,
+    "edge_darkening": 7.98,
+    "palette": [
+     {
+      "rgb": [
+       235,
+       236,
+       238
+      ],
+      "weight": 0.374
+     },
+     {
+      "rgb": [
+       202,
+       204,
+       207
+      ],
+      "weight": 0.173
+     },
+     {
+      "rgb": [
+       10,
+       13,
+       16
+      ],
+      "weight": 0.143
+     },
+     {
+      "rgb": [
+       205,
+       71,
+       75
+      ],
+      "weight": 0.126
+     },
+     {
+      "rgb": [
+       73,
+       67,
+       72
+      ],
+      "weight": 0.099
+     },
+     {
+      "rgb": [
+       89,
+       113,
+       117
+      ],
+      "weight": 0.085
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_119",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    36,
+    137,
+    1300,
+    1294
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 41.77,
+    "lightness_std": 17.64,
+    "chroma_mean": 26.52,
+    "texture_fine": 2.301,
+    "texture_mid": 4.13,
+    "band_horizontal": 0.177,
+    "band_vertical": 0.268,
+    "edge_darkening": -17.85,
+    "palette": [
+     {
+      "rgb": [
+       62,
+       81,
+       50
+      ],
+      "weight": 0.252
+     },
+     {
+      "rgb": [
+       47,
+       68,
+       37
+      ],
+      "weight": 0.25
+     },
+     {
+      "rgb": [
+       169,
+       173,
+       147
+      ],
+      "weight": 0.223
+     },
+     {
+      "rgb": [
+       146,
+       29,
+       13
+      ],
+      "weight": 0.167
+     },
+     {
+      "rgb": [
+       158,
+       147,
+       121
+      ],
+      "weight": 0.081
+     },
+     {
+      "rgb": [
+       3,
+       125,
+       143
+      ],
+      "weight": 0.027
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_120",
+   "family": "layered_geometric",
+   "crop_xyxy": [
+    257,
+    24,
+    1056,
+    796
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 64.49,
+    "lightness_std": 23.95,
+    "chroma_mean": 8.69,
+    "texture_fine": 3.886,
+    "texture_mid": 5.512,
+    "band_horizontal": 0.06,
+    "band_vertical": 0.417,
+    "edge_darkening": 16.09,
+    "palette": [
+     {
+      "rgb": [
+       215,
+       217,
+       208
+      ],
+      "weight": 0.343
+     },
+     {
+      "rgb": [
+       158,
+       153,
+       143
+      ],
+      "weight": 0.205
+     },
+     {
+      "rgb": [
+       201,
+       179,
+       153
+      ],
+      "weight": 0.181
+     },
+     {
+      "rgb": [
+       114,
+       116,
+       104
+      ],
+      "weight": 0.101
+     },
+     {
+      "rgb": [
+       30,
+       31,
+       30
+      ],
+      "weight": 0.101
+     },
+     {
+      "rgb": [
+       75,
+       73,
+       96
+      ],
+      "weight": 0.069
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_121",
+   "family": "hardedge_flat",
+   "exclude_from_stats": true,
+   "note": "duplicate of ref_119",
+   "crop_xyxy": [
+    36,
+    137,
+    1300,
+    1294
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 41.77,
+    "lightness_std": 17.64,
+    "chroma_mean": 26.52,
+    "texture_fine": 2.301,
+    "texture_mid": 4.13,
+    "band_horizontal": 0.177,
+    "band_vertical": 0.268,
+    "edge_darkening": -17.85,
+    "palette": [
+     {
+      "rgb": [
+       62,
+       81,
+       50
+      ],
+      "weight": 0.252
+     },
+     {
+      "rgb": [
+       47,
+       68,
+       37
+      ],
+      "weight": 0.25
+     },
+     {
+      "rgb": [
+       169,
+       173,
+       147
+      ],
+      "weight": 0.223
+     },
+     {
+      "rgb": [
+       146,
+       29,
+       13
+      ],
+      "weight": 0.167
+     },
+     {
+      "rgb": [
+       158,
+       147,
+       121
+      ],
+      "weight": 0.081
+     },
+     {
+      "rgb": [
+       3,
+       125,
+       143
+      ],
+      "weight": 0.027
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_122",
+   "family": "hardedge_flat",
+   "crop_xyxy": [
+    35,
+    264,
+    1164,
+    1398
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 65.55,
+    "lightness_std": 28.37,
+    "chroma_mean": 27.89,
+    "texture_fine": 1.212,
+    "texture_mid": 4.001,
+    "band_horizontal": 0.418,
+    "band_vertical": 0.402,
+    "edge_darkening": -58.03,
+    "palette": [
+     {
+      "rgb": [
+       144,
+       191,
+       185
+      ],
+      "weight": 0.253
+     },
+     {
+      "rgb": [
+       109,
+       21,
+       26
+      ],
+      "weight": 0.192
+     },
+     {
+      "rgb": [
+       252,
+       252,
+       246
+      ],
+      "weight": 0.188
+     },
+     {
+      "rgb": [
+       195,
+       80,
+       58
+      ],
+      "weight": 0.159
+     },
+     {
+      "rgb": [
+       239,
+       240,
+       229
+      ],
+      "weight": 0.144
+     },
+     {
+      "rgb": [
+       158,
+       16,
+       28
+      ],
+      "weight": 0.064
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_123",
+   "family": "layered_geometric",
+   "exclude_from_stats": true,
+   "note": "duplicate of ref_120",
+   "crop_xyxy": [
+    257,
+    24,
+    1056,
+    796
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 64.49,
+    "lightness_std": 23.95,
+    "chroma_mean": 8.69,
+    "texture_fine": 3.886,
+    "texture_mid": 5.512,
+    "band_horizontal": 0.06,
+    "band_vertical": 0.417,
+    "edge_darkening": 16.09,
+    "palette": [
+     {
+      "rgb": [
+       215,
+       217,
+       208
+      ],
+      "weight": 0.343
+     },
+     {
+      "rgb": [
+       158,
+       153,
+       143
+      ],
+      "weight": 0.205
+     },
+     {
+      "rgb": [
+       201,
+       179,
+       153
+      ],
+      "weight": 0.181
+     },
+     {
+      "rgb": [
+       114,
+       116,
+       104
+      ],
+      "weight": 0.101
+     },
+     {
+      "rgb": [
+       30,
+       31,
+       30
+      ],
+      "weight": 0.101
+     },
+     {
+      "rgb": [
+       75,
+       73,
+       96
+      ],
+      "weight": 0.069
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_124",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    123,
+    98,
+    966,
+    1224
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 64.61,
+    "lightness_std": 20.03,
+    "chroma_mean": 32.68,
+    "texture_fine": 3.713,
+    "texture_mid": 7.422,
+    "band_horizontal": 0.14,
+    "band_vertical": 0.11,
+    "edge_darkening": -4.75,
+    "palette": [
+     {
+      "rgb": [
+       217,
+       196,
+       181
+      ],
+      "weight": 0.407
+     },
+     {
+      "rgb": [
+       236,
+       107,
+       84
+      ],
+      "weight": 0.171
+     },
+     {
+      "rgb": [
+       58,
+       171,
+       175
+      ],
+      "weight": 0.127
+     },
+     {
+      "rgb": [
+       236,
+       163,
+       61
+      ],
+      "weight": 0.108
+     },
+     {
+      "rgb": [
+       99,
+       92,
+       75
+      ],
+      "weight": 0.094
+     },
+     {
+      "rgb": [
+       65,
+       36,
+       43
+      ],
+      "weight": 0.093
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_125",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    55,
+    90,
+    1348,
+    1369
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 43.41,
+    "lightness_std": 30.88,
+    "chroma_mean": 8.17,
+    "texture_fine": 6.307,
+    "texture_mid": 5.505,
+    "band_horizontal": 0.299,
+    "band_vertical": 0.356,
+    "edge_darkening": 53.74,
+    "palette": [
+     {
+      "rgb": [
+       15,
+       18,
+       25
+      ],
+      "weight": 0.246
+     },
+     {
+      "rgb": [
+       182,
+       174,
+       157
+      ],
+      "weight": 0.223
+     },
+     {
+      "rgb": [
+       51,
+       44,
+       47
+      ],
+      "weight": 0.221
+     },
+     {
+      "rgb": [
+       204,
+       198,
+       182
+      ],
+      "weight": 0.192
+     },
+     {
+      "rgb": [
+       153,
+       142,
+       126
+      ],
+      "weight": 0.086
+     },
+     {
+      "rgb": [
+       101,
+       84,
+       73
+      ],
+      "weight": 0.031
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_126",
+   "family": "shapes_over_worn_ground",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1800
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 62.95,
+    "lightness_std": 23.76,
+    "chroma_mean": 7.43,
+    "texture_fine": 2.887,
+    "texture_mid": 5.806,
+    "band_horizontal": 0.505,
+    "band_vertical": 0.14,
+    "edge_darkening": -5.34,
+    "palette": [
+     {
+      "rgb": [
+       216,
+       213,
+       208
+      ],
+      "weight": 0.35
+     },
+     {
+      "rgb": [
+       177,
+       176,
+       169
+      ],
+      "weight": 0.268
+     },
+     {
+      "rgb": [
+       73,
+       75,
+       70
+      ],
+      "weight": 0.157
+     },
+     {
+      "rgb": [
+       132,
+       135,
+       136
+      ],
+      "weight": 0.09
+     },
+     {
+      "rgb": [
+       108,
+       78,
+       40
+      ],
+      "weight": 0.081
+     },
+     {
+      "rgb": [
+       36,
+       33,
+       31
+      ],
+      "weight": 0.053
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_127",
+   "family": "split_organic",
+   "crop_xyxy": [
+    266,
+    247,
+    1175,
+    1151
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 58.23,
+    "lightness_std": 18.44,
+    "chroma_mean": 49.22,
+    "texture_fine": 1.828,
+    "texture_mid": 4.937,
+    "band_horizontal": 0.087,
+    "band_vertical": 0.411,
+    "edge_darkening": 7.44,
+    "palette": [
+     {
+      "rgb": [
+       253,
+       75,
+       78
+      ],
+      "weight": 0.533
+     },
+     {
+      "rgb": [
+       55,
+       67,
+       81
+      ],
+      "weight": 0.18
+     },
+     {
+      "rgb": [
+       31,
+       164,
+       192
+      ],
+      "weight": 0.165
+     },
+     {
+      "rgb": [
+       244,
+       247,
+       253
+      ],
+      "weight": 0.111
+     },
+     {
+      "rgb": [
+       221,
+       126,
+       138
+      ],
+      "weight": 0.007
+     },
+     {
+      "rgb": [
+       238,
+       194,
+       202
+      ],
+      "weight": 0.005
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_128",
+   "family": "split_organic",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 54.49,
+    "lightness_std": 29.18,
+    "chroma_mean": 17.81,
+    "texture_fine": 2.252,
+    "texture_mid": 5.518,
+    "band_horizontal": 0.279,
+    "band_vertical": 0.32,
+    "edge_darkening": -23.1,
+    "palette": [
+     {
+      "rgb": [
+       27,
+       29,
+       31
+      ],
+      "weight": 0.209
+     },
+     {
+      "rgb": [
+       145,
+       28,
+       38
+      ],
+      "weight": 0.2
+     },
+     {
+      "rgb": [
+       181,
+       173,
+       152
+      ],
+      "weight": 0.164
+     },
+     {
+      "rgb": [
+       195,
+       182,
+       160
+      ],
+      "weight": 0.156
+     },
+     {
+      "rgb": [
+       219,
+       220,
+       215
+      ],
+      "weight": 0.139
+     },
+     {
+      "rgb": [
+       208,
+       195,
+       172
+      ],
+      "weight": 0.132
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_129",
+   "family": "split_organic",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 59.81,
+    "lightness_std": 24.63,
+    "chroma_mean": 6.87,
+    "texture_fine": 4.397,
+    "texture_mid": 6.548,
+    "band_horizontal": 0.242,
+    "band_vertical": 0.179,
+    "edge_darkening": -12.12,
+    "palette": [
+     {
+      "rgb": [
+       199,
+       193,
+       187
+      ],
+      "weight": 0.325
+     },
+     {
+      "rgb": [
+       115,
+       117,
+       105
+      ],
+      "weight": 0.176
+     },
+     {
+      "rgb": [
+       75,
+       80,
+       66
+      ],
+      "weight": 0.136
+     },
+     {
+      "rgb": [
+       231,
+       228,
+       222
+      ],
+      "weight": 0.132
+     },
+     {
+      "rgb": [
+       148,
+       146,
+       135
+      ],
+      "weight": 0.126
+     },
+     {
+      "rgb": [
+       26,
+       34,
+       43
+      ],
+      "weight": 0.105
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_130",
+   "family": "stain_wash",
+   "crop_xyxy": [
+    36,
+    35,
+    382,
+    475
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 74.31,
+    "lightness_std": 16.29,
+    "chroma_mean": 8.08,
+    "texture_fine": 5.427,
+    "texture_mid": 7.679,
+    "band_horizontal": 0.238,
+    "band_vertical": 0.306,
+    "edge_darkening": -17.93,
+    "palette": [
+     {
+      "rgb": [
+       188,
+       186,
+       176
+      ],
+      "weight": 0.35
+     },
+     {
+      "rgb": [
+       205,
+       207,
+       200
+      ],
+      "weight": 0.216
+     },
+     {
+      "rgb": [
+       246,
+       250,
+       251
+      ],
+      "weight": 0.146
+     },
+     {
+      "rgb": [
+       166,
+       155,
+       131
+      ],
+      "weight": 0.144
+     },
+     {
+      "rgb": [
+       130,
+       116,
+       87
+      ],
+      "weight": 0.107
+     },
+     {
+      "rgb": [
+       77,
+       65,
+       45
+      ],
+      "weight": 0.036
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_131",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    135,
+    135,
+    945,
+    1154
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 52.11,
+    "lightness_std": 13.59,
+    "chroma_mean": 18.51,
+    "texture_fine": 6.155,
+    "texture_mid": 5.238,
+    "band_horizontal": 0.445,
+    "band_vertical": 0.098,
+    "edge_darkening": 16.31,
+    "palette": [
+     {
+      "rgb": [
+       150,
+       135,
+       113
+      ],
+      "weight": 0.301
+     },
+     {
+      "rgb": [
+       166,
+       155,
+       135
+      ],
+      "weight": 0.274
+     },
+     {
+      "rgb": [
+       135,
+       112,
+       84
+      ],
+      "weight": 0.176
+     },
+     {
+      "rgb": [
+       119,
+       82,
+       41
+      ],
+      "weight": 0.151
+     },
+     {
+      "rgb": [
+       78,
+       46,
+       22
+      ],
+      "weight": 0.083
+     },
+     {
+      "rgb": [
+       209,
+       203,
+       193
+      ],
+      "weight": 0.016
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_132",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    93,
+    201,
+    986,
+    879
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 77.31,
+    "lightness_std": 11.7,
+    "chroma_mean": 11.04,
+    "texture_fine": 2.227,
+    "texture_mid": 2.641,
+    "band_horizontal": 0.032,
+    "band_vertical": 0.873,
+    "edge_darkening": -14.24,
+    "palette": [
+     {
+      "rgb": [
+       224,
+       226,
+       226
+      ],
+      "weight": 0.346
+     },
+     {
+      "rgb": [
+       208,
+       208,
+       208
+      ],
+      "weight": 0.169
+     },
+     {
+      "rgb": [
+       199,
+       165,
+       108
+      ],
+      "weight": 0.152
+     },
+     {
+      "rgb": [
+       179,
+       144,
+       87
+      ],
+      "weight": 0.116
+     },
+     {
+      "rgb": [
+       166,
+       168,
+       171
+      ],
+      "weight": 0.115
+     },
+     {
+      "rgb": [
+       146,
+       150,
+       157
+      ],
+      "weight": 0.101
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_133",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    94,
+    201,
+    987,
+    880
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 79.75,
+    "lightness_std": 20.17,
+    "chroma_mean": 6.11,
+    "texture_fine": 3.173,
+    "texture_mid": 4.785,
+    "band_horizontal": 0.325,
+    "band_vertical": 0.383,
+    "edge_darkening": -18.44,
+    "palette": [
+     {
+      "rgb": [
+       241,
+       241,
+       241
+      ],
+      "weight": 0.334
+     },
+     {
+      "rgb": [
+       228,
+       220,
+       216
+      ],
+      "weight": 0.254
+     },
+     {
+      "rgb": [
+       212,
+       190,
+       174
+      ],
+      "weight": 0.221
+     },
+     {
+      "rgb": [
+       90,
+       99,
+       94
+      ],
+      "weight": 0.107
+     },
+     {
+      "rgb": [
+       134,
+       138,
+       129
+      ],
+      "weight": 0.055
+     },
+     {
+      "rgb": [
+       43,
+       48,
+       43
+      ],
+      "weight": 0.029
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_134",
+   "family": "weathered_field",
+   "exclude_from_stats": true,
+   "note": "duplicate of ref_055",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1080
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 61.42,
+    "lightness_std": 17.85,
+    "chroma_mean": 8.71,
+    "texture_fine": 2.65,
+    "texture_mid": 5.3,
+    "band_horizontal": 0.39,
+    "band_vertical": 0.358,
+    "edge_darkening": -15.63,
+    "palette": [
+     {
+      "rgb": [
+       178,
+       177,
+       175
+      ],
+      "weight": 0.214
+     },
+     {
+      "rgb": [
+       210,
+       212,
+       209
+      ],
+      "weight": 0.201
+     },
+     {
+      "rgb": [
+       160,
+       153,
+       145
+      ],
+      "weight": 0.174
+     },
+     {
+      "rgb": [
+       93,
+       73,
+       55
+      ],
+      "weight": 0.163
+     },
+     {
+      "rgb": [
+       147,
+       126,
+       107
+      ],
+      "weight": 0.143
+     },
+     {
+      "rgb": [
+       127,
+       99,
+       82
+      ],
+      "weight": 0.106
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_135",
+   "family": "weathered_field",
+   "crop_xyxy": [
+    0,
+    0,
+    1080,
+    1349
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 62.36,
+    "lightness_std": 19.63,
+    "chroma_mean": 14.32,
+    "texture_fine": 4.161,
+    "texture_mid": 5.643,
+    "band_horizontal": 0.123,
+    "band_vertical": 0.435,
+    "edge_darkening": -20.08,
+    "palette": [
+     {
+      "rgb": [
+       204,
+       203,
+       201
+      ],
+      "weight": 0.346
+     },
+     {
+      "rgb": [
+       168,
+       163,
+       152
+      ],
+      "weight": 0.289
+     },
+     {
+      "rgb": [
+       112,
+       102,
+       96
+      ],
+      "weight": 0.121
+     },
+     {
+      "rgb": [
+       72,
+       56,
+       54
+      ],
+      "weight": 0.114
+     },
+     {
+      "rgb": [
+       232,
+       86,
+       80
+      ],
+      "weight": 0.072
+     },
+     {
+      "rgb": [
+       167,
+       55,
+       55
+      ],
+      "weight": 0.059
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_136",
+   "family": "gestural_field",
+   "crop_xyxy": [
+    310,
+    119,
+    2010,
+    2286
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 66.1,
+    "lightness_std": 17.34,
+    "chroma_mean": 30.82,
+    "texture_fine": 4.814,
+    "texture_mid": 7.391,
+    "band_horizontal": 0.432,
+    "band_vertical": 0.387,
+    "edge_darkening": 8.23,
+    "palette": [
+     {
+      "rgb": [
+       216,
+       75,
+       48
+      ],
+      "weight": 0.304
+     },
+     {
+      "rgb": [
+       206,
+       193,
+       179
+      ],
+      "weight": 0.231
+     },
+     {
+      "rgb": [
+       220,
+       216,
+       203
+      ],
+      "weight": 0.204
+     },
+     {
+      "rgb": [
+       123,
+       157,
+       159
+      ],
+      "weight": 0.143
+     },
+     {
+      "rgb": [
+       204,
+       128,
+       107
+      ],
+      "weight": 0.085
+     },
+     {
+      "rgb": [
+       36,
+       36,
+       36
+      ],
+      "weight": 0.034
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_137",
+   "family": "atmospheric_field",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1733
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 69.53,
+    "lightness_std": 18.45,
+    "chroma_mean": 20.74,
+    "texture_fine": 3.089,
+    "texture_mid": 5.576,
+    "band_horizontal": 0.443,
+    "band_vertical": 0.222,
+    "edge_darkening": -26.87,
+    "palette": [
+     {
+      "rgb": [
+       208,
+       214,
+       214
+      ],
+      "weight": 0.379
+     },
+     {
+      "rgb": [
+       214,
+       176,
+       95
+      ],
+      "weight": 0.206
+     },
+     {
+      "rgb": [
+       185,
+       183,
+       142
+      ],
+      "weight": 0.114
+     },
+     {
+      "rgb": [
+       167,
+       141,
+       79
+      ],
+      "weight": 0.112
+     },
+     {
+      "rgb": [
+       74,
+       72,
+       55
+      ],
+      "weight": 0.106
+     },
+     {
+      "rgb": [
+       122,
+       102,
+       59
+      ],
+      "weight": 0.083
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_138",
+   "family": "atmospheric_field",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1800
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 58.3,
+    "lightness_std": 23.07,
+    "chroma_mean": 14.89,
+    "texture_fine": 2.702,
+    "texture_mid": 4.553,
+    "band_horizontal": 0.658,
+    "band_vertical": 0.19,
+    "edge_darkening": -14.17,
+    "palette": [
+     {
+      "rgb": [
+       163,
+       167,
+       153
+      ],
+      "weight": 0.284
+     },
+     {
+      "rgb": [
+       54,
+       35,
+       21
+      ],
+      "weight": 0.172
+     },
+     {
+      "rgb": [
+       134,
+       138,
+       126
+      ],
+      "weight": 0.16
+     },
+     {
+      "rgb": [
+       227,
+       220,
+       205
+      ],
+      "weight": 0.157
+     },
+     {
+      "rgb": [
+       203,
+       161,
+       109
+      ],
+      "weight": 0.14
+     },
+     {
+      "rgb": [
+       112,
+       95,
+       69
+      ],
+      "weight": 0.087
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_139",
+   "family": "atmospheric_field",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1800
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 61.43,
+    "lightness_std": 18.81,
+    "chroma_mean": 14.73,
+    "texture_fine": 3.164,
+    "texture_mid": 4.645,
+    "band_horizontal": 0.595,
+    "band_vertical": 0.193,
+    "edge_darkening": -25.5,
+    "palette": [
+     {
+      "rgb": [
+       139,
+       137,
+       126
+      ],
+      "weight": 0.263
+     },
+     {
+      "rgb": [
+       107,
+       103,
+       93
+      ],
+      "weight": 0.186
+     },
+     {
+      "rgb": [
+       195,
+       139,
+       65
+      ],
+      "weight": 0.178
+     },
+     {
+      "rgb": [
+       229,
+       227,
+       221
+      ],
+      "weight": 0.171
+     },
+     {
+      "rgb": [
+       185,
+       176,
+       162
+      ],
+      "weight": 0.155
+     },
+     {
+      "rgb": [
+       43,
+       35,
+       27
+      ],
+      "weight": 0.048
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_140",
+   "family": "atmospheric_field",
+   "crop_xyxy": [
+    0,
+    0,
+    1440,
+    1440
+   ],
+   "crop_method": "full",
+   "stats": {
+    "lightness_mean": 67.5,
+    "lightness_std": 16.66,
+    "chroma_mean": 9.54,
+    "texture_fine": 4.009,
+    "texture_mid": 4.214,
+    "band_horizontal": 0.586,
+    "band_vertical": 0.095,
+    "edge_darkening": -2.65,
+    "palette": [
+     {
+      "rgb": [
+       197,
+       189,
+       173
+      ],
+      "weight": 0.406
+     },
+     {
+      "rgb": [
+       163,
+       160,
+       153
+      ],
+      "weight": 0.199
+     },
+     {
+      "rgb": [
+       209,
+       213,
+       220
+      ],
+      "weight": 0.14
+     },
+     {
+      "rgb": [
+       138,
+       130,
+       121
+      ],
+      "weight": 0.117
+     },
+     {
+      "rgb": [
+       105,
+       93,
+       84
+      ],
+      "weight": 0.081
+     },
+     {
+      "rgb": [
+       70,
+       56,
+       47
+      ],
+      "weight": 0.058
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_141",
+   "family": "knife_drag_bands",
+   "note": "Structures 8 (artist sample): knife-dragged horizontal bands, light from below; 100% crops in closeups/ at ~300 ppi (weave period 9.6 px = ~0.8 mm)",
+   "title": "Structures 8",
+   "medium": "oil",
+   "substrate": "cotton duck",
+   "size_cm": [
+    88,
+    88
+   ],
+   "lighting": "from bottom",
+   "crop_xyxy": [
+    211,
+    168,
+    2833,
+    2800
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 45.01,
+    "lightness_std": 5.78,
+    "chroma_mean": 5.0,
+    "texture_fine": 3.332,
+    "texture_mid": 2.518,
+    "band_horizontal": 0.156,
+    "band_vertical": 0.126,
+    "edge_darkening": -5.83,
+    "palette": [
+     {
+      "rgb": [
+       99,
+       111,
+       117
+      ],
+      "weight": 0.285
+     },
+     {
+      "rgb": [
+       89,
+       101,
+       107
+      ],
+      "weight": 0.284
+     },
+     {
+      "rgb": [
+       110,
+       121,
+       126
+      ],
+      "weight": 0.191
+     },
+     {
+      "rgb": [
+       80,
+       91,
+       97
+      ],
+      "weight": 0.134
+     },
+     {
+      "rgb": [
+       128,
+       138,
+       141
+      ],
+      "weight": 0.072
+     },
+     {
+      "rgb": [
+       65,
+       75,
+       80
+      ],
+      "weight": 0.034
+     }
+    ]
+   }
+  },
+  {
+   "id": "ref_142",
+   "family": "gestural_shapes_on_ground",
+   "title": "Commodore64",
+   "note": "gestural navy and ochre stepped shapes on scumbled cream ground; raw canvas exposed; crops in closeups/ at ~150 ppi (weave ~5.9 px = ~1 mm)",
+   "size_in": [
+    30,
+    40
+   ],
+   "substrate": "canvas (cotton duck, ~1 mm weave)",
+   "medium": "acrylic with paste medium in thicker areas",
+   "crop_xyxy": [
+    329,
+    219,
+    2104,
+    2824
+   ],
+   "crop_method": "auto",
+   "stats": {
+    "lightness_mean": 42.31,
+    "lightness_std": 32.56,
+    "chroma_mean": 25.64,
+    "texture_fine": 3.75,
+    "texture_mid": 8.268,
+    "band_horizontal": 0.31,
+    "band_vertical": 0.287,
+    "edge_darkening": -53.04,
+    "palette": [
+     {
+      "rgb": [
+       157,
+       110,
+       42
+      ],
+      "weight": 0.295
+     },
+     {
+      "rgb": [
+       9,
+       11,
+       36
+      ],
+      "weight": 0.284
+     },
+     {
+      "rgb": [
+       231,
+       218,
+       191
+      ],
+      "weight": 0.249
+     },
+     {
+      "rgb": [
+       26,
+       33,
+       64
+      ],
+      "weight": 0.11
+     },
+     {
+      "rgb": [
+       87,
+       83,
+       84
+      ],
+      "weight": 0.033
+     },
+     {
+      "rgb": [
+       172,
+       154,
+       134
+      ],
+      "weight": 0.028
+     }
+    ]
+   }
+  }
+ ]
+}
