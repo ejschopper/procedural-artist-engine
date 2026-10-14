@@ -92,6 +92,15 @@ def _place(arr, M, size, interp=cv2.INTER_LINEAR):
     return cv2.warpAffine(arr, M, size, flags=interp, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
 
 
+def _place_sharp(arr, M, size, sigma=1.2):
+    """Place without softening: smooth part interpolated, fine grain taken from the nearest source pixel.
+    (Interpolating grain at sub-pixel offsets averages neighbours and visibly softens it - the blind test
+    caught this in round 1.)"""
+    low = cv2.GaussianBlur(arr, (0, 0), sigma)
+    return (cv2.warpAffine(low, M, size, flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_CONSTANT, borderValue=0) +
+            cv2.warpAffine(arr - low, M, size, flags=cv2.INTER_NEAREST, borderMode=cv2.BORDER_CONSTANT, borderValue=0))
+
+
 def compose(H, W, px_mm, placements, marks, ground=None):
     """placements: list of dicts {mark: index, x, y (px), angle_deg, scale, rgb_shift (3,), relief_gain}."""
     if ground is None:
@@ -110,8 +119,8 @@ def compose(H, W, px_mm, placements, marks, ground=None):
         a = _place(mk.alpha, M, (W, H))
         if a.max() < 1e-3:
             continue
-        r = _place(mk.relief, M, (W, H)) * p.get("relief_gain", 1.0)
-        col = _place(mk.albedo.astype(np.float32), M, (W, H), cv2.INTER_CUBIC)
+        r = np.clip(_place_sharp(mk.relief, M, (W, H)), 0, None) * p.get("relief_gain", 1.0)
+        col = _place_sharp(mk.albedo.astype(np.float32), M, (W, H))
         # keep the mark's own detail, take its broad colour from the surface it lands on (paint picks up
         # and carries the local colour), so marks never read as pasted-in tiles
         s_ = max(6.0, 2.0 / px_mm)

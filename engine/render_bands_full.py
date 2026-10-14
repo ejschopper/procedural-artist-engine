@@ -26,6 +26,16 @@ from knife_bands import _noise1d                # noqa: E402
 Image.MAX_IMAGE_PIXELS = None
 
 
+def warp_keep_detail(e, map_x, map_y, sigma=1.2):
+    """Resample without softening: the smooth part is interpolated (cubic), the fine grain is taken from the
+    nearest source row/column unchanged. Interpolating fine grain at fractional positions averages neighbouring
+    pixels and loses up to half its contrast, varying with the sub-pixel offset (seen as soft streaks)."""
+    low = cv2.GaussianBlur(e, (0, 0), sigma)
+    lo = cv2.remap(low, map_x, map_y, cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
+    hi = cv2.remap(e - low, map_x, map_y, cv2.INTER_NEAREST, borderMode=cv2.BORDER_REFLECT)
+    return lo + hi
+
+
 def multiband_blend(a, b, mask, levels=5):
     """Laplacian-pyramid blend: fine detail switches along the seam, tone/colour blends smoothly
     over a wide zone, so neither a hard line nor a soft smear appears."""
@@ -100,8 +110,10 @@ def main():
         h = float(heights[rng.integers(len(heights))]) * rng.uniform(0.96, 1.04)
         base += h
 
-    out = np.zeros((H, W, 3), np.float32)
+    out = np.zeros((H, W, 3), np.float32)          # low frequencies, feathered between bands
     wsum = np.zeros((H, W), np.float32)
+    fine = np.zeros((H, W, 3), np.float32)         # fine grain, taken whole from one band (no averaging)
+    fine_w = np.zeros((H, W), np.float32)
     margin, feather = 8, 6
     log = []; stretches = []
     global_tone = np.mean([l[0][l[1]:l[2]].mean((0, 1)) for l in lib], axis=0)
@@ -136,7 +148,7 @@ def main():
                     src_x = (ew - 1) - src_x
                 map_y = (st + t[:, xa:xb] * (sb - st)).astype(np.float32)
                 map_x = np.broadcast_to(src_x[None, :], map_y.shape).astype(np.float32)
-                seg = cv2.remap(e, map_x, map_y, cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
+                seg = warp_keep_detail(e, map_x, map_y)
                 core = seg[margin:-margin] if seg.shape[0] > 2 * margin + 4 else seg
                 seg = seg * (target / (core.mean((0, 1)) + 1e-3))[None, None, :]   # every segment at band tone
                 return seg, xa, xb
@@ -163,15 +175,20 @@ def main():
             x = xb - min(a.overlap, xb - xa - 1)
         d_top = yy - top[None, :]; d_bot = bot[None, :] - yy
         wgt = np.clip((np.minimum(d_top, d_bot) + feather) / (2 * feather), 0, 1)
-        out[y0:y1] += strip * wgt[..., None]
+        s_low = cv2.GaussianBlur(strip, (0, 0), 1.5)
+        out[y0:y1] += s_low * wgt[..., None]
         wsum[y0:y1] += wgt
+        take = wgt > fine_w[y0:y1]
+        fine[y0:y1][take] = (strip - s_low)[take]
+        fine_w[y0:y1] = np.maximum(fine_w[y0:y1], wgt)
         log.append({"band": bi, "height_mm": round(hmean / mm, 1), "segments": len(segs)})
         if bi % 10 == 0:
             print(f"band {bi}/{len(bounds) - 1}  {time.time() - t0:.0f}s", flush=True)
     st = np.array(stretches)
     print(f"vertical stretch: median {np.median(st):.3f}, 5-95% {np.percentile(st, 5):.3f}-{np.percentile(st, 95):.3f}")
     out /= np.maximum(wsum, 1e-3)[..., None]
-    del wsum
+    out += fine
+    del wsum, fine, fine_w
     # broad tone field matched to the real painting (std ~2.5 L at 1 cm, ~1.1 at 8 cm)
     def field(cell_cm, amp):
         g = rng.standard_normal((int(H / (cell_cm * 10 * mm)) + 4, int(W / (cell_cm * 10 * mm)) + 4)).astype(np.float32)
