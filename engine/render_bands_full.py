@@ -26,6 +26,27 @@ from knife_bands import _noise1d                # noqa: E402
 Image.MAX_IMAGE_PIXELS = None
 
 
+def multiband_blend(a, b, mask, levels=5):
+    """Laplacian-pyramid blend: fine detail switches along the seam, tone/colour blends smoothly
+    over a wide zone, so neither a hard line nor a soft smear appears."""
+    h, w = mask.shape
+    def pyr(img):
+        g = [img]
+        for _ in range(levels):
+            g.append(cv2.pyrDown(g[-1]))
+        return g
+    def lap(g):
+        return [g[i] - cv2.pyrUp(g[i + 1], dstsize=(g[i].shape[1], g[i].shape[0])) for i in range(levels)] + [g[-1]]
+    la, lb = lap(pyr(a)), lap(pyr(b))
+    gm = pyr(mask.astype(np.float32))
+    res = None
+    for i in range(levels, -1, -1):
+        m = gm[i][..., None]
+        layer = la[i] * (1 - m) + lb[i] * m
+        res = layer if res is None else cv2.pyrUp(res, dstsize=(layer.shape[1], layer.shape[0])) + layer
+    return res
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--size-cm", type=float, nargs=2, default=[44, 44])
@@ -34,7 +55,7 @@ def main():
     ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--exemplars", nargs="+", default=[
         f"library/closeups/structures8_crop0{i}.png" for i in (1, 2, 3, 4, 5)])
-    ap.add_argument("--overlap", type=int, default=220)
+    ap.add_argument("--overlap", type=int, default=320)
     a = ap.parse_args()
     t0 = time.time()
     rng = np.random.default_rng(a.seed)
@@ -49,7 +70,7 @@ def main():
         if path.endswith("crop01.png"):
             e = e[600:, 600:]                     # painted bands only (skip border, tape, corner)
         Lx = cv2.cvtColor(e.astype(np.uint8), cv2.COLOR_RGB2LAB)[..., 0].astype(np.float32)
-        for top, bot in find_bands(e.astype(np.uint8)):
+        for top, bot in find_bands(e.astype(np.uint8), min_mm=12.5):
             if bot - top >= 6 * mm:
                 core = Lx[top + 8:bot - 8]
                 busy = float(np.percentile(np.abs(core - cv2.GaussianBlur(core, (0, 0), 6)), 99)) if core.size else 99
@@ -60,20 +81,31 @@ def main():
     used = np.zeros(len(lib), np.float32)
     print(f"{W}x{H}px, {len(lib)} real bands in library")
 
-    # plan: band boundaries
+    # plan: band boundaries. Heights are drawn from the REAL band heights so segments are never
+    # stretched more than a few percent (stretching is what softened the earlier render).
+    lum = lambda c: float(0.3 * c[0] + 0.59 * c[1] + 0.11 * c[2])
+    # Boundaries are nearly straight: the real bands bring their own natural wiggle, so the plan only
+    # adds a very gentle common drift plus a small independent wobble per boundary (not cumulative).
+    drift = (_noise1d(rng, W, 400 * mm) * 1.0 * mm).astype(np.float32)
     bounds = []
-    y = -rng.uniform(0, 20) * mm
-    while y < H + 25 * mm:
-        b = (y + _noise1d(rng, W, 250 * mm) * 3.0 * mm + _noise1d(rng, W, 90 * mm) * 1.8 * mm
-             + _noise1d(rng, W, 25 * mm) * 1.0 * mm + _noise1d(rng, W, 8 * mm) * 0.35 * mm)
-        bounds.append(b.astype(np.float32))
-        y += rng.uniform(9, 24) * mm
+    base = -rng.uniform(0, 10) * mm
+    prev_b = None
+    while prev_b is None or prev_b.min() < H + 4 * mm:
+        own = (_noise1d(rng, W, 150 * mm) * 0.6 * mm + _noise1d(rng, W, 40 * mm) * 0.3 * mm).astype(np.float32)
+        b = base + drift + own
+        if prev_b is not None:
+            b = np.maximum(b, prev_b + 0.85 * h)          # never pinch below 85% of the band's real height
+        bounds.append(b)
+        prev_b = b
+        h = float(heights[rng.integers(len(heights))]) * rng.uniform(0.96, 1.04)
+        base += h
 
     out = np.zeros((H, W, 3), np.float32)
     wsum = np.zeros((H, W), np.float32)
-    xs_all = np.arange(W, dtype=np.float32)
-    margin, feather = 6, 3
-    log = []
+    margin, feather = 8, 6
+    log = []; stretches = []
+    global_tone = np.mean([l[0][l[1]:l[2]].mean((0, 1)) for l in lib], axis=0)
+    prev_band_tone = global_tone.copy()
     for bi, (top, bot) in enumerate(zip(bounds[:-1], bounds[1:])):
         y0 = max(0, int(np.floor(top.min())) - margin - 2); y1 = min(H, int(np.ceil(bot.max())) + margin + 2)
         if y1 <= y0:
@@ -81,13 +113,16 @@ def main():
         yy = np.arange(y0, y1, dtype=np.float32)[:, None]
         t = (yy - top[None, :]) / np.maximum(bot - top, 1)[None, :]
         hmean = float(np.mean(bot - top))
+        # band tone: continuous with the band above, small random step, gently pulled to the painting mean
+        target = prev_band_tone * (1 + rng.normal(0, 0.035)) * 0.8 + global_tone * 0.2
+        prev_band_tone = target
         strip = np.zeros((y1 - y0, W, 3), np.float32)
         x = 0; prev = None; segs = []
-        band_tone = None
         while x < W:
-            score = (np.abs(heights - hmean) / max(hmean, 1) + 0.25 * rng.random(len(lib)) + 0.35 * used
+            ratio = hmean / heights
+            score = (np.abs(np.log(ratio)) * 6 + 0.25 * rng.random(len(lib)) + 0.35 * used
                      + 0.35 * np.clip(busy, 0, None))
-            cands = list(np.argsort(score)[: (1 if prev is None else 10)])
+            cands = list(np.argsort(score)[: (1 if prev is None else 8)])
 
             def make(k):
                 e, st, sb = lib[k][0], lib[k][1], lib[k][2]
@@ -101,37 +136,27 @@ def main():
                     src_x = (ew - 1) - src_x
                 map_y = (st + t[:, xa:xb] * (sb - st)).astype(np.float32)
                 map_x = np.broadcast_to(src_x[None, :], map_y.shape).astype(np.float32)
-                return cv2.remap(e, map_x, map_y, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT), xa, xb
+                seg = cv2.remap(e, map_x, map_y, cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
+                core = seg[margin:-margin] if seg.shape[0] > 2 * margin + 4 else seg
+                seg = seg * (target / (core.mean((0, 1)) + 1e-3))[None, None, :]   # every segment at band tone
+                return seg, xa, xb
             best = None
             for k in cands:
                 seg, xa, xb = make(k)
-                if band_tone is not None:            # one band keeps one tone along its length
-                    seg = seg * (band_tone / (seg.mean((0, 1)) + 1e-3))[None, None, :]
-                if prev is None:
-                    cost = 0.0
-                else:
-                    ov = min(a.overlap, xb - xa, prev)
-                    cost = float(((seg[:, :ov] - strip[:, xa:xa + ov]) ** 2).mean())
+                cost = 0.0 if prev is None else float(((seg[:, :min(a.overlap, xb - xa, prev)] -
+                                                        strip[:, xa:xa + min(a.overlap, xb - xa, prev)]) ** 2).mean())
                 if best is None or cost < best[0]:
                     best = (cost, k, seg, xa, xb)
             _, k, seg, xa, xb = best
-            used[k] += 1; name = lib[k][3]
-            if band_tone is None:
-                band_tone = seg.mean((0, 1))
+            used[k] += 1; segs.append(lib[k][3]); stretches.append(hmean / heights[k])
             if prev is None:
                 strip[:, xa:xb] = seg
             else:
                 ov = min(a.overlap, xb - xa, prev)
                 old = strip[:, xa:xa + ov]
-                g = (old.mean((0, 1)) + 1) / (seg[:, :ov].mean((0, 1)) + 1)
-                ramp = np.clip(1 - np.arange(xb - xa) / max(1.0, 0.6 * (xb - xa)), 0, 1)[None, :, None]
-                seg = seg * (1 + (g[None, None, :] - 1) * ramp)
-                err = ((seg[:, :ov] - old) ** 2).sum(2)
-                M = _min_cut_vertical(err)
-                M = cv2.GaussianBlur(M, (0, 0), 1.2)
-                strip[:, xa:xa + ov] = old * (1 - M[..., None]) + seg[:, :ov] * M[..., None]
+                M = _min_cut_vertical(((seg[:, :ov] - old) ** 2).sum(2))
+                strip[:, xa:xa + ov] = multiband_blend(old, seg[:, :ov], M)
                 strip[:, xa + ov:xb] = seg[:, ov:]
-            segs.append(name)
             prev = xb - xa
             if xb >= W:
                 break
@@ -143,6 +168,8 @@ def main():
         log.append({"band": bi, "height_mm": round(hmean / mm, 1), "segments": len(segs)})
         if bi % 10 == 0:
             print(f"band {bi}/{len(bounds) - 1}  {time.time() - t0:.0f}s", flush=True)
+    st = np.array(stretches)
+    print(f"vertical stretch: median {np.median(st):.3f}, 5-95% {np.percentile(st, 5):.3f}-{np.percentile(st, 95):.3f}")
     out /= np.maximum(wsum, 1e-3)[..., None]
     del wsum
     # broad tone field matched to the real painting (std ~2.5 L at 1 cm, ~1.1 at 8 cm)
@@ -160,7 +187,7 @@ def main():
     meta = {"size_cm": a.size_cm, "dpi": a.dpi, "px": [W, H], "seed": a.seed, "bands": len(log),
             "library_bands": len(lib), "max_reuse": int(used.max()), "mean_reuse": round(float(used.mean()), 1),
             "lighting": "baked from source photos (light from below)", "exemplars": [Path(p).name for p in a.exemplars],
-            "seconds": round(time.time() - t0), "band_log": log}
+            "seconds": round(time.time() - t0), "stretch_median": round(float(np.median(st)), 3), "band_log": log}
     (out_dir / "metadata.json").write_text(json.dumps(meta, indent=1))
     print(json.dumps({k: v for k, v in meta.items() if k != "band_log"}))
 
