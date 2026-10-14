@@ -1,0 +1,209 @@
+<title>Real or Engine</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#f3f1ec; --panel:#fbfaf7; --fg:#1f1d1a; --muted:#6e6a62; --line:#dcd7cc;
+  --accent:#9a4b20; --accent-fg:#fff; --real:#2f6b4f; --engine:#3c4f8a; --bad:#a3332a;
+  --mat:#e6e2d9;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#161513; --panel:#1e1c19; --fg:#ece8e0; --muted:#a39d92; --line:#36322c;
+  --accent:#e08a55; --accent-fg:#1a120c; --real:#7cc4a0; --engine:#9bb0ee; --bad:#ef7d72;
+  --mat:#0f0e0c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#161513; --panel:#1e1c19; --fg:#ece8e0; --muted:#a39d92; --line:#36322c;
+  --accent:#e08a55; --accent-fg:#1a120c; --real:#7cc4a0; --engine:#9bb0ee; --bad:#ef7d72;
+  --mat:#0f0e0c; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px}
+h1{font-size:22px;font-weight:600;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);font-size:13px;max-width:62ch;margin:0}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:12px}
+.status{color:var(--muted)}
+.bar{height:3px;background:var(--line);border-radius:2px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--accent);width:0;transition:width .25s}
+.stage{background:var(--mat);border:1px solid var(--line);border-radius:6px;display:flex;justify-content:center;align-items:center;
+  padding:24px;overflow:auto;min-height:280px}
+.stage img{display:block;image-rendering:auto;max-width:none}
+.stage.fit img{max-width:100%;height:auto!important}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.choices{display:flex;gap:10px;flex-wrap:wrap}
+button{font:inherit;cursor:pointer;border-radius:6px;border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:10px 16px}
+button:hover{border-color:var(--muted)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.choice{min-width:140px;font-weight:600;font-size:16px;padding:14px 20px}
+.choice.real{border-color:var(--real);color:var(--real)}
+.choice.engine{border-color:var(--engine);color:var(--engine)}
+.choice kbd{font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:400;opacity:.7;margin-left:8px;border:1px solid currentColor;border-radius:3px;padding:0 4px}
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tools button{padding:7px 12px;font-size:13px}
+.tools button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.note{font-size:13px;color:var(--muted);margin:0}
+.result{display:flex;flex-direction:column;gap:16px}
+.score{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.stat b{display:block;font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cell{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.cell img{width:100%;aspect-ratio:1;object-fit:cover;max-width:100%}
+.cell div{padding:6px 8px;font-size:12px;display:flex;justify-content:space-between;gap:6px}
+.cell .miss{color:var(--bad);font-weight:600}
+.t-real{color:var(--real)} .t-engine{color:var(--engine)}
+.banner{font-size:13px;padding:8px 12px;border-radius:6px;border:1px dashed var(--line);color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Real or Engine</h1>
+      <p class="sub" id="lede">Each crop is shown at 100%: one image pixel per screen pixel. Half are from the real painting and half from the engine. Decide which each one is.</p>
+    </div>
+    <div class="status mono" id="status"></div>
+  </header>
+  <div class="bar"><i id="prog"></i></div>
+  <div id="saveNote" class="banner" hidden></div>
+
+  <section id="trial">
+    <div class="stage" id="stage"><img id="crop" alt="Crop to judge"></div>
+    <div class="controls" style="margin-top:14px">
+      <div class="choices">
+        <button class="choice real" id="bReal">Real<kbd>R</kbd></button>
+        <button class="choice engine" id="bEngine">Engine<kbd>E</kbd></button>
+      </div>
+      <div class="tools">
+        <button id="bBack">Back</button>
+        <button id="bZoom" aria-pressed="false">2×</button>
+        <button id="bFit" aria-pressed="false">Fit</button>
+      </div>
+    </div>
+    <p class="note" id="scale" style="margin-top:10px"></p>
+  </section>
+
+  <section id="result" class="result" hidden>
+    <div class="score" id="score"></div>
+    <p class="note" id="verdict"></p>
+    <div class="grid" id="grid"></div>
+    <div><button id="bRestart">Judge this round again</button></div>
+  </section>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const items = DATA.items;
+const key = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(DATA.k), c => c.charCodeAt(0) ^ 0x5A)));
+let answers = {}, pos = 0, zoom = 1, fit = false;
+let db = null, docRef = null, writing = Promise.resolve();
+
+const $ = id => document.getElementById(id);
+const dpr = () => window.devicePixelRatio || 1;
+
+function render() {
+  const done = Object.keys(answers).length;
+  $("prog").style.width = (100 * done / items.length) + "%";
+  if (pos >= items.length) return showResult();
+  $("trial").hidden = false; $("result").hidden = true;
+  const it = items[pos];
+  const img = $("crop");
+  img.src = it.src;
+  const css = DATA.size_px / dpr() * zoom;          // 1 image px = 1 device px (×2 if zoomed)
+  img.style.width = css + "px"; img.style.height = css + "px";
+  $("stage").classList.toggle("fit", fit);
+  $("status").textContent = `${DATA.label} · ${pos + 1} / ${items.length} · ${it.id}`;
+  $("scale").textContent = `${DATA.size_px} × ${DATA.size_px} px ≈ ${(DATA.size_px / 300 * 25.4).toFixed(0)} mm at 300 ppi` +
+    (fit ? " · scaled to fit (not 100%)" : zoom > 1 ? " · 200%" : " · 100%");
+  $("bBack").disabled = pos === 0;
+  const a = answers[it.id];
+  $("bReal").setAttribute("aria-pressed", a === "real"); $("bEngine").setAttribute("aria-pressed", a === "engine");
+}
+
+function vote(v) {
+  if (pos >= items.length) return;
+  answers[items[pos].id] = v;
+  pos++;
+  save();
+  render();
+}
+
+function save() {
+  if (!docRef) return;
+  const payload = { round: DATA.round, answers: { ...answers }, done: Object.keys(answers).length === items.length,
+                    updatedAt: new Date().toISOString() };
+  writing = writing.then(() => docRef.set(payload)).catch(e => {
+    $("saveNote").hidden = false;
+    $("saveNote").textContent = "Your answers could not be saved (" + (e && e.code || "error") + "). The score below still works.";
+  });
+}
+
+function showResult() {
+  $("trial").hidden = true; $("result").hidden = false;
+  $("status").textContent = `${DATA.label} · complete`;
+  let right = 0, eng = 0, engReal = 0, real = 0, realEng = 0;
+  const grid = $("grid"); grid.textContent = "";
+  for (const it of items) {
+    const t = key[it.id], a = answers[it.id];
+    if (a === t) right++;
+    if (t === "engine") { eng++; if (a === "real") engReal++; } else { real++; if (a === "engine") realEng++; }
+    const c = document.createElement("div"); c.className = "cell";
+    const im = document.createElement("img"); im.src = it.src; im.alt = it.id; im.loading = "lazy";
+    const d = document.createElement("div");
+    const l = document.createElement("span"); l.className = "t-" + t; l.textContent = t === "real" ? "Real" : "Engine";
+    const r = document.createElement("span"); r.className = a === t ? "" : "miss";
+    r.textContent = a === t ? "✓ " + it.id.split("-")[1] : "you: " + (a || "–");
+    d.append(l, r); c.append(im, d); grid.append(c);
+  }
+  const stats = [
+    [right + " / " + items.length, "Correct calls"],
+    [engReal + " / " + eng, "Engine crops you called real"],
+    [realEng + " / " + real, "Real crops you called engine"],
+  ];
+  $("score").textContent = "";
+  for (const [b, s] of stats) {
+    const el = document.createElement("div"); el.className = "stat";
+    const bb = document.createElement("b"); bb.textContent = b;
+    const ss = document.createElement("span"); ss.textContent = s;
+    el.append(bb, ss); $("score").append(el);
+  }
+  const acc = right / items.length;
+  $("verdict").textContent = acc <= 0.6
+    ? "Close to chance: at this scale you could not reliably tell the engine from the painting. That is the pass mark."
+    : acc >= 0.85 ? "You could tell them apart easily. The engine is not there yet; misses on engine crops show what still gives it away."
+    : "You could tell them apart more often than not. Look at the engine crops you caught to see what gives them away.";
+}
+
+$("bReal").onclick = () => vote("real");
+$("bEngine").onclick = () => vote("engine");
+$("bBack").onclick = () => { if (pos > 0) { pos--; render(); } };
+$("bZoom").onclick = () => { zoom = zoom === 1 ? 2 : 1; fit = false; $("bZoom").setAttribute("aria-pressed", zoom > 1); $("bFit").setAttribute("aria-pressed", false); render(); };
+$("bFit").onclick = () => { fit = !fit; zoom = 1; $("bFit").setAttribute("aria-pressed", fit); $("bZoom").setAttribute("aria-pressed", false); render(); };
+$("bRestart").onclick = () => { answers = {}; pos = 0; save(); render(); };
+document.addEventListener("keydown", e => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  if (k === "r") vote("real"); else if (k === "e") vote("engine");
+  else if (k === "arrowleft" || k === "backspace") $("bBack").click();
+});
+matchMedia(`(resolution: ${dpr()}dppx)`).addEventListener?.("change", render);
+render();
+
+(async () => {
+  try {
+    const [d, u] = await Promise.all([claude.use("db"), claude.use("user")]);
+    const uid = u && await u.id();
+    if (!d || !uid) { $("saveNote").hidden = false; $("saveNote").textContent = "Answers are not being saved in this view; the score still shows at the end."; return; }
+    db = d; docRef = db.doc("votes/" + uid + "_" + DATA.round);
+    const snap = await docRef.get();
+    const prev = snap.exists ? snap.data() : null;
+    if (prev && prev.answers && Object.keys(answers).length === 0) {
+      answers = prev.answers;
+      pos = items.findIndex(it => !(it.id in answers)); if (pos < 0) pos = items.length;
+      render();
+    }
+  } catch (e) { /* page works without saving */ }
+})();
+</script>
