@@ -189,6 +189,7 @@ document.addEventListener("keydown", e => {
   else if (k === "arrowleft" || k === "backspace") $("bBack").click();
 });
 matchMedia(`(resolution: ${dpr()}dppx)`).addEventListener?.("change", render);
+document.querySelector('h1').textContent = 'Real or Engine · ' + DATA.label.split(' · ')[0];
 render();
 
 (async () => {
