@@ -98,7 +98,7 @@ const DATA = /*__DATA__*/null;
 const items = DATA.items;
 const key = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(DATA.k), c => c.charCodeAt(0) ^ 0x5A)));
 let answers = {}, pos = 0, zoom = 1, fit = false;
-let db = null, docRef = null, writing = Promise.resolve();
+let db = null, docRef = null, writing = Promise.resolve(), uidKnown = null;
 
 const $ = id => document.getElementById(id);
 const dpr = () => window.devicePixelRatio || 1;
@@ -140,7 +140,18 @@ function save() {
   });
 }
 
+let archived = false;
+function archive() {
+  // a finished round is kept as its own record; restarting never overwrites it
+  if (archived || !db || !uidKnown || Object.keys(answers).length !== items.length) return;
+  archived = true;
+  const id = uidKnown + "_" + DATA.round + "_" + Date.now();
+  db.doc("results/" + id).set({ round: DATA.round, answers: { ...answers }, finishedAt: new Date().toISOString() })
+    .catch(() => { archived = false; });
+}
+
 function showResult() {
+  archive();
   $("trial").hidden = true; $("result").hidden = false;
   $("status").textContent = `${DATA.label} · complete`;
   let right = 0, eng = 0, engReal = 0, real = 0, realEng = 0;
@@ -181,7 +192,7 @@ $("bEngine").onclick = () => vote("engine");
 $("bBack").onclick = () => { if (pos > 0) { pos--; render(); } };
 $("bZoom").onclick = () => { zoom = zoom === 1 ? 2 : 1; fit = false; $("bZoom").setAttribute("aria-pressed", zoom > 1); $("bFit").setAttribute("aria-pressed", false); render(); };
 $("bFit").onclick = () => { fit = !fit; zoom = 1; $("bFit").setAttribute("aria-pressed", fit); $("bZoom").setAttribute("aria-pressed", false); render(); };
-$("bRestart").onclick = () => { answers = {}; pos = 0; save(); render(); };
+$("bRestart").onclick = () => { archive(); answers = {}; pos = 0; archived = false; render(); };
 document.addEventListener("keydown", e => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
   const k = e.key.toLowerCase();
@@ -197,7 +208,7 @@ render();
     const [d, u] = await Promise.all([claude.use("db"), claude.use("user")]);
     const uid = u && await u.id();
     if (!d || !uid) { $("saveNote").hidden = false; $("saveNote").textContent = "Answers are not being saved in this view; the score still shows at the end."; return; }
-    db = d; docRef = db.doc("votes/" + uid + "_" + DATA.round);
+    db = d; uidKnown = uid; docRef = db.doc("votes/" + uid + "_" + DATA.round);
     const snap = await docRef.get();
     const prev = snap.exists ? snap.data() : null;
     if (prev && prev.answers && Object.keys(answers).length === 0) {
